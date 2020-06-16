@@ -9,11 +9,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://massqeen.github.io/gulp-starter-kit",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/massqeen/gulp-starter-kit.git"
-  },
+  "homepage": "https://massqeen.github.io/HellEN",
   "devDependencies": {
     "@babel/core": "^7.10.2",
     "@babel/preset-env": "^7.10.2",
