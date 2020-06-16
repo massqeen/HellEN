@@ -1,37 +1,35 @@
 @mixin retina($x) {
-
   @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: $x),
-  (min-width: 768px) and (min-resolution: 96dpi*$x) {
+    (min-width: 768px) and (min-resolution: 96dpi*$x) {
     @content;
   }
 }
 
 @mixin for-size($size) {
-
   //576px
   @if $size==phone-only {
-    @media (max-width: 35.94em) {
+    @media (max-width: 36em) {
       @content;
     }
   }
 
   //768px
   @else if $size==tablet {
-    @media (max-width: 47.94em) {
+    @media (max-width: 48em) {
       @content;
     }
   }
 
   //<992px
   @else if $size==tablet-landscape {
-    @media (max-width: 61.94em) {
+    @media (max-width: 62em) {
       @content;
     }
   }
 
   //<1200px
-  @else if $size==desktop-up {
-    @media (max-width: 74.94em) {
+  @else if $size==desktop {
+    @media (max-width: 75em) {
       @content;
     }
   }
@@ -55,10 +53,8 @@
   @font-face {
     font-family: "#{$name}";
     src: url("../fonts/#{$file}.eot");
-    src: url("../fonts/#{$file}.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/#{$file}.woff") format("woff"),
-    url("../fonts/#{$file}.ttf") format("truetype"),
-    url("../fonts/#{$file}.svg?#webfont") format("svg");
+    src: url("../fonts/#{$file}.eot?#iefix") format("embedded-opentype"), url("../fonts/#{$file}.woff") format("woff"),
+      url("../fonts/#{$file}.ttf") format("truetype"), url("../fonts/#{$file}.svg?#webfont") format("svg");
   }
 }
 
@@ -80,60 +76,23 @@
     border-top: $size solid transparent;
     border-bottom: $size solid transparent;
     border-right: $size solid $color;
-  }
-
-  @else if ($direction==right) {
+  } @else if ($direction==right) {
     border-top: $size solid transparent;
     border-bottom: $size solid transparent;
     border-left: $size solid $color;
-  }
-
-  @else if ($direction==down) {
+  } @else if ($direction==down) {
     border-left: $size solid transparent;
     border-right: $size solid transparent;
     border-top: $size solid $color;
-  }
-
-  @else {
+  } @else {
     border-left: $size solid transparent;
     border-right: $size solid transparent;
     border-bottom: $size solid $color;
   }
 }
 
-//fixed aspect ratio - needed such HTML (!include mixin in outer box):
-/*<div class="outer-box">
-    <div class="inner-box">
-    </div>
-  </div>*/
-@mixin aspect-ratio($width, $height) {
-  position: relative;
-
-  &:before {
-    display: block;
-    content: "";
-    width: 100%;
-    padding-top: ($height / $width) * 100%;
-  }
-
-  >.inner-box {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-}
-
-//text shortening
-@mixin text-shorten {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
 //flex center
-@mixin flex-center($justify:center, $align:center) {
+@mixin flex-center($justify: center, $align: center) {
   display: flex;
   align-items: $align;
   justify-content: $justify;
