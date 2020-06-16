@@ -6,30 +6,36 @@
 }
 
 @mixin for-size($size) {
-  //576px
+  //>576px
   @if $size==phone-only {
-    @media (max-width: 36em) {
+    @media (min-width: 36em) {
       @content;
     }
   }
 
-  //768px
+  //>768px
   @else if $size==tablet {
-    @media (max-width: 48em) {
+    @media (min-width: 48em) {
       @content;
     }
   }
 
-  //<992px
+  //>992px
   @else if $size==tablet-landscape {
-    @media (max-width: 62em) {
+    @media (min-width: 62em) {
       @content;
     }
   }
 
-  //<1200px
+  //>1400px
   @else if $size==desktop {
-    @media (max-width: 75em) {
+    @media (min-width: 87.5em) {
+      @content;
+    }
+  }
+  //>1680px
+  @else if $size==desktop {
+    @media (min-width: 105em) {
       @content;
     }
   }
