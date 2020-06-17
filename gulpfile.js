@@ -1,15 +1,11 @@
 'use strict';
 
-const {
-  series,
-  parallel,
-  watch
-} = require('gulp');
+const { series, parallel, watch } = require('gulp');
 const requireDir = require('require-dir');
 const browserSync = require('browser-sync').create();
 
 const tasks = requireDir('./gulp/tasks', {
-  recurse: true
+  recurse: true,
 });
 const paths = require('./gulp/paths');
 
@@ -31,7 +27,9 @@ const watcher = done => {
     'change',
     series(tasks.html, tasks.inject, browserSync.reload),
   );
-  watch(paths.watch.css).on('change', series(tasks.css, browserSync.reload));
+  watch(paths.watch.css).on('change', function () {
+    etTimeout(series(tasks.css, browserSync.reload), 300);
+  });
   watch(paths.watch.js).on('change', series(tasks.scripts, browserSync.reload));
   watch(paths.watch.images, tasks.images);
   watch(paths.watch.fonts, tasks.fonts);
