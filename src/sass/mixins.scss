@@ -41,8 +41,8 @@
   }
 }
 
-@mixin font($fontfamily, $fontsize, $fontweight) {
-  font-family: $fontfamily;
+@mixin font($lineheight, $fontsize, $fontweight) {
+  line-height: $lineheight;
   font-size: $fontsize;
   font-weight: $fontweight;
 }
