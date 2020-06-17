@@ -1,0 +1,51 @@
+.program-section {
+  padding-top: 5.3rem;
+  padding-bottom: 44rem;
+  background-color: #111517;
+  // .program-section__title
+  &__title {
+    @include font(33/20, 2rem, 400);
+    color: #ffffff;
+  }
+
+  // .program-section__list
+
+  //   &__list {
+  //   }
+
+  //   // .program-section__list-item
+
+  //   &__list-item {
+  //   }
+
+  //   // .program-section__list-item--title
+
+  &__list-item--title {
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+}
+// .contaner {
+// }
+// .program {
+//   // .program__list-item--secondary-list
+
+//   &__list-item--secondary-list {
+//   }
+// }
+// .secondary-list {
+//   // .secondary-list__item
+
+//   &__item {
+//   }
+
+//   // .secondary-list__item--title
+
+//   &__item--title {
+//   }
+
+//   // .secondary-list__item--description
+
+//   &__item--description {
+//   }
+// }
