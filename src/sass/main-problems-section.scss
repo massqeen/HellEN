@@ -1,67 +1,64 @@
-/* montserrat-700 - latin_cyrillic */
-@font-face {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 700;
-    src: local("Montserrat Bold"), local("Montserrat-Bold"),
-        url("../fonts/montserrat-v14-latin_cyrillic-700.woff2") format("woff2"),
-        /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/montserrat-v14-latin_cyrillic-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* montserrat-800 - latin_cyrillic */
-@font-face {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 800;
-    src: local("Montserrat ExtraBold"), local("Montserrat-ExtraBold"),
-        url("../fonts/montserrat-v14-latin_cyrillic-800.woff2") format("woff2"),
-        /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/montserrat-v14-latin_cyrillic-800.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-.main-problems__container{
-    content: "";
-    width: 28rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    box-sizing: content-box;
-    background-color: black;
+.main-problems__container {
+  content: "";
+  width: 28rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: content-box;
+  background-color: black;
 }
 
 ol {
-    list-style-type: none;
-  }
+  list-style-type: none;
+}
 
-  .main-problems__title{
-        font-size: 20px;
-        font-family: "Montserrat";
-        color: rgb(255, 255, 255);
-        font-weight: bold;
-        line-height: 1.5;
-        padding-top: 5.6rem;
-        padding-bottom: 33rem;
-  }
+.main-problems__title {
+  font-size: 20px;
+//   font-family: 'Montserrat';
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.5;
+  padding-top: 5.6rem;
+  padding-bottom: 33rem;
+}
 
-  .main-problems__list-wrapper{
-      position: relative;
-  }
+.main-problems__list-wrapper {
+  position: relative;
+}
 
-  .main-problems__list{
-      background-color: white;
-      position: absolute;
-      top: -31.4rem;
-  }
+.main-problems__list {
+  background-color: white;
+  position: absolute;
+  top: -31.4rem;
+  padding: 2.3rem 2.4rem 3.4rem 2.8rem;
+}
 
-  .main-problems__list-item{
-        font-size: 1.3rem;
-        font-family: "Montserrat";
-        color: rgb(24, 25, 29);
-        font-weight: bold;
-        line-height: 1.538;
-        padding-bottom: 2.4rem;
-        padding-left: 2.8rem;
-  }
+.main-problems__list-item {
+  font-size: 1.3rem;
+  font-family: 'Montserrat';
+  color: rgb(24, 25, 29);
+  font-weight: bold;
+  line-height: 1.538;
+  padding-bottom: 2.2rem;
+}
 
-  .main-problems__list-item__number{
-      padding-bottom: 2rem;
-      display: block;
-    //   margin-bottom: 15.6rem;
-  }
+.main-problems__list-item p{
+
+}
+
+
+.main-problems__list-item__number {
+  display: block;
+  position: relative;
+  padding-left: 3.5rem;
+}
+
+.main-problems__list-item__number::before{
+    content: "";
+    width: 2.6rem;
+    height: 0.2rem;
+    background-color: yellowgreen;
+    position: absolute;
+    // left: 2.8rem;
+    top: 0.7rem;
+    left: 0;
+}
