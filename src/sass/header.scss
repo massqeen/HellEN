@@ -1,1 +1,80 @@
+.header {
 
+  // .header__picture
+
+  &__picture {}
+}
+
+.main-nav {}
+
+.logo {
+
+  // .logo__name-site
+
+  &__name-site {}
+
+  // .logo__icon
+
+  &__icon {}
+
+  // .logo__slogan
+
+  &__slogan {
+
+    // .logo__slogan--orange
+
+    &--orange {}
+
+    // .logo__slogan--grey
+
+    &--grey {}
+  }
+}
+
+.menu-list {
+
+  // .menu-list__item
+
+  &__item {}
+
+  // .menu-list__link
+
+  &__link {}
+}
+
+.burger {}
+
+.burger_line {}
+
+.header-title {
+
+  // .header-title__main
+
+  &__main {}
+
+  // .header-title__subtitle
+
+  &__subtitle {
+
+    // .header-title__subtitle--grey
+
+    &--grey {}
+
+    // .header-title__subtitle--orange
+
+    &--orange {}
+  }
+}
+
+.header-img {}
+
+.advantage-list {
+
+  // .advantage-list__item
+
+  &__item {}
+
+  // .advantage-list__item-description
+
+  &__item-description {}
+}
