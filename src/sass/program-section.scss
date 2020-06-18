@@ -2,7 +2,14 @@
   padding-top: 5.3rem;
   padding-bottom: 44rem;
   background-color: #111517;
+  background-image: url(../images/program/bcg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: right -10rem bottom 34.5rem;
+  @include retina(2) {
+    background-image: url(../images/program/bcg-mobile@2x.jpg);
+  }
   // .program-section__title
+
   &__title {
     @include font(33/20, 2rem, 800);
     color: #ffffff;
