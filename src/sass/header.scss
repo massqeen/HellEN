@@ -31,42 +31,7 @@
 
 .main-nav {}
 
-.logo {
-  width: 9rem;
-  color: #000;
-  // .logo__name-site
 
-  &__name-site {
-    @include font(1.2rem, 1.5rem, 900);
-    letter-spacing: 0.075rem;
-  }
-
-  // .logo__icon
-
-  &__icon {
-    margin-bottom: -0.8rem;
-    width: 1.6rem;
-    height: 2.4rem;
-    fill: $accent-color;
-  }
-
-  // .logo__slogan
-
-  &__slogan {
-    display: inline-block;
-    text-transform: uppercase;
-    @include font(1rem, 0.53rem, 700);
-    letter-spacing: 0.0689rem;
-
-    // .logo__slogan--orange
-
-    &--orange {
-      margin-right: 0.2rem;
-      color: $accent-color;
-    }
-
-  }
-}
 
 .menu-list {
   //   @include flex-center($justify: space-between, $align: center);
