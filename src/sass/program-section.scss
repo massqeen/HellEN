@@ -45,7 +45,7 @@
 
   //   // .program-section__list-item--title
 
-  &__list-item--title {
+  &__list-item-title {
     color: #ffffff;
     text-transform: uppercase;
     @include font(30/15, 1.5rem, 700);
@@ -84,7 +84,7 @@
 
   //   // .secondary-list__item--title
 
-  &__item--title {
+  &__item-title {
     color: $accent-color;
     padding-left: 4rem;
     @include font(30/14, 1.4rem, 500);
@@ -104,7 +104,7 @@
 
   //   // .secondary-list__item--description
 
-  &__item--description {
+  &__item-description {
     color: $additional-text;
     @include font(20/11, 1.1rem, 400);
     letter-spacing: 0.55px;
