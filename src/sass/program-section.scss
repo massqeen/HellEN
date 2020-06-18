@@ -4,25 +4,59 @@
   background-color: #111517;
   // .program-section__title
   &__title {
-    @include font(33/20, 2rem, 400);
+    @include font(33/20, 2rem, 800);
     color: #ffffff;
+    text-align: center;
+    margin-bottom: 4rem;
+    letter-spacing: 1px;
   }
 
   // .program-section__list
 
-  //   &__list {
-  //   }
+  &__list {
+    max-width: 16rem;
+    width: 100%;
+    padding-left: 3rem;
+    margin: 0 auto;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      height: 92%;
+      width: 0.2rem;
+      background-color: #546264;
+      left: 0.2rem;
+      top: 1rem;
+    }
+  }
 
   //   // .program-section__list-item
 
-  //   &__list-item {
-  //   }
+  &__list-item {
+    margin-bottom: 3.5rem;
+  }
 
   //   // .program-section__list-item--title
 
   &__list-item--title {
     color: #ffffff;
     text-transform: uppercase;
+    @include font(30/15, 1.5rem, 700);
+    letter-spacing: 1.65px;
+    margin-bottom: 2.2rem;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      background-color: $accent-color;
+      left: -3.2rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 }
 // .program {
@@ -31,19 +65,39 @@
 //   &__list-item--secondary-list {
 //   }
 // }
-// .secondary-list {
-//   // .secondary-list__item
+.secondary-list {
+  //   // .secondary-list__item
 
-//   &__item {
-//   }
+  &__item {
+    margin-bottom: 2rem;
+    span {
+      display: block;
+    }
+  }
 
-//   // .secondary-list__item--title
+  //   // .secondary-list__item--title
 
-//   &__item--title {
-//   }
+  &__item--title {
+    color: $accent-color;
+    padding-left: 4rem;
+    @include font(30/14, 1.4rem, 500);
+    position: relative;
+    margin-bottom: 1.5rem;
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 2.5rem;
+      height: 0.2rem;
+      background-color: $accent-color;
+    }
+  }
 
-//   // .secondary-list__item--description
+  //   // .secondary-list__item--description
 
-//   &__item--description {
-//   }
-// }
+  &__item--description {
+    color: $additional-text;
+  }
+}
