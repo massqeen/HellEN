@@ -1,0 +1,42 @@
+.advantages__list {
+    background-color: white;
+    padding: 2.3rem 2.4rem 3.4rem 2.8rem;
+  }
+  
+  .advantages__list-item {
+    font-size: 1.3rem;
+    font-family: 'Montserrat';
+    color: rgb(24, 25, 29);
+    font-weight: 700;
+    line-height: 1.538;
+    margin-bottom: 2.2rem;
+    letter-spacing: 0.65px;
+  }
+  
+  .advantages__list-item p {
+   @include font(20/13, 1.3rem, 700)
+  }
+  
+  .advantages__list-item__number {
+    display: block;
+    position: relative;
+    padding-left: 3.5rem;
+    color: $accent-color;
+  }
+  
+  .advantages__list-item__number::before {
+    content: "";
+    width: 2.6rem;
+    height: 0.2rem;
+    background-color: $accent-color;
+    position: absolute;
+    top: 0.8rem;
+    left: 0;
+  }
+  
+  .adwantages-wrapper {
+    @include flex-center(flex-start, flex-start);
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    padding: 5rem 3rem 2.8rem 2.8rem;
+  }

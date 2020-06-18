@@ -1,4 +1,6 @@
-.main-problems__container {
+@import "./components/advantages.scss";
+
+.container {
   content: "";
   width: 28rem;
   padding-left: 2rem;
@@ -12,53 +14,26 @@ ol {
 }
 
 .main-problems__title {
-  font-size: 20px;
-//   font-family: 'Montserrat';
+  width: 23rem;
   color: rgb(255, 255, 255);
-  font-weight: bold;
-  line-height: 1.5;
   padding-top: 5.6rem;
   padding-bottom: 33rem;
+  @include font(1.5, 2rem, 800)
+}
+
+.main-problems__container {
+  position: relative;
+}
+
+.main-problems__title-span {
+  color: $accent-color;
 }
 
 .main-problems__list-wrapper {
-  position: relative;
-}
-
-.main-problems__list {
-  background-color: white;
   position: absolute;
-  top: -31.4rem;
-  padding: 2.3rem 2.4rem 3.4rem 2.8rem;
-}
-
-.main-problems__list-item {
-  font-size: 1.3rem;
-  font-family: 'Montserrat';
-  color: rgb(24, 25, 29);
-  font-weight: bold;
-  line-height: 1.538;
-  padding-bottom: 2.2rem;
-}
-
-.main-problems__list-item p{
-
+  max-width: 28rem;
+  top: 19rem;
 }
 
 
-.main-problems__list-item__number {
-  display: block;
-  position: relative;
-  padding-left: 3.5rem;
-}
 
-.main-problems__list-item__number::before{
-    content: "";
-    width: 2.6rem;
-    height: 0.2rem;
-    background-color: yellowgreen;
-    position: absolute;
-    // left: 2.8rem;
-    top: 0.7rem;
-    left: 0;
-}
