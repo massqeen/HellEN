@@ -6,4 +6,14 @@
     max-width: 76.8rem;
     padding: 0 4rem;
   }
+
+  @include for-size(desktop) {
+    max-width: 128rem;
+    padding: 0 3.5rem;
+  }
+
+  @include for-size(large-desktop) {
+    max-width: 138rem;
+    padding: 0 2rem;
+  }
 }
