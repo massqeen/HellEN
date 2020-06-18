@@ -27,14 +27,14 @@
     }
   }
 
-  //>1400px
+  //>1280px
   @else if $size==desktop {
-    @media (min-width: 87.5em) {
+    @media (min-width: 80em) {
       @content;
     }
   }
   //>1680px
-  @else if $size==desktop {
+  @else if $size==large-desktop {
     @media (min-width: 105em) {
       @content;
     }
@@ -57,10 +57,12 @@
 //fast import of the fonts
 @mixin font-face($name, $file) {
   @font-face {
-    font-family: "#{$name}";
-    src: url("../fonts/#{$file}.eot");
-    src: url("../fonts/#{$file}.eot?#iefix") format("embedded-opentype"), url("../fonts/#{$file}.woff") format("woff"),
-      url("../fonts/#{$file}.ttf") format("truetype"), url("../fonts/#{$file}.svg?#webfont") format("svg");
+    font-family: '#{$name}';
+    src: url('../fonts/#{$file}.eot');
+    src: url('../fonts/#{$file}.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/#{$file}.woff') format('woff'),
+      url('../fonts/#{$file}.ttf') format('truetype'),
+      url('../fonts/#{$file}.svg?#webfont') format('svg');
   }
 }
 
