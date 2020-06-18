@@ -153,3 +153,68 @@
     margin-bottom: 0;
   }
 }
+
+@include for-size(desktop) {
+  .program-section {
+    position: relative;
+    padding-top: 7rem;
+    padding-bottom: 51rem;
+    background-image: url(../images/program/bcg-desktop.jpg);
+    background-size: 70rem 48.5rem;
+    background-position: left -8rem bottom 30.5rem;
+    &::before {
+      content: '';
+      position: absolute;
+      height: 0.2rem;
+      width: 100%;
+      background-color: #546264;
+      left: 0;
+      top: 18rem;
+    }
+    @include retina(2) {
+      background-image: url(../images/program/bcg-desktop@2x.jpg);
+    }
+    &__title {
+      @include font(63/42, 4.2rem, 800);
+      margin-bottom: 9rem;
+    }
+    &__list {
+      padding-left: 0;
+      flex-direction: row;
+      max-width: 100%;
+      justify-content: space-between;
+      margin: 0;
+      &::before {
+        display: none;
+      }
+    }
+    &__list-item-title {
+      @include font(29/19, 1.9rem, 700);
+      letter-spacing: 2px;
+      &::before {
+        width: 1.7rem;
+        height: 1.7rem;
+        left: -0.2rem;
+        top: -4rem;
+        transition: all 0.3 ease-in-out;
+      }
+    }
+  }
+  .secondary-list {
+    &__item {
+      margin-bottom: 3.5rem;
+    }
+    &__item-title {
+      @include font(29/18, 1.8rem, 500);
+      letter-spacing: 0.9px;
+    }
+    &__item-description {
+      @include font(29/15, 1.5rem, 400);
+      letter-spacing: 0.75px;
+    }
+  }
+  .program__list-item--secondary-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
