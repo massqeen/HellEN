@@ -103,3 +103,7 @@
   align-items: $align;
   justify-content: $justify;
 }
+
+%transition {
+  transition: all 0.3s ease-in-out;
+}
