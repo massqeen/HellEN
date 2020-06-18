@@ -106,17 +106,50 @@
 
   &__item--description {
     color: $additional-text;
+    @include font(20/11, 1.1rem, 400);
+    letter-spacing: 0.55px;
   }
 }
 
 @include for-size(tablet) {
   .program-section {
+    padding-top: 5.5rem;
     padding-bottom: 36rem;
     background-image: url(../images/program/bcg-tablet.jpg);
     background-size: 40.7rem 28.2rem;
-    background-position: right -10rem bottom 24.5rem;
+    background-position: right 2rem bottom 31.5rem;
     @include retina(2) {
       background-image: url(../images/program/bcg-tablet@2x.jpg);
     }
+
+    &__title {
+      text-align: left;
+      @include font(63/26, 2.6rem, 800);
+    }
+
+    &__list {
+      max-width: 58rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      margin-left: 9rem;
+      &::before {
+        height: 84%;
+      }
+    }
+  }
+  .program__list-item--secondary-list {
+    display: flex;
+  }
+  .secondary-list {
+    &__item {
+      max-width: 15rem;
+      width: 100%;
+      margin-right: 3rem;
+    }
+  }
+  .secondary-list__item {
+    margin-bottom: 0;
   }
 }
