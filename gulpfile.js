@@ -21,9 +21,6 @@ const serve = () => {
     port: process.env.PORT || 5500,
   });
 };
-watch(paths.watch.css).on('change', function () {
-  setTimeout(series(tasks.css, browserSync.reload), 300);
-});
 const watcher = done => {
   watch(paths.watch.html).on(
     'change',
