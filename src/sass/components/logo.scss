@@ -1,6 +1,7 @@
 .logo {
   width: 9rem;
   color: #000;
+  line-height: 100%;
 
   &__name-site {
     @include font(1.2rem, 1.5rem, 900);
@@ -18,10 +19,11 @@
     display: inline-block;
     text-transform: uppercase;
     @include font(1rem, 0.53rem, 700);
-    letter-spacing: 0.0689rem;
+    letter-spacing: 0.025rem;
 
     &--orange {
       margin-right: 0.2rem;
+      margin-left: 0.14rem;
       color: $accent-color;
     }
 

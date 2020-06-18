@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  outline: 1px solid greenyellow;
+}
+
 .header {
   //   background-image: url(../images/header/header-bg.png);
   //   background-repeat: no-repeat;
@@ -117,17 +123,68 @@
 .header-img {}
 
 .advantage-list {
+  padding-bottom: 5rem;
 
   // .advantage-list__item
 
-  &__item {}
+  &__item {
+    @include flex-center($justify: center, $align: center);
+    padding-left: 1.8rem;
+  }
+
+  &__icon-wrapper {
+    position: relative;
+    width: 5.8rem;
+    height: 5.8rem;
+    @include flex-center($justify: center, $align: center);
+    border: 2px solid $accent-color;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: -0.2rem;
+      width: 0.2rem;
+      height: 3.6rem;
+      background-color: #fff;
+    }
+  }
+
+  &__icon {
+    fill: $accent-color;
+
+    &--student {
+      width: 3rem;
+      height: 3.6rem;
+    }
+
+    &--mobile {
+      width: 3.4rem;
+      height: 3.4rem;
+    }
+
+    &--dollar {
+      width: 3rem;
+      height: 3.4rem;
+    }
+
+  }
 
   // .advantage-list__item-description
 
   &__item-description {
+    padding-left: 1rem;
+    max-width: 15rem;
     @include font(2rem, 1.3rem, 700);
     letter-spacing: 0.065rem;
 
-    &::before {}
+    // &::before {
+    //   content: "";
+    //   display: block;
+    //   width: 5.8rem;
+    //   height: 5.8rem;
+    //   border: 2px solid $accent-color;
+
+    // }
   }
 }
