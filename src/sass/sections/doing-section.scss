@@ -3,7 +3,6 @@
 }
 .doing__title {
   font-size: 20px;
-  // font-family: 'Montserrat';
   color: $main-text;
   font-weight: bold;
   line-height: 1.65;
@@ -21,7 +20,6 @@
 }
 .doing__subtitle {
   font-size: 13px;
-  // font-family: 'Montserrat';
   color: $h2-text;
   font-weight: bold;
   line-height: 1.538;
@@ -40,7 +38,6 @@
 }
 .doing__description {
   font-size: 11px;
-  // font-family: 'Montserrat';
   color: $additional-text;
   line-height: 1.818;
   text-align: center;
@@ -51,27 +48,27 @@
   display: block;
   margin: 0 auto;
 }
-.doing__icon_program {
+.doing__icon--program {
   width: 42px;
   height: 45px;
 }
-.doing__icon_mobile-learn {
+.doing__icon--mobile-learn {
   width: 44px;
   height: 45px;
 }
-.doing__icon_open-book {
+.doing__icon--open-book {
   width: 50px;
   height: 36px;
 }
-.doing__icon_community {
+.doing__icon--community {
   width: 44px;
   height: 45px;
 }
-.doing__icon_female-student {
+.doing__icon--female-student {
   width: 39px;
   height: 45px;
 }
-.doing__icon_audio-book {
+.doing__icon--audio-book {
   width: 50px;
   height: 43px;
 }
