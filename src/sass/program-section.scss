@@ -108,3 +108,15 @@
     color: $additional-text;
   }
 }
+
+@include for-size(tablet) {
+  .program-section {
+    padding-bottom: 36rem;
+    background-image: url(../images/program/bcg-tablet.jpg);
+    background-size: 40.7rem 28.2rem;
+    background-position: right -10rem bottom 24.5rem;
+    @include retina(2) {
+      background-image: url(../images/program/bcg-tablet@2x.jpg);
+    }
+  }
+}
