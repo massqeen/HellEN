@@ -39,40 +39,40 @@
   &__features {
     margin-bottom: 2rem;
   }
-  &__features__item {
+  &__features-item {
     display: flex;
   }
-  &__features__item:not(:last-child) {
+  &__features-item:not(:last-child) {
     margin-bottom: 1.4rem;
   }
-  &__features__item__icon {
-    padding-right: 3.5rem;
-    width: 1.6rem;
-    height: 1.3rem;
-    fill: $accent-color;
-  }
+  // &__features__item__icon {
+  //   padding-right: 3.5rem;
+  //   width: 1.6rem;
+  //   height: 1.3rem;
+  //   fill: $accent-color;
+  // }
   // .teacher__progress
-  &__features__item__description {
+  &__description {
     @include font(2rem, 1.3rem, 800) letter-spacing: 0.03em;
   }
   &__progress::before {
     display: block;
     content: '';
     width: 2.5rem;
-    height: 0.02rem;
+    height: 0.2rem;
     background-color: $accent-color;
     margin-bottom: 1.4rem;
   }
   &__progress {
     padding-left: 1.6rem;
   }
-  &__progress__item:not(:last-child) {
+  &__progress-item:not(:last-child) {
     margin-bottom: 1.3rem;
   }
-  &__progress__item__description {
+  &__description--progress {
     @include font(2rem, 1.1rem, 400) letter-spacing: 0.05em;
   }
-  &__progress__item--link {
+  &__progress--link {
     color: $accent-color;
     text-decoration: underline;
     letter-spacing: 0.05em;
