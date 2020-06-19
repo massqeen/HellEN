@@ -1,6 +1,6 @@
-// * {
-// outline: 1px solid palevioletred;
-// }
+* {
+  outline: 1px solid palevioletred;
+}
 .teacher {
   padding-top: 4.6rem;
   padding-bottom: 4.6rem;
@@ -44,6 +44,11 @@
   }
   &__features-item:not(:last-child) {
     margin-bottom: 1.4rem;
+  }
+  &__icon {
+    fill: $accent-color;
+    // min-width: 16px;
+    // height: 1.3rem;
   }
   // &__features__item__icon {
   //   padding-right: 3.5rem;
