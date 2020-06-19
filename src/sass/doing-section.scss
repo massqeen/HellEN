@@ -1,84 +1,83 @@
-.doing__title {
-  // font-size: 2rem;
-  color: $main-text;
-  // font-weight: bold;
-  // line-height: 1.65;
-  text-align: center;
-  margin-bottom: 3.6rem;
-  letter-spacing: 0.1rem;
-  @include font(1.65, 2rem, bold);
+.doing {
+  padding: 20.2rem 1.5rem 5.4rem;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__list-items {
+    box-shadow: 4px 6.928px 23.68px 8.32px rgba(29, 29, 27, 0.11);
+    padding: 30px 22px 26px;
+    flex-basis: 29rem;
+    @extend %transition;
+  }
+
+  &__subtitle {
+    color: $h2-text;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.065rem;
+    @include font(1.538, 1.3rem, bold);
+
+    &::after {
+      content: '';
+      margin: 0px auto;
+      background-color: $accent-color;
+      padding-bottom: 0.2rem;
+      display: block;
+      width: 2.5rem;
+      margin-top: 1.5rem;
+    }
+  }
+  &__description {
+    color: $additional-text;
+    text-align: center;
+    letter-spacing: 0.055rem;
+    @include font(1.818, 1.1rem, 400);
+  }
+
+  &__icon {
+    fill: $accent-color;
+    display: block;
+    margin: 0 auto;
+
+    &--program {
+      width: 42px;
+      height: 45px;
+    }
+
+    &--mobile-learn {
+      width: 44px;
+      height: 45px;
+    }
+
+    &--open-book {
+      width: 50px;
+      height: 36px;
+    }
+
+    &--community {
+      width: 44px;
+      height: 45px;
+    }
+
+    &--female-student {
+      width: 39px;
+      height: 45px;
+    }
+
+    &--audio-book {
+      width: 50px;
+      height: 43px;
+    }
+  }
 }
-@mixin font($lineheight, $fontsize, $fontweight) {
-  line-height: $lineheight;
-  font-size: $fontsize;
-  font-weight: $fontweight;
-}
-.doing__list {
-  display: flex;
-  flex-wrap: wrap;
-}
-.doing__list-items {
-  box-shadow: 4px 6.928px 23.68px 8.32px rgba(29, 29, 27, 0.11);
-  padding: 30px;
-  flex-basis: 290px;
-  @extend %transition;
-}
-.doing__subtitle {
-  // font-size: 1.3rem;
-  color: $h2-text;
-  // font-weight: bold;
-  // line-height: 1.538;
-  text-align: center;
-  margin-bottom: 15px;
-  letter-spacing: 0.65px;
-  @include font(1.538, 1.3rem, bold);
-}
-.doing__subtitle::after {
-  content: '';
-  margin: 0px auto;
-  background-color: $accent-color;
-  padding-bottom: 2px;
+
+.block {
   display: block;
-  width: 25px;
-  margin-top: 15px;
 }
-.doing__description {
-  // font-size: 11px;
-  color: $additional-text;
-  // line-height: 1.818;
-  text-align: center;
-  letter-spacing: 0.55px;
-  @include font(1.818, 1.1rem, 400);
-}
-.doing__icon {
-  fill: $accent-color;
-  display: block;
-  margin: 0 auto;
-}
-.doing__icon--program {
-  width: 42px;
-  height: 45px;
-}
-.doing__icon--mobile-learn {
-  width: 44px;
-  height: 45px;
-}
-.doing__icon--open-book {
-  width: 50px;
-  height: 36px;
-}
-.doing__icon--community {
-  width: 44px;
-  height: 45px;
-}
-.doing__icon--female-student {
-  width: 39px;
-  height: 45px;
-}
-.doing__icon--audio-book {
-  width: 50px;
-  height: 43px;
-}
+
 .doing__list-items:hover,
 .doing__list-items:focus {
   background-color: $accent-color;
@@ -97,24 +96,6 @@
 .doing__list-items:focus .doing__subtitle::after {
   background-color: rgb(255, 255, 255);
 }
-
-// @media (max-width: 687px) {
 .doing__list-items:not(:last-child) {
-  margin-bottom: 16px;
+  margin-bottom: 1.6rem;
 }
-.doing {
-  padding: 202px 15px 54px 15px;
-}
-@include for-size(phone-only) {
-  font-size: 1rem;
-}
-
-// }
-// @media (min-width: 688px) {
-// .doing {
-//   padding: 224px 44px 54px 44px;
-// }
-// .doing__list-items:nth-last-child(-n + 2) {
-//   margin-bottom: 56px;
-// }
-// }
