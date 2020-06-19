@@ -1,6 +1,10 @@
 .doing {
   padding: 20.2rem 1.5rem 5.4rem;
 
+  &__title {
+    margin-bottom: 3.6rem;
+  }
+
   &__list {
     display: flex;
     flex-wrap: wrap;

@@ -7,8 +7,7 @@
 @import './components/container.scss';
 @import './components/slider.scss';
 @import './components/title-section.scss';
-
-:root  {
+:root {
   font-size: 62.5%;
 }
 
@@ -25,7 +24,7 @@ body {
 }
 
 @import 'header';
-@import 'doing-section.scss';
 @import 'main-problems-section';
+@import 'doing-section.scss';
 @import 'program-section';
 @import 'footer';
