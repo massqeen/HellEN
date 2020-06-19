@@ -1,9 +1,3 @@
-*,
-*::before,
-*::after {
-  outline: 1px solid greenyellow;
-}
-
 .header {
   background-image: url(../images/header/header-bg.png);
   background-repeat: no-repeat;
@@ -13,7 +7,6 @@
     background-image: url(../images/header/header-bg@2x.png);
   }
 
-
   &__picture {
     @include flex-center($justify: center, $align: center);
   }
@@ -21,7 +14,6 @@
   &__main-content {
     padding-top: 5.2rem;
     padding-bottom: 8rem;
-
   }
 }
 
@@ -34,9 +26,8 @@
   }
 }
 
-.main-nav {}
-
-
+.main-nav {
+}
 
 .menu-list {
   //   @include flex-center($justify: space-between, $align: center);
@@ -44,11 +35,13 @@
 
   // .menu-list__item
 
-  &__item {}
+  &__item {
+  }
 
   // .menu-list__link
 
-  &__link {}
+  &__link {
+  }
 }
 
 .burger {
@@ -66,7 +59,6 @@
       margin-bottom: 0.4rem;
     }
   }
-
 }
 
 .header-title {
@@ -104,7 +96,8 @@
   }
 }
 
-.header-img {}
+.header-img {
+}
 
 .advantage-list {
   padding-bottom: 5rem;
@@ -128,7 +121,7 @@
     border: 2px solid $accent-color;
 
     &::after {
-      content: "";
+      content: '';
       display: block;
       position: absolute;
       right: -0.2rem;
@@ -155,7 +148,6 @@
       width: 3rem;
       height: 3.4rem;
     }
-
   }
 
   // .advantage-list__item-description
@@ -165,6 +157,5 @@
     max-width: 15rem;
     @include font(20/13, 1.3rem, 700);
     letter-spacing: 0.065rem;
-
   }
 }
