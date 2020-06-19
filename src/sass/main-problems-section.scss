@@ -1,0 +1,34 @@
+@import './components/advantages.scss';
+
+.main-problems-section {
+  content: '';
+  padding-right: 2rem;
+  box-sizing: content-box;
+  background-color: $h2-text;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.main-problems__title {
+  max-width: 23rem;
+  color: rgb(255, 255, 255);
+  padding-top: 5.6rem;
+  padding-bottom: 33rem;
+  @include font(1.5, 2rem, 800);
+}
+
+.main-problems__container {
+  position: relative;
+}
+
+.main-problems__title-span {
+  color: $accent-color;
+}
+
+.main-problems__list-wrapper {
+  position: absolute;
+  max-width: 28rem;
+  top: 19rem;
+}
