@@ -3,6 +3,9 @@ $(document).ready(function () {
     dots: true,
     speed: 300,
     arrows: true,
+    infinite: true,
   });
 });
+
+
 
