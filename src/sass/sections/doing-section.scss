@@ -1,5 +1,5 @@
 .doing__title {
-  font-size: 20px;
+  font-size: 2rem;
   color: $main-text;
   font-weight: bold;
   line-height: 1.65;
@@ -97,6 +97,10 @@
 .doing {
   padding: 202px 15px 54px 15px;
 }
+@include for-size(phone-only) {
+  font-size: 1rem;
+}
+
 // }
 // @media (min-width: 688px) {
 // .doing {
