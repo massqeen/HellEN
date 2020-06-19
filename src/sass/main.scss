@@ -1,9 +1,11 @@
+@import './components/system-slider.scss';
 @import 'minireset';
 @import 'normalize.scss';
 @import 'fonts';
 @import 'vars.scss';
 @import 'mixins.scss';
 @import './components/container.scss';
+@import './components/slider.scss';
 
 :root {
   font-size: 62.5%;
@@ -22,5 +24,7 @@ body {
 }
 
 @import 'header';
-@import './sections/doing-section.scss';
+@import 'doing-section.scss';
+@import 'main-problems-section';
+@import 'program-section';
 @import 'footer';

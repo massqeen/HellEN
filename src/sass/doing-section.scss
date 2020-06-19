@@ -1,11 +1,17 @@
 .doing__title {
-  font-size: 2rem;
+  // font-size: 2rem;
   color: $main-text;
-  font-weight: bold;
-  line-height: 1.65;
+  // font-weight: bold;
+  // line-height: 1.65;
   text-align: center;
-  margin-bottom: 36px;
-  letter-spacing: 1px;
+  margin-bottom: 3.6rem;
+  letter-spacing: 0.1rem;
+  @include font(1.65, 2rem, bold);
+}
+@mixin font($lineheight, $fontsize, $fontweight) {
+  line-height: $lineheight;
+  font-size: $fontsize;
+  font-weight: $fontweight;
 }
 .doing__list {
   display: flex;
@@ -15,16 +21,17 @@
   box-shadow: 4px 6.928px 23.68px 8.32px rgba(29, 29, 27, 0.11);
   padding: 30px;
   flex-basis: 290px;
-  transition: all 0.2s linear;
+  @extend %transition;
 }
 .doing__subtitle {
-  font-size: 13px;
+  // font-size: 1.3rem;
   color: $h2-text;
-  font-weight: bold;
-  line-height: 1.538;
+  // font-weight: bold;
+  // line-height: 1.538;
   text-align: center;
   margin-bottom: 15px;
   letter-spacing: 0.65px;
+  @include font(1.538, 1.3rem, bold);
 }
 .doing__subtitle::after {
   content: '';
@@ -36,11 +43,12 @@
   margin-top: 15px;
 }
 .doing__description {
-  font-size: 11px;
+  // font-size: 11px;
   color: $additional-text;
-  line-height: 1.818;
+  // line-height: 1.818;
   text-align: center;
   letter-spacing: 0.55px;
+  @include font(1.818, 1.1rem, 400);
 }
 .doing__icon {
   fill: $accent-color;

@@ -1,0 +1,39 @@
+.advantages__list {
+  background-color: white;
+  padding: 2.3rem 2.4rem 3.4rem 2.8rem;
+}
+
+.advantages__list-item {
+  color: $main-text;
+  @include font(20/13, 1.3rem, 700);
+  padding-right: 2.3rem;
+  letter-spacing: 0.65px;
+
+  &:not(:last-child) {
+    margin-bottom: 2.2rem;
+  }
+}
+
+.advantages__list-item-number {
+  display: block;
+  position: relative;
+  padding-left: 3.5rem;
+  margin-bottom: 1rem;
+  color: $accent-color;
+}
+
+.advantages__list-item-number::before {
+  content: '';
+  width: 2.6rem;
+  height: 0.2rem;
+  background-color: $accent-color;
+  position: absolute;
+  top: 0.8rem;
+  left: 0;
+}
+
+.advantages-wrapper {
+  @include flex-center(flex-start, flex-start);
+  flex-wrap: wrap;
+  flex: 1 1 100%;
+}
