@@ -1,13 +1,13 @@
-@import "./components/advantages.scss";
+@import './components/advantages.scss';
 
-.container {
-  content: "";
-  width: 28rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  box-sizing: content-box;
-  background-color: black;
-}
+// .container {
+//   content: "";
+//   width: 28rem;
+//   padding-left: 2rem;
+//   padding-right: 2rem;
+//   box-sizing: content-box;
+//   background-color: black;
+// }
 
 ol {
   list-style-type: none;
@@ -18,7 +18,7 @@ ol {
   color: rgb(255, 255, 255);
   padding-top: 5.6rem;
   padding-bottom: 33rem;
-  @include font(1.5, 2rem, 800)
+  @include font(1.5, 2rem, 800);
 }
 
 .main-problems__container {
@@ -34,6 +34,3 @@ ol {
   max-width: 28rem;
   top: 19rem;
 }
-
-
-
