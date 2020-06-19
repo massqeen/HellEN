@@ -8,6 +8,7 @@
 @import './components/btn-action.scss';
 @import './components/slider.scss';
 @import 'form.scss';
+@import './components/title-section.scss';
 
 :root {
   font-size: 62.5%;
@@ -27,5 +28,6 @@ body {
 
 @import 'header';
 @import 'main-problems-section';
+@import 'doing-section.scss';
 @import 'program-section';
 @import 'footer';
