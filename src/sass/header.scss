@@ -1,19 +1,11 @@
-*,
-*::before,
-*::after {
-  outline: 1px solid greenyellow;
-}
-
 .header {
-  //   background-image: url(../images/header/header-bg.png);
-  //   background-repeat: no-repeat;
-  //   background-position: top;
-  //   background-size: cover;
+  background-image: url(../images/header/header-bg.png);
+  background-repeat: no-repeat;
+  background-position: top;
 
-  //   @include for-size(phone-only) {
-  //     background-image: url(../images/header/header-bg@2x.png);}
-
-  // .header__picture
+  @include retina(2) {
+    background-image: url(../images/header/header-bg@2x.png);
+  }
 
   &__picture {
     @include flex-center($justify: center, $align: center);
@@ -107,19 +99,6 @@
   }
 }
 
-.btn-action {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1.8rem 1rem;
-  @include font(1.1rem, 1.1rem, 700);
-  letter-spacing: 0.143rem;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: $accent-color;
-
-}
-
 .header-img {}
 
 .advantage-list {
@@ -130,6 +109,10 @@
   &__item {
     @include flex-center($justify: center, $align: center);
     padding-left: 1.8rem;
+
+    &:not(:last-child) {
+      margin-bottom: 2.2rem;
+    }
   }
 
   &__icon-wrapper {
@@ -178,13 +161,5 @@
     @include font(2rem, 1.3rem, 700);
     letter-spacing: 0.065rem;
 
-    // &::before {
-    //   content: "";
-    //   display: block;
-    //   width: 5.8rem;
-    //   height: 5.8rem;
-    //   border: 2px solid $accent-color;
-
-    // }
   }
 }

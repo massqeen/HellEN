@@ -1,0 +1,17 @@
+.btn-action {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.8rem 1rem;
+  @include font(1.1rem, 1.1rem, 700);
+  letter-spacing: 0.143rem;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: $accent-color;
+
+  &:hover,
+  &:focus {
+    background-color: #d35526;
+    ;
+  }
+}
