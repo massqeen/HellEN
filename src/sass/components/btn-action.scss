@@ -1,0 +1,36 @@
+.btn-action {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.8rem 1rem;
+  @include font(11/11, 1.1rem, 700);
+  letter-spacing: 0.143rem;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: $accent-color;
+  cursor: pointer;
+  @extend %transition;
+  border-radius: 1px;
+
+  &:hover,
+  &:focus {
+    background-color: #d35526;
+  ;
+  }
+}
+@include for-size(tablet){
+  .btn-action {
+    width: 26.2rem;
+    height: 5rem;
+  }
+
+
+}
+@include for-size(desktop){
+  .btn-action {
+    width: 35.2rem;
+    height: 7rem;
+    @include font(14/14, 1.4rem, 700);
+  }
+
+}

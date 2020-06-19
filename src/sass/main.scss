@@ -1,12 +1,16 @@
-@import './components/system-slider.scss';
 @import 'minireset';
 @import 'normalize.scss';
 @import 'fonts';
 @import 'vars.scss';
 @import 'mixins.scss';
+@import './components/system-slider.scss';
 @import './components/container.scss';
 @import './teacher.scss';
+@import './components/btn-action.scss';
 @import './components/slider.scss';
+@import './components/title-section.scss';
+@import './components/logo.scss';
+@import './form.scss';
 
 :root {
   font-size: 62.5%;
@@ -26,5 +30,6 @@ body {
 
 @import 'header';
 @import 'main-problems-section';
+@import 'doing-section.scss';
 @import 'program-section';
 @import 'footer';
