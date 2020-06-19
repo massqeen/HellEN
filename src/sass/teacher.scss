@@ -77,10 +77,8 @@
   }
   &__progress__item--link {
   color: $accent-color;
+  text-decoration: underline;
   letter-spacing: 0.05em;
-  }
-  &__progress__item--link:hover {
-    text-decoration: underline;
   }
 }
 
