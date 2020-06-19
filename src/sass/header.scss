@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  outline: 1px solid greenyellow;
+}
+
 .header {
   background-image: url(../images/header/header-bg.png);
   background-repeat: no-repeat;
@@ -45,20 +51,18 @@
 }
 
 .burger {
+  display: flex;
+  flex-direction: column;
   width: 2.4rem;
   height: 1.4rem;
 
   &__line {
-    // &:not(:last-of-type) {
-    //   margin-bottom: 0.4rem;
-    // }
+    width: 2.4rem;
+    height: 0.2rem;
+    background-color: $main-text;
 
-    &::after {
-      content: "";
-      display: block;
-      width: 2.4rem;
-      height: 0.2rem;
-      background-color: $main-text;
+    &:not(:last-child) {
+      margin-bottom: 0.4rem;
     }
   }
 
