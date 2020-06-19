@@ -1,1 +1,161 @@
+.header {
+  background-image: url(../images/header/header-bg.png);
+  background-repeat: no-repeat;
+  background-position: top;
 
+  @include retina(2) {
+    background-image: url(../images/header/header-bg@2x.png);
+  }
+
+  &__picture {
+    @include flex-center($justify: center, $align: center);
+  }
+
+  &__main-content {
+    padding-top: 5.2rem;
+    padding-bottom: 8rem;
+  }
+}
+
+.top-line {
+  @include flex-center($justify: space-between, $align: center);
+  padding-top: 2.4rem;
+
+  &__btn {
+    display: none;
+  }
+}
+
+.main-nav {
+}
+
+.menu-list {
+  //   @include flex-center($justify: space-between, $align: center);
+  display: none;
+
+  // .menu-list__item
+
+  &__item {
+  }
+
+  // .menu-list__link
+
+  &__link {
+  }
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  width: 2.4rem;
+  height: 1.4rem;
+
+  &__line {
+    width: 2.4rem;
+    height: 0.2rem;
+    background-color: $main-text;
+
+    &:not(:last-child) {
+      margin-bottom: 0.4rem;
+    }
+  }
+}
+
+.header-title {
+  margin-bottom: 3.6rem;
+
+  // .header-title__main
+
+  &__main {
+    margin-bottom: 3.2rem;
+    @include font(29/20, 2rem, 900);
+    letter-spacing: 0.06rem;
+  }
+
+  // .header-title__subtitle
+
+  &__subtitle {
+    margin-bottom: 3.6rem;
+    @include font(20/15, 1.5rem, 700);
+    letter-spacing: 0.062rem;
+
+    // .header-title__subtitle--grey
+
+    &--grey {
+      display: block;
+      color: #c7c7c7;
+      font-weight: 500;
+    }
+
+    // .header-title__subtitle--orange
+
+    &--orange {
+      display: block;
+      color: $accent-color;
+    }
+  }
+}
+
+.header-img {
+}
+
+.advantage-list {
+  padding-bottom: 5rem;
+
+  // .advantage-list__item
+
+  &__item {
+    @include flex-center($justify: center, $align: center);
+    padding-left: 1.8rem;
+
+    &:not(:last-child) {
+      margin-bottom: 2.2rem;
+    }
+  }
+
+  &__icon-wrapper {
+    position: relative;
+    width: 5.8rem;
+    height: 5.8rem;
+    @include flex-center($justify: center, $align: center);
+    border: 2px solid $accent-color;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      right: -0.2rem;
+      width: 0.2rem;
+      height: 3.6rem;
+      background-color: #fff;
+    }
+  }
+
+  &__icon {
+    fill: $accent-color;
+
+    &--student {
+      width: 3rem;
+      height: 3.6rem;
+    }
+
+    &--mobile {
+      width: 3.4rem;
+      height: 3.4rem;
+    }
+
+    &--dollar {
+      width: 3rem;
+      height: 3.4rem;
+    }
+  }
+
+  // .advantage-list__item-description
+
+  &__item-description {
+    padding-left: 1rem;
+    max-width: 15rem;
+    @include font(20/13, 1.3rem, 700);
+    letter-spacing: 0.065rem;
+  }
+}

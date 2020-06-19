@@ -1,1 +1,30 @@
+.footer {
+        text-align: center;
 
+    &__address {
+            font-style: normal;
+    }
+    &__tel {
+            @include font(37.5/18, 18, 600);
+            font-style: normal;
+            color: $h2-text;
+            // width: 201px;
+            // height: 18px;
+    }
+    &__social-link {
+            display: block;
+    }
+    &__copy {
+            @include font(37.5/11, 11, 500);
+            background-color: $h2-text;
+            height: 72px;
+            color: rgba(253, 254, 254, 0.42);
+            letter-spacing: .55;
+            // width: 184px;
+            // height: 11px;
+    }
+    &__icon--instagram {
+            width: 37px;
+            height: 37px;
+    }
+}
