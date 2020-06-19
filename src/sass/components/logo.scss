@@ -4,7 +4,7 @@
   line-height: 100%;
 
   &__name-site {
-    @include font(1.2rem, 1.5rem, 900);
+    @include font(18/15, 1.5rem, 900);
     letter-spacing: 0.075rem;
   }
 
@@ -18,12 +18,12 @@
   &__slogan {
     display: inline-block;
     text-transform: uppercase;
-    @include font(1rem, 0.53rem, 700);
+    @include font(8/5.3, 0.53rem, 700);
     letter-spacing: 0.025rem;
 
     &--orange {
       margin-right: 0.2rem;
-      margin-left: 0.14rem;
+      margin-left: 0.1rem;
       color: $accent-color;
     }
 

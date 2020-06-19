@@ -76,7 +76,7 @@
 
   &__main {
     margin-bottom: 3.2rem;
-    @include font(2.9rem, 2rem, 900);
+    @include font(29/20, 2rem, 900);
     letter-spacing: 0.06rem;
   }
 
@@ -84,7 +84,7 @@
 
   &__subtitle {
     margin-bottom: 3.6rem;
-    @include font(2rem, 1.5rem, 700);
+    @include font(20/15, 1.5rem, 700);
     letter-spacing: 0.062rem;
 
     // .header-title__subtitle--grey
@@ -163,7 +163,7 @@
   &__item-description {
     padding-left: 1rem;
     max-width: 15rem;
-    @include font(2rem, 1.3rem, 700);
+    @include font(20/13, 1.3rem, 700);
     letter-spacing: 0.065rem;
 
   }
