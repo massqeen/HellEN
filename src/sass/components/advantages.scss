@@ -1,16 +1,32 @@
+.advantages-wrapper {
+  box-shadow: 4px 7px 16px 6px rgba(29, 29, 27, 0.04);
+}
+
 .advantages__list {
-  background-color: white;
+  background-color: $primary-white;
   padding: 2.3rem 2.4rem 3.4rem 2.8rem;
+  @include flex-center(flex-start, flex-start);
+  flex-wrap: wrap;
+  flex: 0 0 100%;
+
+  @include for-size(tablet) {
+    justify-content: center;
+  }
 }
 
 .advantages__list-item {
   color: $main-text;
   @include font(20/13, 1.3rem, 700);
-  padding-right: 2.3rem;
   letter-spacing: 0.65px;
 
+  @include for-size(tablet) {
+    position: relative;
+    flex: 0 0 50%;
+    @include flex-center(center, flex-start);
+  }
+
   &:not(:last-child) {
-    margin-bottom: 2.2rem;
+    margin-bottom: 1.4rem;
   }
 }
 
@@ -20,20 +36,25 @@
   padding-left: 3.5rem;
   margin-bottom: 1rem;
   color: $accent-color;
+  @include for-size(tablet) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &::before {
+    content: '';
+    width: 2.6rem;
+    height: 0.2rem;
+    background-color: $accent-color;
+    position: absolute;
+    top: 0.8rem;
+    left: 0;
+  }
 }
 
-.advantages__list-item-number::before {
-  content: '';
-  width: 2.6rem;
-  height: 0.2rem;
-  background-color: $accent-color;
-  position: absolute;
-  top: 0.8rem;
-  left: 0;
-}
-
-.advantages-wrapper {
-  @include flex-center(flex-start, flex-start);
-  flex-wrap: wrap;
-  flex: 1 1 100%;
+.advantages__list-text {
+  @include for-size(tablet) {
+    max-width: 50%;
+  }
 }
