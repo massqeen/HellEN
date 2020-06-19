@@ -8,9 +8,24 @@
 
   &__list-items {
     box-shadow: 4px 6.928px 23.68px 8.32px rgba(29, 29, 27, 0.11);
-    padding: 30px 22px 26px;
+    padding: 3rem 2.2rem 2.6rem;
     flex-basis: 29rem;
     @extend %transition;
+
+    &:hover,
+    :focus {
+      background-color: $accent-color;
+      .doing__icon {
+        fill: rgb(255, 255, 255);
+      }
+      .doing__subtitle,
+      .doing__description {
+        color: rgb(255, 255, 255);
+      }
+      .doing__subtitle::after {
+        background-color: rgb(255, 255, 255);
+      }
+    }
   }
 
   &__subtitle {
@@ -78,24 +93,6 @@
   display: block;
 }
 
-.doing__list-items:hover,
-.doing__list-items:focus {
-  background-color: $accent-color;
-}
-.doing__list-items:hover .doing__icon,
-.doing__list-items:focus .doing__icon {
-  fill: rgb(255, 255, 255);
-}
-.doing__list-items:hover .doing__subtitle,
-.doing__list-items:focus .doing__subtitle,
-.doing__list-items:hover .doing__description,
-.doing__list-items:focus .doing__description {
-  color: rgb(255, 255, 255);
-}
-.doing__list-items:hover .doing__subtitle::after,
-.doing__list-items:focus .doing__subtitle::after {
-  background-color: rgb(255, 255, 255);
-}
 .doing__list-items:not(:last-child) {
   margin-bottom: 1.6rem;
 }
