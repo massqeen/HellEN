@@ -8,6 +8,7 @@
   text-transform: uppercase;
   color: #fff;
   background-color: $accent-color;
+  @extend %transition;
 
   &:hover,
   &:focus {
