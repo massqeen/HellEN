@@ -21,7 +21,6 @@ const serve = () => {
     port: process.env.PORT || 5500,
   });
 };
-
 const watcher = done => {
   watch(paths.watch.html).on(
     'change',
