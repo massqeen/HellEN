@@ -5,8 +5,11 @@
 @import 'vars.scss';
 @import 'mixins.scss';
 @import './components/container.scss';
+@import './components/btn-action.scss';
 @import './components/slider.scss';
+@import 'form.scss';
 @import './components/title-section.scss';
+
 :root {
   font-size: 62.5%;
 }
