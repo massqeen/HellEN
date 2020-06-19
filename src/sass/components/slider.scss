@@ -1,3 +1,12 @@
+.main-slider{
+  padding-top: 3.6rem;
+  padding-bottom: 12rem;
+  .program-section__title{
+    color: $h2-text;
+    margin-bottom: 2rem;
+  }
+}
+
 .slider{
   margin: 0 auto;
   max-width: 100%;
@@ -14,6 +23,8 @@
   }
 
 }
+
+
 .slider__photo{
   margin: 0 auto;
   border-radius: 50%;
@@ -23,9 +34,12 @@
   flex-wrap: wrap;
 }
 .slider__link{
-
   width: 2.5rem;
   height: 1.4rem;
+  @extend %transition;
+  &:hover{
+    transform: scale(1.2);
+  }
 }
 .slider__main-photo{
   flex-basis: 30%;
@@ -45,6 +59,9 @@
   position: absolute;
   bottom: -12%;
   border-radius: 0.1rem;
+  cursor: pointer;
+  @extend %transition;
+
 }
 
 .slick-prev{
@@ -72,6 +89,9 @@
     transform: rotate(23deg);
     background-color: #ff6b08;
   }
+  &:hover{
+    transform: translate(-50%) scale(1.2);
+  }
 }
 
 
@@ -79,6 +99,7 @@
 .slick-next{
   right: 6%;
   transform: translate(50%);
+
   &::before {
     content: "";
     position: absolute;
@@ -101,6 +122,10 @@
     border-radius: 0.1rem;
     transform: rotate(-32deg);
     background-color: #ff6b08;
+  }
+
+  &:hover{
+    transform: translate(50%) scale(1.2);
   }
 
 }
@@ -163,17 +188,23 @@
 }
 .slick-dots button{
   font-size: 0;
+  @extend %transition;
   background-clip: padding-box;
   width: 5.4rem;
   height: 5.4rem;
   border-radius: 50%;
   border: 2px solid transparent;
+  cursor: pointer;
   &:focus{
     outline: none;
   }
   &:hover{
-    border: 2px solid $accent-color;
+    transform: scale(1.2);
   }
+
+}
+.slick-active button{
+  border: 2px solid $accent-color;
 }
 .slick-dots li:nth-child(1) button{
   background-image: url("../images/slider/pagi-photo1.png");
@@ -206,6 +237,14 @@
 }
 
 @include for-size(tablet){
+  .main-slider{
+    padding-top: 4rem;
+
+    .program-section__title{
+      text-align: center;
+
+    }
+  }
   .slider{
     padding-left: 3.6rem;
     padding-right: 3.6rem;
@@ -265,6 +304,15 @@
 }
 
 @include for-size(desktop){
+  .main-slider{
+    padding-top: 6rem;
+    padding-bottom: 17rem;
+
+    .program-section__title{
+      margin-bottom: 3.7rem;
+    }
+  }
+
   .slider{
     padding-left: 8.6rem;
     padding-right: 8.6rem;
