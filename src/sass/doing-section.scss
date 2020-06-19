@@ -1,0 +1,102 @@
+.doing {
+  padding: 20.2rem 1.5rem 5.4rem;
+
+  &__title {
+    margin-bottom: 3.6rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__list-items {
+    box-shadow: 4px 6.928px 23.68px 8.32px rgba(29, 29, 27, 0.11);
+    padding: 3rem 2.2rem 2.6rem;
+    flex-basis: 29rem;
+    @extend %transition;
+
+    &:hover,
+    :focus {
+      background-color: $accent-color;
+      .doing__icon {
+        fill: rgb(255, 255, 255);
+      }
+      .doing__subtitle,
+      .doing__description {
+        color: rgb(255, 255, 255);
+      }
+      .doing__subtitle::after {
+        background-color: rgb(255, 255, 255);
+      }
+    }
+  }
+
+  &__subtitle {
+    color: $h2-text;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.065rem;
+    @include font(1.538, 1.3rem, bold);
+
+    &::after {
+      content: '';
+      margin: 0px auto;
+      background-color: $accent-color;
+      padding-bottom: 0.2rem;
+      display: block;
+      width: 2.5rem;
+      margin-top: 1.5rem;
+    }
+  }
+  &__description {
+    color: $additional-text;
+    text-align: center;
+    letter-spacing: 0.055rem;
+    @include font(1.818, 1.1rem, 400);
+  }
+
+  &__icon {
+    fill: $accent-color;
+    display: block;
+    margin: 0 auto;
+
+    &--program {
+      width: 42px;
+      height: 45px;
+    }
+
+    &--mobile-learn {
+      width: 44px;
+      height: 45px;
+    }
+
+    &--open-book {
+      width: 50px;
+      height: 36px;
+    }
+
+    &--community {
+      width: 44px;
+      height: 45px;
+    }
+
+    &--female-student {
+      width: 39px;
+      height: 45px;
+    }
+
+    &--audio-book {
+      width: 50px;
+      height: 43px;
+    }
+  }
+}
+
+.block {
+  display: block;
+}
+
+.doing__list-items:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
