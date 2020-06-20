@@ -10,7 +10,7 @@
   flex: 0 0 100%;
 
   @include for-size(tablet) {
-    justify-content: center;
+    padding: 3.8rem 7.6rem 4.4rem 10.8rem;
   }
 }
 
@@ -19,14 +19,20 @@
   @include font(20/13, 1.3rem, 700);
   letter-spacing: 0.65px;
 
+  @media screen and (max-width: 47.94em) {
+    &:not(:last-child) {
+      margin-bottom: 1.4rem;
+    }
+  }
+
   @include for-size(tablet) {
     position: relative;
     flex: 0 0 50%;
     @include flex-center(center, flex-start);
-  }
-
-  &:not(:last-child) {
-    margin-bottom: 1.4rem;
+    flex-direction: column;
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 2rem;
+    }
   }
 }
 
@@ -36,11 +42,6 @@
   padding-left: 3.5rem;
   margin-bottom: 1rem;
   color: $accent-color;
-  @include for-size(tablet) {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
 
   &::before {
     content: '';
@@ -55,6 +56,6 @@
 
 .advantages__list-text {
   @include for-size(tablet) {
-    max-width: 50%;
+    max-width: 85%;
   }
 }
