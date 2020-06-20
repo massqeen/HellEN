@@ -1,0 +1,39 @@
+* {
+  outline: 1px solid purple;
+}
+.guarantee {
+  // .guarantee__head
+
+  &__head {
+    @include font(6.2rem, 2rem, 800);
+    letter-spacing: 0.05em;
+    margin-bottom: 0.7rem;
+  }
+
+  // .guarantee__list
+
+  &__list {
+    background-color: red;
+  }
+}
+.guarantee-list {
+  // .guarantee-list__item
+
+  &__item {
+  }
+}
+.guarantee-item {
+  // .guarantee-item__icon
+
+  &__icon {
+  }
+
+  // .guarantee-item__description
+
+  &__description {
+    // .guarantee-item__description--axent
+
+    &--axent {
+    }
+  }
+}
