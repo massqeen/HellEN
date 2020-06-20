@@ -71,6 +71,14 @@
   @extend %transition;
 
 }
+.body-arrow{
+  height: 25px;
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 .slick-prev {
   left: 6%;
@@ -151,7 +159,7 @@
   width: 70%;
   left: 50%;
   transform: translate(-50%);
-  bottom: -18%;
+  bottom: -19%;
 }
 
 .slider__study {
