@@ -10,4 +10,8 @@
   @include for-size(desktop) {
     padding: 0 3.5rem;
   }
+
+  @include for-size(large-desktop) {
+    padding: 0 2rem;
+  }
 }
