@@ -1,12 +1,13 @@
 .btn-action {
   display: block;
+  outline: none;
   margin-left: auto;
   margin-right: auto;
   padding: 1.8rem 1rem;
   @include font(11/11, 1.1rem, 700);
   letter-spacing: 0.143rem;
   text-transform: uppercase;
-  color: #fff;
+  color: $primary-white;
   background-color: $accent-color;
   cursor: pointer;
   @extend %transition;
@@ -15,7 +16,6 @@
   &:hover,
   &:focus {
     background-color: #d35526;
-  ;
   }
 }
 @include for-size(tablet){
