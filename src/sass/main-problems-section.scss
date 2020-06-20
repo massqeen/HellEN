@@ -1,5 +1,33 @@
 @import './components/advantages.scss';
 
+.bcg-wrapper {
+  @include for-size(tablet) {
+    background-image: url(../images/main-problems/fire-tablet.png);
+    background-repeat: no-repeat;
+    background-size: 210px 297px;
+    background-position: right 0px bottom 176px;
+
+    @include retina(2) {
+      background-image: url(../images/main-problems/fire-tablet@2x.png);
+    }
+  }
+
+  @include for-size(tablet-landscape) {
+    background-position: right 0px bottom 82px;
+  }
+
+  @include for-size(desktop) {
+    background-image: url(../images/main-problems/fire-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 356px 487px;
+    background-position: right 0px bottom 118px;
+
+    @include retina(2) {
+      background-image: url(../images/main-problems/fire-desktop@2x.png);
+    }
+  }
+}
+
 .main-problems-section {
   background-image: linear-gradient(
     to bottom,
@@ -15,7 +43,7 @@
     );
   }
 
-  @include for-size(desktop) {
+  @include for-size(tablet-landscape) {
     background-image: linear-gradient(
       to bottom,
       $h2-text 82%,
@@ -27,28 +55,8 @@
 .main-problems__container {
   padding-top: 5rem;
 
-  @include for-size(tablet) {
-    background-image: url(../images/main-problems/fire-tablet.png);
-    background-repeat: no-repeat;
-    background-size: 210px 297px;
-    background-position: right 0px bottom 176px;
-
-    @include retina(2) {
-      background-image: url(../images/main-problems/fire-tablet@2x.png);
-    }
-  }
-
   @include for-size(desktop) {
     padding-top: 7.5rem;
-
-    background-image: url(../images/main-problems/fire-desktop.png);
-    background-repeat: no-repeat;
-    background-size: 356px 487px;
-    background-position: right 0px bottom 114px;
-
-    @include retina(2) {
-      background-image: url(../images/main-problems/fire-desktop@2x.png);
-    }
   }
 }
 
@@ -65,6 +73,11 @@
   @include for-size(tablet) {
     @include font(33/26, 2.6rem, 800);
     letter-spacing: 1.3px;
+  }
+
+  @include for-size(tablet-landscape) {
+    @include font(43/32, 3.2rem, 800);
+    letter-spacing: 1.6px;
   }
 
   @include for-size(desktop) {
