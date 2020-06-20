@@ -1,6 +1,5 @@
 @mixin retina($x) {
-  @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: $x),
-    (min-width: 768px) and (min-resolution: 96dpi*$x) {
+  @media (-webkit-min-device-pixel-ratio: $x), (min-resolution: 96dpi*$x) {
     @content;
   }
 }
