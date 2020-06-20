@@ -1,4 +1,6 @@
 .header {
+  padding-top: 2.4rem;
+  padding-bottom: 5rem;
   background-image: url(../images/header/header-bg.png);
   background-repeat: no-repeat;
   background-position: top;
@@ -8,40 +10,36 @@
   }
 
   &__picture {
-    @include flex-center($justify: center, $align: center);
+    @include flex-center();
   }
 
   &__main-content {
-    padding-top: 5.2rem;
-    padding-bottom: 8rem;
+    margin-bottom: 8rem;
   }
 }
 
 .top-line {
-  @include flex-center($justify: space-between, $align: center);
-  padding-top: 2.4rem;
+  @include flex-center(space-between, center);
+  margin-bottom: 5.2rem;
 
   &__btn {
     display: none;
   }
 }
 
-.main-nav {
-}
+.main-nav {}
 
 .menu-list {
-  //   @include flex-center($justify: space-between, $align: center);
+  //   @include flex-center(space-between, center);
   display: none;
 
   // .menu-list__item
 
-  &__item {
-  }
+  &__item {}
 
   // .menu-list__link
 
-  &__link {
-  }
+  &__link {}
 }
 
 .burger {
@@ -96,16 +94,14 @@
   }
 }
 
-.header-img {
-}
+.header-img {}
 
 .advantage-list {
-  padding-bottom: 5rem;
 
   // .advantage-list__item
 
   &__item {
-    @include flex-center($justify: center, $align: center);
+    @include flex-center();
     padding-left: 1.8rem;
 
     &:not(:last-child) {
@@ -117,7 +113,7 @@
     position: relative;
     width: 5.8rem;
     height: 5.8rem;
-    @include flex-center($justify: center, $align: center);
+    @include flex-center();
     border: 2px solid $accent-color;
 
     &::after {
