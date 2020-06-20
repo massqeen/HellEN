@@ -13,7 +13,9 @@
     background-image: url(../images/header/header-bg@2x.png);
   }
 
-  @include for-size (tablet) {
+  @include for-size(tablet) {
+    padding-top: 3.8rem;
+    padding-bottom: 5.2rem;
     background-image: url(../images/header/header-bg-tablet.png);
 
     @include retina(2) {
@@ -21,7 +23,9 @@
     }
   }
 
-  @include for-size (desktop) {
+  @include for-size(desktop) {
+    padding-top: 1.8rem;
+    padding-bottom: 8.8rem;
     background-image: url(../images/header/header-bg-desktop.png);
 
     @include retina(2) {
@@ -29,7 +33,9 @@
     }
   }
 
-  @include for-size (large-desktop) {
+  @include for-size(large-desktop) {
+    padding-top: 3rem;
+    padding-bottom: 12.8rem;
     background-image: url(../images/header/header-bg-large.png);
 
     @include retina(2) {
@@ -50,20 +56,71 @@
   @include flex-center(space-between, center);
   margin-bottom: 5.2rem;
 
+  @include for-size(tablet) {
+    margin-bottom: 6rem;
+  }
+
+  @include for-size(desktop) {
+    margin-bottom: 2.8rem;
+  }
+
+  @include for-size(large-desktop) {
+    margin-bottom: 5.2rem;
+  }
+
   &__btn {
     display: none;
+
+    @include for-size(tablet) {
+      display: block;
+      margin: 0;
+      color: $accent-color;
+      background-color: $primary-white;
+      border: 2px solid $accent-color;
+      letter-spacing: 0.1em;
+      transition: all 0.3s ease-in-out;
+
+      &:hover,
+      &:focus {
+        color: $primary-white;
+        background-color: #d35526;
+        border: none;
+      }
+
+    }
+
   }
 }
 
-.main-nav {}
+.main-nav {
+  @include for-size(tablet) {
+    width: 90%;
+    @include flex-center(space-between, center);
+  }
+
+  @include for-size(desktop) {
+    width: 100%;
+  }
+}
 
 .menu-list {
   //   @include flex-center(space-between, center);
   display: none;
 
+  @include for-size(desktop) {
+    @include flex-center(space-between, center);
+    @include font(110/12, 1.2rem, 700);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
   // .menu-list__item
 
-  &__item {}
+  &__item {
+    @include for-size(desktop) {
+      margin-right: 4.4rem;
+    }
+  }
 
   // .menu-list__link
 
@@ -76,8 +133,12 @@
   width: 2.4rem;
   height: 1.4rem;
 
+  @include for-size(desktop) {
+    display: none;
+  }
+
   &__line {
-    width: 2.4rem;
+    width: 100%;
     height: 0.2rem;
     background-color: $main-text;
 
@@ -125,7 +186,6 @@
 .header-img {}
 
 .advantage-list {
-
   // .advantage-list__item
 
   &__item {
@@ -151,7 +211,7 @@
       right: -0.2rem;
       width: 0.2rem;
       height: 3.6rem;
-      background-color: #fff;
+      background-color: $primary-white;
     }
   }
 
