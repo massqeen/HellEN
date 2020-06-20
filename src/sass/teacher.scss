@@ -1,21 +1,22 @@
-// * {
-//   outline: 1px solid palevioletred;
-// }
+* {
+  outline: 1px solid palevioletred;
+}
 .teacher {
-  padding-top: 4.6rem;
+  padding-top: 4rem;
   padding-bottom: 4.6rem;
 
   // .teacher__head
 
   &__head {
-    @include font(3rem, 2rem, 800) color: $h2-text;
+    @include font(3rem, 2rem, 800)
+    color: $h2-text;
     letter-spacing: 0.05em;
-    margin-bottom: 2.2rem;
+    margin-bottom: 2rem;
   }
 
   // .teacher__img
 
-  &__img {
+  &__img--default {
     margin-bottom: 1.6rem;
   }
   // .teacher__secondary-head
@@ -40,10 +41,14 @@
     margin-bottom: 2rem;
   }
   &__features-item {
-    @include flex-center($justify: space-between, $align: flex-start);
+    @include flex-center($justify: flex-start, $align: flex-start);
   }
   &__features-item:not(:last-child) {
     margin-bottom: 1.4rem;
+  }
+  &__icon--wrap {
+    // width: 55px;
+    // margin-right: 20px;
   }
   &__icon {
     fill: $accent-color;
@@ -54,8 +59,10 @@
   // &__features__item__icon {
 
   &__description {
-    @include font(2rem, 1.3rem, 800) letter-spacing: 0.03em;
-    width: 24.5rem;
+    @include font(2rem, 1.3rem, 800)
+    letter-spacing: 0.03em;
+    padding-left: 2rem;
+    // min-width: 24.5rem;
   }
   &__progress::before {
     display: block;

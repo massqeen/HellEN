@@ -1,41 +1,58 @@
 <!-- TEACHER -->
 <section class="teacher container">
   <h2 class="teacher__head">Преподаватель</h2>
-  <img
-    class="teacher__img"
-    srcset="
-      ./images/teacher/teacher-mobile.jpg    280w,
-      ./images/teacher/teacher-mobile@2x.jpg 560w
-    "
-    src="./images/teacher/teacher-mobile.jpg"
-    alt="Елена Морева"
-    sizes="280px"
-    height="214"
-  />
+  <picture class="teacher__img">
+    <source
+      srcset="./images/teacher/teacher-mobile.jpg 280w,
+        ./images/teacher/teacher-mobile@2x.jpg 560w"
+      sizes="280px"
+      media="(min-width: 320px)">
+    <source
+      srcset="./images/teacher/teacher-tablet.jpg 247w,
+        ./images/teacher/teacher-tablet@2x.jpg 494w"
+      sizes="247px"
+      media="(min-width: 768px)">
+    <source
+      srcset="./images/teacher/teacher-desktop.jpg 490ww,
+        ./images/teacher/teacher-desktop@2x.jpg 980w"
+      sizes="490px"
+      media="(min-width: 1280px)">
+    <img
+      class="teacher__img--default"
+      src="./images/teacher/teacher-mobile.jpg"
+      alt="Елена Морева"/>
+  </picture>
+
   <div class="wrap">
     <h3 class="teacher__secondary-head">Елена Морева</h3>
     <!-- FEATURES -->
     <ul class="teacher__features">
       <li class="teacher__features-item">
+        <div class="teacher__icon--wrap">
         <svg class="teacher__icon">
           <use href="./images/icons/sprite.svg#check"></use>
         </svg>
+        </div>
         <p class="teacher__description">
           Опыт подготовки учеников к ВНО - 6 лет
         </p>
       </li>
       <li class="teacher__features-item">
+        <div class="teacher__icon--wrap">
         <svg class="teacher__icon">
           <use href="./images/icons/sprite.svg#check"></use>
         </svg>
+        </div>
         <p class="teacher__description">
           Собственный результат сдачи ВНО - 197 баллов 2 года подряд
         </p>
       </li>
       <li class="teacher__features-item">
+        <div class="teacher__icon--wrap">
         <svg class="teacher__icon">
           <use href="./images/icons/sprite.svg#check"></use>
         </svg>
+        </div>
         <p class="teacher__description">
           Сдала на отлично международный аналог ВНО - Кембриджский PET
           (Preliminary English Test)
