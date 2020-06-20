@@ -1,6 +1,6 @@
-@import 'minireset';
+@import 'minireset.scss';
 @import 'normalize.scss';
-@import 'fonts';
+@import 'fonts.scss';
 @import 'vars.scss';
 @import 'mixins.scss';
 @import './components/system-slider.scss';
@@ -27,8 +27,8 @@ body {
   background-color: #fff;
 }
 
-@import 'header';
-@import 'main-problems-section';
+@import 'header.scss';
+@import 'main-problems-section.scss';
 @import 'doing-section.scss';
-@import 'program-section';
-@import 'footer';
+@import 'program-section.scss';
+@import 'footer.scss';
