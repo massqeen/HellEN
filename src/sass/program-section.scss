@@ -62,7 +62,6 @@
       background-color: $accent-color;
       left: -3.2rem;
       top: 50%;
-      transform: translateY(-50%);
     }
   }
 }
@@ -189,6 +188,7 @@
         display: none;
       }
     }
+
     &__list-item-title {
       @include font(29/19, 1.9rem, 700);
       letter-spacing: 2px;
@@ -197,7 +197,6 @@
         height: 1.7rem;
         left: -0.2rem;
         top: -4rem;
-        transition: all 0.3 ease-in-out;
       }
     }
   }
@@ -221,6 +220,7 @@
 }
 @include for-size(large-desktop) {
   .program-section {
+    background-position: left 0rem bottom 30.5rem;
     &__title {
       @include font(63/46, 4.6rem, 800);
       letter-spacing: 2.29px;
