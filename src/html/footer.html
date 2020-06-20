@@ -1,19 +1,23 @@
 <footer class="footer">
 
-    <address class="footer__address">
+    <address class="footer__address container">
         
         <a href="tel:+380952050274" class="footer__tel">
             <svg class="footer__tel-icon">
-                <use href="./images/icons/sprite.svg#tel"></use>
+                <use href="./images/icons/sprite.svg#tell"></use>
             </svg>
             +38 (000) 000 00 00
         </a>
         
         <a href="#" class="footer__social-link">
             <span class="visually-hidden">instagram-icon</span>
-            <svg class="footer__icon--instagram">
-                <use href="./images/icons/instagram.svg"></use>
-            </svg>
+            <img src="./images/icons/instagram.svg" alt="instagram-icon">
+            <!-- <svg class="footer__instagram-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="37px" height="37px">
+                <image  x="0px" y="0px" width="37px" height="37px"  xlink:href="data:img/png;base64,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" />
+            </svg> -->
         </a>
 
         <a href="#" class="logo">
@@ -27,7 +31,7 @@
     </address>
 
     <div class="footer__copy">
-        <p>
+        <p class="footer__copy-text container">
             &#64; Все права защищены, 2020
             <!-- <script>document.write("&#64; Все права защищены, "+ new Date().getFullYear()+ );</script> -->
             <!-- <?php echo date('Y'); ?> -->
