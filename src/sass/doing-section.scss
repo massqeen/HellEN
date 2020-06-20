@@ -1,31 +1,45 @@
 .doing {
-  padding-top: 20.2rem;
+  padding-top: 4.8rem;
   padding-bottom: 5.4rem;
-
-  @include for-size(phone-only) {
-    .doing__list-items:not(:last-child) {
-      margin-bottom: 1.6rem;
-    }
-  }
-
-  @include for-size(tablet) {
-  }
-  @include for-size(tablet-landscape) {
-  }
 
   &__title {
     margin-bottom: 3.6rem;
   }
 
   &__list {
-    @include flex-center(space-between, center);
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    @include for-size(tablet) {
+      justify-content: space-between;
+    }
   }
 
   &__list-items {
     box-shadow: 4px 6.928px 23.68px 8.32px rgba(29, 29, 27, 0.11);
     padding: 3rem 2.2rem 2.6rem;
     flex-basis: 29rem;
+    @include for-size(tablet) {
+      flex-basis: 50%;
+    }
+    @include for-size(desktop) {
+      flex-basis: 33%;
+    }
+    @media (max-width: 35em) {
+      &:not(:last-child) {
+        margin-bottom: 1.6rem;
+      }
+    }
+    @media (min-width: 36em) and (max-width: 79em) {
+      &:not(:nth-last-child(-n + 2)) {
+        margin-bottom: 1.6rem;
+      }
+    }
+    @media (min-width: 80em) {
+      &:not(:nth-last-child(-n + 3)) {
+        margin-bottom: 1.6rem;
+      }
+    }
 
     &:hover,
     :focus {
@@ -64,6 +78,7 @@
       margin-top: 1.5rem;
     }
   }
+
   &__description {
     color: $additional-text;
     text-align: center;
