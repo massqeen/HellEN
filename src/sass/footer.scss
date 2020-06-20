@@ -1,1 +1,44 @@
+.footer {
+        padding-top: 2.8rem;
+        text-align: center;
 
+    &__address {
+            font-style: normal;
+            margin-bottom: 0.8rem;
+    }
+    &__tel {
+            @include font(37.5/18, 1.8rem, 600);
+            font-style: normal;
+            color: $h2-text;
+            letter-spacing: .09rem;
+            margin-bottom: 2rem;
+            
+            &-icon{
+                width: 2.4rem;
+                height: 2.4rem;
+                fill: #000;
+            }
+            &:focus,
+            &:hover {
+                .footer__tel-icon {
+                    fill: $accent-color;
+                }
+            }
+    }
+    &__social-link {
+            display: block;
+            margin-bottom: 2rem;
+    }
+    &__copy {
+            @include font(38/11, 1.1rem, 500);
+            background-color: $h2-text;
+            color: rgba(253, 254, 254, 0.42);
+            letter-spacing: .055rem;
+            height: 7.2rem;
+            padding: 1.6rem 0;
+    }
+    &__icon--instagram {
+            width: 3.8rem;
+            height: 3.8rem;
+    }
+}

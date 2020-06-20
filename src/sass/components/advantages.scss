@@ -1,16 +1,54 @@
+.advantages-wrapper {
+  background-color: $primary-white;
+  box-shadow: 4px 7px 16px 6px rgba(29, 29, 27, 0.04);
+}
+
 .advantages__list {
-  background-color: white;
+  background-color: $primary-white;
   padding: 2.3rem 2.4rem 3.4rem 2.8rem;
+  @include flex-center(flex-start, flex-start);
+  flex-wrap: wrap;
+  flex: 0 0 100%;
+
+  @include for-size(tablet) {
+    padding: 3.8rem 7.6rem 4.4rem 10.8rem;
+  }
+
+  @include for-size(desktop) {
+    padding: 5.5rem 10.8rem 5.2rem 10.1rem;
+  }
 }
 
 .advantages__list-item {
   color: $main-text;
   @include font(20/13, 1.3rem, 700);
-  padding-right: 2.3rem;
   letter-spacing: 0.65px;
 
-  &:not(:last-child) {
-    margin-bottom: 2.2rem;
+  @media screen and (max-width: 47.94em) {
+    &:not(:last-child) {
+      margin-bottom: 1.4rem;
+    }
+  }
+
+  @media screen and (min-width: 36em) and (max-width: 79.94em) {
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 2rem;
+    }
+  }
+  @media screen and (min-width: 80em) {
+    &:not(:nth-last-child(-n + 3)) {
+      margin-bottom: 4.5rem;
+    }
+  }
+
+  @include for-size(phone-only) {
+    flex: 0 0 50%;
+    @include flex-center(center, flex-start);
+    flex-direction: column;
+  }
+
+  @include for-size(tablet-landscape) {
+    flex: 0 0 33.3%;
   }
 }
 
@@ -20,20 +58,37 @@
   padding-left: 3.5rem;
   margin-bottom: 1rem;
   color: $accent-color;
+  @include font(29/14, 1.4rem, 500);
+  letter-spacing: 0.7px;
+
+  @include for-size(desktop) {
+    @include font(29/21, 2.1rem, 500);
+    letter-spacing: 1.04px;
+  }
+
+  &::before {
+    content: '';
+    width: 2.6rem;
+    height: 0.2rem;
+    background-color: $accent-color;
+    position: absolute;
+    top: 1.3rem;
+    left: 0;
+  }
 }
 
-.advantages__list-item-number::before {
-  content: '';
-  width: 2.6rem;
-  height: 0.2rem;
-  background-color: $accent-color;
-  position: absolute;
-  top: 0.8rem;
-  left: 0;
-}
+.advantages__list-text {
+  @include for-size(tablet) {
+    max-width: 85%;
+  }
 
-.advantages-wrapper {
-  @include flex-center(flex-start, flex-start);
-  flex-wrap: wrap;
-  flex: 1 1 100%;
+  @include for-size(desktop) {
+    @include font(29/18, 1.8rem, 700);
+    max-width: 85%;
+  }
+
+  @include for-size(large-desktop) {
+    @include font(29/21, 2.1rem, 700);
+    max-width: 85%;
+  }
 }

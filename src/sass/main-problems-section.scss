@@ -1,26 +1,95 @@
 @import './components/advantages.scss';
 
+.bcg-wrapper {
+  @include for-size(tablet) {
+    background-image: url(../images/main-problems/fire-tablet.png);
+    background-repeat: no-repeat;
+    background-size: 210px 297px;
+    background-position: right 0px bottom 176px;
+
+    @include retina(2) {
+      background-image: url(../images/main-problems/fire-tablet@2x.png);
+    }
+  }
+
+  @include for-size(tablet-landscape) {
+    background-position: right 0px bottom 82px;
+  }
+
+  @include for-size(desktop) {
+    background-image: url(../images/main-problems/fire-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 356px 487px;
+    background-position: right 0px bottom 118px;
+
+    @include retina(2) {
+      background-image: url(../images/main-problems/fire-desktop@2x.png);
+    }
+  }
+}
+
 .main-problems-section {
-  content: '';
-  padding-right: 2rem;
-  box-sizing: content-box;
-  background-color: $h2-text;
-}
+  background-image: linear-gradient(
+    to bottom,
+    $h2-text 76%,
+    $primary-white 76%
+  );
 
-ul {
-  list-style-type: none;
-}
+  @include for-size(tablet) {
+    background-image: linear-gradient(
+      to bottom,
+      $h2-text 68%,
+      $primary-white 68%
+    );
+  }
 
-.main-problems__title {
-  max-width: 23rem;
-  color: rgb(255, 255, 255);
-  padding-top: 5.6rem;
-  padding-bottom: 33rem;
-  @include font(1.5, 2rem, 800);
+  @include for-size(tablet-landscape) {
+    background-image: linear-gradient(
+      to bottom,
+      $h2-text 82%,
+      $primary-white 82%
+    );
+  }
 }
 
 .main-problems__container {
-  position: relative;
+  padding-top: 5rem;
+
+  @include for-size(desktop) {
+    padding-top: 7.5rem;
+  }
+}
+
+.main-problems__title {
+  max-width: 85%;
+  margin-bottom: 2rem;
+  color: $primary-white;
+  @include font(1.5, 2rem, 800);
+
+  @include for-size(phone-only) {
+    max-width: 65%;
+  }
+
+  @include for-size(tablet) {
+    @include font(33/26, 2.6rem, 800);
+    letter-spacing: 1.3px;
+  }
+
+  @include for-size(tablet-landscape) {
+    @include font(43/32, 3.2rem, 800);
+    letter-spacing: 1.6px;
+  }
+
+  @include for-size(desktop) {
+    margin-bottom: 5rem;
+    @include font(56/42, 4.2rem, 800);
+    letter-spacing: 2.1px;
+  }
+
+  @include for-size(large-desktop) {
+    @include font(62/46, 4.6rem, 800);
+    letter-spacing: 2.3px;
+  }
 }
 
 .main-problems__title-span {
@@ -28,7 +97,5 @@ ul {
 }
 
 .main-problems__list-wrapper {
-  position: absolute;
-  max-width: 28rem;
-  top: 19rem;
+  max-width: 100%;
 }
