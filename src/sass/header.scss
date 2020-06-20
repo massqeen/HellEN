@@ -1,3 +1,7 @@
+* {
+  outline: 1px solid greenyellow;
+}
+
 .header {
   padding-top: 2.4rem;
   padding-bottom: 5rem;
@@ -7,6 +11,30 @@
 
   @include retina(2) {
     background-image: url(../images/header/header-bg@2x.png);
+  }
+
+  @include for-size (tablet) {
+    background-image: url(../images/header/header-bg-tablet.png);
+
+    @include retina(2) {
+      background-image: url(../images/header/header-bg-tablet@2x.png);
+    }
+  }
+
+  @include for-size (desktop) {
+    background-image: url(../images/header/header-bg-desktop.png);
+
+    @include retina(2) {
+      background-image: url(../images/header/header-bg-desktop@2x.png);
+    }
+  }
+
+  @include for-size (large-desktop) {
+    background-image: url(../images/header/header-bg-large.png);
+
+    @include retina(2) {
+      background-image: url(../images/header/header-bg-large@2x.png);
+    }
   }
 
   &__picture {
@@ -67,7 +95,7 @@
   &__main {
     margin-bottom: 3.2rem;
     @include font(29/20, 2rem, 900);
-    letter-spacing: 0.06rem;
+    letter-spacing: 0.03em;
   }
 
   // .header-title__subtitle
@@ -75,7 +103,7 @@
   &__subtitle {
     margin-bottom: 3.6rem;
     @include font(20/15, 1.5rem, 700);
-    letter-spacing: 0.062rem;
+    letter-spacing: 0.04em;
 
     // .header-title__subtitle--grey
 
@@ -150,8 +178,8 @@
 
   &__item-description {
     padding-left: 1rem;
-    max-width: 15rem;
+    max-width: 53%;
     @include font(20/13, 1.3rem, 700);
-    letter-spacing: 0.065rem;
+    letter-spacing: 0.05em;
   }
 }
