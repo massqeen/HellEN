@@ -1,18 +1,25 @@
 .doing {
-  padding: 20.2rem 1.5rem 5.4rem;
+  padding-top: 20.2rem;
+  padding-bottom: 5.4rem;
 
-  // @include for-size(tablet) {
-  //   max-width: 60.4rem;
-  // }
+  @include for-size(phone-only) {
+    .doing__list-items:not(:last-child) {
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  @include for-size(tablet) {
+  }
+  @include for-size(tablet-landscape) {
+  }
 
   &__title {
     margin-bottom: 3.6rem;
   }
 
   &__list {
-    display: flex;
+    @include flex-center(space-between, center);
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 
   &__list-items {
@@ -68,6 +75,7 @@
     fill: $accent-color;
     display: block;
     margin: 0 auto;
+    margin-bottom: 2rem;
 
     &--program {
       width: 42px;
@@ -103,8 +111,4 @@
 
 .block {
   display: block;
-}
-
-.doing__list-items:not(:last-child) {
-  margin-bottom: 1.6rem;
 }
