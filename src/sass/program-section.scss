@@ -66,10 +66,16 @@
 .image-anchor {
   background-repeat: no-repeat;
   background-size: 24.7rem 17.1rem;
-  background-position: right 0 bottom 0;
+  background-position: right -10rem bottom 58rem;
   background-image: url(../images/program/bcg-mobile.jpg);
   @include retina(2) {
     background-image: url(../images/program/bcg-mobile@2x.jpg);
+  }
+}
+
+@media (min-width: 57px) and (max-width: 76.7px) {
+  .image-anchor {
+    background-position: right -7rem bottom 39rem;
   }
 }
 
@@ -127,7 +133,7 @@
   .image-anchor {
     background-image: url(../images/program/bcg-tablet.jpg);
     background-size: 40.7rem 28.2rem;
-    background-position: right 2rem bottom 31.5rem;
+    background-position: right 2rem bottom 48.5rem;
     @include retina(2) {
       background-image: url(../images/program/bcg-tablet@2x.jpg);
     }
@@ -147,10 +153,16 @@
       flex-direction: column;
       margin: 0;
       margin-left: 9rem;
+      margin-bottom: 10rem;
       &::before {
-        height: 84%;
+        height: 83%;
       }
     }
+  }
+  .alternative-title {
+    max-width: max-content;
+    text-align: center;
+    margin: 0 auto;
   }
   .program__list-item--secondary-list {
     display: flex;
@@ -171,7 +183,7 @@
   .image-anchor {
     background-image: url(../images/program/bcg-desktop.jpg);
     background-size: 70rem 48.5rem;
-    background-position: left -8rem bottom 30.5rem;
+    background-position: left -16rem bottom 32.5rem;
     @include retina(2) {
       background-image: url(../images/program/bcg-desktop@2x.jpg);
     }
@@ -215,6 +227,9 @@
         top: -4rem;
       }
     }
+    .alternative-title {
+      margin-bottom: 3rem;
+    }
 
     .secondary-list {
       &__item {
@@ -236,7 +251,7 @@
   }
   @include for-size(large-desktop) {
     .image-anchor {
-      background-position: left 0rem bottom 30.5rem;
+      background-position: left 0rem bottom 32.5rem;
     }
     .program-section {
       &__title {
