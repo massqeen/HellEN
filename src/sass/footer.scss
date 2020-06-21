@@ -1,44 +1,110 @@
 .footer {
-        padding-top: 2.8rem;
-        text-align: center;
+  @media (max-width: 47.94em) {
+    text-align: center;
+  }
 
-    &__address {
-            font-style: normal;
-            margin-bottom: 0.8rem;
+  &__nav {
+    @media (max-width: 47.94em) {
+      padding-bottom: 1.4rem;
+      padding-top: 3.6rem;
     }
-    &__tel {
-            @include font(37.5/18, 1.8rem, 600);
-            font-style: normal;
-            color: $h2-text;
-            letter-spacing: .09rem;
-            margin-bottom: 2rem;
-            
-            &-icon{
-                width: 2.4rem;
-                height: 2.4rem;
-                fill: #000;
-            }
-            &:focus,
-            &:hover {
-                .footer__tel-icon {
-                    fill: $accent-color;
-                }
-            }
+
+    @include for-size(tablet) {
+      @include flex-center(center);
+      flex-direction: row-reverse;
     }
-    &__social-link {
-            display: block;
-            margin-bottom: 2rem;
+  }
+
+  &__address {
+    font-style: normal;
+    margin-bottom: 2rem;
+
+    @include for-size(tablet) {
+      min-height: 12rem;
+      @include flex-center(center, center);
+      flex-grow: 1;
+      margin-left: -5rem;
     }
-    &__copy {
-            @include font(38/11, 1.1rem, 500);
-            background-color: $h2-text;
-            color: rgba(253, 254, 254, 0.42);
-            letter-spacing: .055rem;
-            height: 7.2rem;
-            padding: 1.6rem 0;
+    @include for-size(desktop) {
+      min-height: 14.8rem;
     }
-    &__icon--instagram {
-            width: 3.8rem;
-            height: 3.8rem;
+  }
+
+  &__tel {
+    @include font(37.5/18, 1.8rem, 600);
+    font-style: normal;
+    color: $h2-text;
+    letter-spacing: 0.09rem;
+
+    @media (max-width: 767px) {
+      display: block;
+      margin-bottom: 2rem;
     }
+
+    @include for-size(tablet) {
+      border-right: 1px solid #e0e0e0;
+      @include font(37.5/20, 2rem, 600);
+      letter-spacing: 0.1rem;
+      margin-right: 3.2rem;
+      padding-right: 3.2rem;
+    }
+    @include for-size(desktop) {
+      @include font(37.5/27, 2.7rem, 700);
+      letter-spacing: 0.135rem;
+    }
+
+    &-icon {
+      width: 2.4rem;
+      height: 2.4rem;
+      fill: #000;
+      @extend %transition;
+      margin-bottom: -8px;
+
+      @include for-size(desktop) {
+        width: 3.4rem;
+        height: 3.4rem;
+        margin-bottom: -10px;
+      }
+    }
+
+    @media screen and (max-width: 61.94em) {
+      .footer__tel-icon {
+        fill: $accent-color;
+      }
+    }
+
+    @include for-size(tablet-landscape) {
+      &:focus,
+      &:hover {
+        .footer__tel-icon {
+          fill: $accent-color;
+        }
+      }
+    }
+  }
+
+  &__social-link {
+    display: inline-block;
+
+    @media (max-width: 767px) {
+      margin: 0 auto;
+    }
+  }
+
+  &__copy {
+    background-color: $h2-text;
+    padding: 1.6rem 0;
+    min-height: 7.2rem;
+
+    &-text {
+      @include font(37.5/11, 1.1rem, 500);
+      color: rgba(253, 254, 254, 0.42);
+      letter-spacing: 0.055rem;
+
+      @include for-size(desktop) {
+        @include font(37.5/15, 1.5rem, 500);
+        letter-spacing: 0.075rem;
+      }
+    }
+  }
 }
