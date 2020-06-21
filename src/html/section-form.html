@@ -12,7 +12,7 @@
 
     <form class="form">
       <div class="inputs-wrapper">
-        <input type="text" name="name" class="form-contacts__input invalids" placeholder="Имя *" required="" minlength="3">
+        <input type="text" name="name" class="form-contacts__input invalids" pattern="A-Za-zА-Яа-яЁё" title="Только буквы русского и латинского алфавита" placeholder="Имя *" required="" minlength="3">
         <input type="tel" id="phone" name="tel"
                 class="form-contacts__input invalids"
                placeholder="Телефон*" required="" minlength="10" title="Формат: (096) 999 99 99" pattern="[0-9_-]{10}" >
