@@ -1,33 +1,51 @@
 .logo {
-  width: 8.5rem;
+  display: inline-block;
+  min-width: 8.5rem;
   color: #000;
   line-height: 100%;
 
+  @include for-size(tablet) {
+    min-width: 12.1rem;
+  }
+
   &__name-site {
-    @include font(17/15, 1.5rem, 900);
-    letter-spacing: 0.075rem;
+    @include font(17/15, 1.5rem, 800);
+    letter-spacing: 0.075em;
+
+    @include for-size(tablet) {
+      @include font(30/25, 2.5rem, 800);
+      letter-spacing: 0.05em;
+    }
   }
 
   &__icon {
-    margin-bottom: -0.6rem;
+    margin-bottom: -0.5rem;
     margin-left: 0.2rem;
     margin-right: 0.2rem;
     width: 1.6rem;
     height: 2.4rem;
     fill: $accent-color;
+
+    @include for-size(tablet) {
+      width: 2.1rem;
+      height: 3rem;
+    }
   }
 
   &__slogan {
     display: inline-block;
     text-transform: uppercase;
-    @include font(16/5.3, 0.53rem, 700);
-    letter-spacing: 0.06rem;
+    @include font(1.2, 0.5rem, 700);
+    letter-spacing: 0.04em;
+
+    @include for-size(tablet) {
+      @include font(1.6, 0.875rem, 700);
+      letter-spacing: 0.05em;
+    }
 
     &--orange {
       margin-right: 0.2rem;
-      margin-left: 0.1rem;
       color: $accent-color;
     }
-
   }
 }
