@@ -1,16 +1,3 @@
-.logo {
-  //   width: 9rem;
-
-  @include for-size(tablet) {
-    // order: -1;
-    // margin-right: 14%;
-  }
-  @include for-size(desktop) {
-    // width: 13rem;
-    // margin-right: 22%;
-  }
-}
-
 .footer {
   @media (max-width: 47.94em) {
     text-align: center;
