@@ -1,22 +1,25 @@
 <header class="header">
     <div class="top-line container">
         <nav class="main-nav">
+
             //= ./components/logo.html
             <ul class="menu-list">
+
                 <li class="menu-list__item">
-                    <a href="#" class="menu-list__link"></a>Программа обучения
+                    <a href="#" class="menu-list__link">Программа обучения</a>
                 </li>
                 <li class="menu-list__item">
-                    <a href="#" class="menu-list__link"></a>о нас
+                    <a href="#" class="menu-list__link">о нас</a>
                 </li>
                 <li class="menu-list__item">
-                    <a href="#" class="menu-list__link"></a>варианты обучения
+                    <a href="#" class="menu-list__link">варианты обучения</a>
                 </li>
                 <li class="menu-list__item">
-                    <a href="#" class="menu-list__link"></a>контакты
+                    <a href="#" class="menu-list__link">контакты</a>
                 </li>
-            </ul>
-            <button class="top-line__btn" type="button">консультация по телефону</button>
+                </ul>
+                <button class="btn-action top-line__btn" type="button">консультация по телефону</button>
+            </div>
         </nav>
         <div class="burger">
             <span class="burger__line"></span>
@@ -26,26 +29,25 @@
     </div>
     <div class="header__main-content container">
         <div class="header-title">
-        <h1 class="header-title__main">Комплексная подготовка к ВНО по английскому языку</h1>
+        <h1 class="header-title__main">Комплексная подготовка к ВНО <span class="header-title__main--br">по английскому языку</span></h1>
         <p class="header-title__subtitle">
             <span class="header-title__subtitle--grey">Просто не будет.</span>Но ты
             гарантировано наберешь
             <span class="header-title__subtitle--orange">+25 баллов</span>
         </p>
-        <button class="btn-action" type="button">хочу на бесплатное занятие</button>
+        <button class="btn-action btn-action--position" type="button">хочу на бесплатное занятие</button>
         </div>
-    <!-- <img class="header-img" srcset="./images/header/header-class-mobile.png 215w, ./images/header/header-class-mobile@2x.png 430w, ./images/header/header-class-tablet.png 370w, ./images/header/header-class-tablet@2x.png 740w, ./images/header/header-class-laptop.png 685w, ./images/header/header-class-laptop@2x 1369w, ./images/header/header-class-desKtop.png 839w, ./images/header/header-class-desktop@2x 1677w>" sizes="(min-width: 320px)215px, (min-width: 768px)370px, (min-width: 1280px)685px, (min-width: 1680px)839px" src="./images/header/header-class-tablet.png" alt="english teacher with students"> -->
-    <picture class="header__picture">
-        <source srcset="./images/header/header-class-mobile.png 215w, ./images/header/header-class-mobile@2x.png 430w"
-            sizes="215px" media="(min-width: 320px)">
-        <source srcset="./images/header/header-class-tablet.png 370w, ./images/header/header-class-tablet@2x.png 740w"
-            sizes="370px" media="(min-width: 768px)">
-        <source srcset="./images/header/header-class-laptop.png 685w, ./images/header/header-class-laptop@2x.png 1369w"
-            sizes="685px" media="(min-width: 1280px)">
-        <source srcset="./images/header/header-class-desktop.png 839w, ./images/header/header-class-desktop@2x.png 1677w"
+        <picture class="header__picture">
+            <source srcset="./images/header/header-class-desktop.png 839w, ./images/header/header-class-desktop@2x.png 1677w"
             sizes="839px" media="(min-width: 1680px)">
-        <img class="header-img" src="./images/header/header-class-tablet.png" alt="english teacher with students"/>
-    </picture>
+            <source srcset="./images/header/header-class-laptop.png 685w, ./images/header/header-class-laptop@2x.png 1369w"
+            sizes="685px" media="(min-width: 1280px)">
+            <source srcset="./images/header/header-class-tablet.png 370w, ./images/header/header-class-tablet@2x.png 740w"
+            sizes="370px" media="(min-width: 768px)">
+            <source srcset="./images/header/header-class-mobile.png 215w, ./images/header/header-class-mobile@2x.png 430w"
+            sizes="215px" media="(min-width: 320px)">
+            <img class="header-img" src="./images/header/header-class-mobile.png" alt="english teacher with students"/>
+        </picture>
     </div>
     <ul class="advantage-list container">
         <li class="advantage-list__item">
@@ -72,5 +74,5 @@
             </div>
             <p class="advantage-list__item-description">Финансовая гарантия результата</p>
         </li>
-        </ul>
+    </ul>
 </header class="header">
