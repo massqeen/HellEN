@@ -1,0 +1,189 @@
+.teacher {
+  padding-top: 4rem;
+  padding-bottom: 3.3rem;
+  @include for-size(tablet) {
+    padding-top: 4.5rem;
+  }
+  @include for-size(desktop) {
+    padding-top: 8.2rem;
+  }
+  @include for-size(large-desktop) {
+    padding-top: 5.7rem;
+  }
+
+  // .teacher__head
+  &__head {
+    @include font(3rem, 2rem, 800);
+    color: $h2-text;
+    letter-spacing: 0.05em;
+    margin-bottom: 2rem;
+    @include for-size(tablet) {
+      @include font(6.3rem, 2.6rem, 800);
+      margin-bottom: 1.5rem;
+    }
+    @include for-size(desktop) {
+      @include font(6.3rem, 4.2rem, 800);
+      margin-bottom: 4.6rem;
+    }
+    @include for-size(large-desktop) {
+      @include font(6.3rem, 4.6rem, 800);
+      margin-bottom: 6.7rem;
+    }
+  }
+
+  // .teacher__img
+
+  &__img--default {
+    margin-bottom: 1.6rem;
+  }
+  &__secondary-head {
+    @include font(2.9rem, 1.6rem, 800);
+    letter-spacing: 0.05em;
+    color: $h2-text;
+    @include for-size(tablet) {
+      @include font(2rem, 2rem, 800);
+    }
+    @include for-size(desktop) {
+      @include font(2.917rem, 2.917rem, 800);
+    }
+  }
+  &__secondary-head::after {
+    display: block;
+    content: '';
+    height: 0.1rem;
+    width: 100%;
+    background-color: $additional-text;
+    margin-bottom: 2.2rem;
+    @include for-size(tablet) {
+      margin-top: 1.1rem;
+      margin-bottom: 1.8rem;
+    }
+    @include for-size(desktop) {
+      margin-top: 0.7rem;
+      margin-bottom: 3.4rem;
+    }
+  }
+
+  // .teacher__features
+
+  &__features {
+    margin-bottom: 1.9rem;
+    @include for-size(tablet) {
+      padding-right: 1rem;
+      margin-bottom: 1.7rem;
+    }
+    @include for-size(desktop) {
+      margin-bottom: 2.8rem;
+    }
+    @include for-size(large-desktop) {
+      padding-right: 14.6rem;
+    }
+  }
+  &__features-item {
+    @include flex-center($justify: flex-start, $align: flex-start);
+  }
+  &__features-item:not(:last-child) {
+    margin-bottom: 1.4rem;
+    @include for-size(tablet) {
+      margin-bottom: 0.5rem;
+    }
+  }
+  @include for-size(tablet) {
+    &__features-item:nth-child(2) {
+      margin-bottom: 1.4rem;
+    }
+  }
+  &__icon {
+    fill: $accent-color;
+    width: 2.5rem;
+    height: 2.5rem;
+    @include for-size(desktop) {
+      fill: $main-text;
+      width: 3.5rem;
+      height: 3.2rem;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  // &__features__item__icon {
+
+  &__description {
+    @include font(2rem, 1.3rem, 800);
+    letter-spacing: 0.03em;
+    padding-left: 0.8rem;
+    @include for-size(tablet) {
+    }
+    @include for-size(desktop) {
+      @include font(2.917rem, 1.667rem, 800);
+      padding-left: 1.5rem;
+    }
+  }
+  &__progress::before {
+    display: block;
+    content: '';
+    width: 2.5rem;
+    height: 0.2rem;
+    background-color: $accent-color;
+    margin-bottom: 1.4rem;
+    @include for-size(desktop) {
+      margin-bottom: 2.8rem;
+    }
+  }
+  &__progress {
+    padding-left: 1.6rem;
+    @include for-size(tablet) {
+      padding-left: 0;
+      padding-right: 0.2rem;
+    }
+  }
+  &__progress-item:not(:last-child) {
+    margin-bottom: 1.3rem;
+    @include for-size(tablet) {
+      margin-bottom: 1.7rem;
+    }
+  }
+  &__description--progress {
+    @include font(2rem, 1.1rem, 400);
+    letter-spacing: 0.05em;
+    @include for-size(desktop) {
+      @include font(2.917rem, 1.667rem, 400);
+    }
+  }
+  &__progress--link {
+    color: $accent-color;
+    text-decoration: underline;
+    letter-spacing: 0.05em;
+    @include for-size(desktop) {
+      @include font(2.917rem, 1.667rem, 400);
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.teacher-info-wrap {
+  @include for-size(tablet) {
+    display: flex;
+  }
+}
+.wrap {
+  @include for-size(tablet) {
+    margin: 0 auto;
+    width: 64.24419%;
+    padding-left: 4.3rem;
+  }
+  @include for-size(desktop) {
+    min-width: 59.50413%;
+    padding-left: 8.2rem;
+    padding-right: 2.8rem;
+    &:hover .teacher__icon {
+      fill: $accent-color;
+    }
+  }
+  @include for-size(large-desktop) {
+    padding-left: 9rem;
+    width: 59.91935%;
+    padding-right: 9.5rem;
+  }
+}
