@@ -18,7 +18,7 @@
   &__list-items {
     box-shadow: 4px 6.928px 23.68px 8.32px rgba(29, 29, 27, 0.11);
     padding: 3rem 2.2rem 2.6rem;
-    flex-basis: 29rem;
+    flex-basis: 100%;
     @include for-size(tablet) {
       flex-basis: 50%;
     }
