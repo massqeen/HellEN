@@ -1,10 +1,8 @@
-* {
-  outline: 1px solid purple;
-}
 .guarantee {
   // .guarantee__head
 
   &__head {
+    text-align: center;
     @include font(6.2rem, 2rem, 800);
     letter-spacing: 0.05em;
     margin-bottom: 0.7rem;
@@ -13,27 +11,50 @@
   // .guarantee__list
 
   &__list {
-    background-color: red;
+    padding-left: calc(2rem + 0.6rem);
+
+    // .guarantee__list--bgcolor
+
+    &--bgcolor {
+      background-color: #f1f1f1;
+      padding-top: 2rem;
+      padding-bottom: 3.3rem;
+    }
   }
 }
 .guarantee-list {
   // .guarantee-list__item
 
   &__item {
+    @include flex-center(flex-start, flex-start);
+    position: relative;
+  }
+  &__item:not(:last-child) {
+    border-left: 1px dotted #bababa;
+    padding-bottom: 1.4rem;
   }
 }
 .guarantee-item {
   // .guarantee-item__icon
 
   &__icon {
+    @include abs-position($top: 0, $right, $bottom, $left: 0);
+    width: 1.7rem;
+    height: 1.9rem;
+    transform: translateX(-50%);
+    fill: $accent-color;
   }
 
   // .guarantee-item__description
 
   &__description {
+    padding-left: 3rem;
+    @include font(2rem, 1.1rem, 400);
+    color: $main-text;
+    letter-spacing: 0.05em;
     // .guarantee-item__description--axent
-
     &--axent {
+      color: $accent-color;
     }
   }
 }
