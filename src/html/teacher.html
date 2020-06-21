@@ -4,11 +4,19 @@
   <picture class="teacher__img">
     <source
       srcset="
-        ./images/teacher/teacher-mobile.jpg    280w,
-        ./images/teacher/teacher-mobile@2x.jpg 560w
+        ./images/teacher/teacher-desktop.jpg    490w,
+        ./images/teacher/teacher-desktop@2x.jpg 980w
       "
-      sizes="280px"
-      media="(min-width: 320px)"
+      sizes="490px"
+      media="(min-width: 1280px)"
+    />
+    <source
+      srcset="
+        ./images/teacher/teacher-desktop.jpg    490w,
+        ./images/teacher/teacher-desktop@2x.jpg 980w
+      "
+      sizes="490px"
+      media="(min-width: 1280px)"
     />
     <source
       srcset="
@@ -19,10 +27,14 @@
       media="(min-width: 768px)"
     />
     <source
-      srcset="./images/teacher/teacher-desktop.jpg 490ww, ./images/teacher/teacher-desktop@2x.jpg 980w"
-      sizes="490px"
-      media="(min-width: 1280px)"
+      srcset="
+        ./images/teacher/teacher-mobile.jpg    280w,
+        ./images/teacher/teacher-mobile@2x.jpg 560w
+      "
+      sizes="280px"
+      media="(min-width: 320px)"
     />
+
     <img
       class="teacher__img--default"
       src="./images/teacher/teacher-mobile.jpg"
