@@ -8,6 +8,7 @@
   background-image: url(../images/header/header-bg.png);
   background-repeat: no-repeat;
   background-position: top;
+  background-size: 100%;
 
   @include retina(2) {
     background-image: url(../images/header/header-bg@2x.png);
@@ -34,7 +35,7 @@
   }
 
   @include for-size(large-desktop) {
-    padding-top: 3rem;
+    padding-top: 1rem;
     padding-bottom: 12.8rem;
     background-image: url(../images/header/header-bg-large.png);
 
@@ -45,10 +46,20 @@
 
   &__picture {
     @include flex-center();
+
+    @include for-size(tablet) {}
+
+
   }
 
   &__main-content {
     margin-bottom: 8rem;
+
+    @include for-size(tablet) {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 21rem;
+    }
   }
 }
 
@@ -65,7 +76,7 @@
   }
 
   @include for-size(large-desktop) {
-    margin-bottom: 5.2rem;
+    margin-bottom: 3.2rem;
   }
 
   &__btn {
@@ -84,7 +95,7 @@
       &:focus {
         color: $primary-white;
         background-color: #d35526;
-        border: none;
+        border: 2px solid #d35526;
       }
 
     }
@@ -101,30 +112,49 @@
   @include for-size(desktop) {
     width: 100%;
   }
+
+  &--right {
+    @include for-size(desktop) {
+      @include flex-center();
+    }
+  }
 }
 
 .menu-list {
-  //   @include flex-center(space-between, center);
   display: none;
 
   @include for-size(desktop) {
     @include flex-center(space-between, center);
-    @include font(110/12, 1.2rem, 700);
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
   }
-
-  // .menu-list__item
 
   &__item {
     @include for-size(desktop) {
       margin-right: 4.4rem;
+
+
     }
   }
 
-  // .menu-list__link
+  &__link {
+    @include for-size(desktop) {
+      @include font(110/12, 1.2rem, 700);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #b9b9b9;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
 
-  &__link {}
+      &:hover,
+      :focus {
+        color: $accent-color;
+      }
+
+    }
+
+    @include for-size(large-desktop) {
+      @include font(110/14, 1.4rem, 700);
+    }
+  }
 }
 
 .burger {
@@ -151,12 +181,22 @@
 .header-title {
   margin-bottom: 3.6rem;
 
+  @include for-size(desktop) {
+    width: 35%;
+    margin-bottom: 0;
+  }
+
   // .header-title__main
 
   &__main {
     margin-bottom: 3.2rem;
     @include font(29/20, 2rem, 900);
     letter-spacing: 0.03em;
+
+    @include for-size(desktop) {
+      @include font(29/26, 2.6rem, 900);
+    }
+
   }
 
   // .header-title__subtitle
@@ -183,10 +223,14 @@
   }
 }
 
-.header-img {}
+.header-img {
+  display: block;
+}
 
 .advantage-list {
-  // .advantage-list__item
+  @include for-size(tablet) {
+    @include flex-center(space-between, center);
+  }
 
   &__item {
     @include flex-center();
@@ -194,6 +238,15 @@
 
     &:not(:last-child) {
       margin-bottom: 2.2rem;
+    }
+
+    @include for-size(tablet) {
+      padding-left: 0;
+      width: 33.3%;
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -204,6 +257,11 @@
     @include flex-center();
     border: 2px solid $accent-color;
 
+    @include for-size(desktop) {
+      width: 10.2rem;
+      height: 10.2rem;
+    }
+
     &::after {
       content: '';
       display: block;
@@ -212,6 +270,10 @@
       width: 0.2rem;
       height: 3.6rem;
       background-color: $primary-white;
+
+      @include for-size(desktop) {
+        height: 7.3rem;
+      }
     }
   }
 
@@ -221,16 +283,31 @@
     &--student {
       width: 3rem;
       height: 3.6rem;
+
+      @include for-size(desktop) {
+        width: 4rem;
+        height: 4.5rem;
+      }
     }
 
     &--mobile {
       width: 3.4rem;
       height: 3.4rem;
+
+      @include for-size(desktop) {
+        width: 4.4rem;
+        height: 4.5rem;
+      }
     }
 
     &--dollar {
       width: 3rem;
       height: 3.4rem;
+
+      @include for-size(desktop) {
+        width: 4rem;
+        height: 4.8rem;
+      }
     }
   }
 
@@ -238,8 +315,21 @@
 
   &__item-description {
     padding-left: 1rem;
-    max-width: 53%;
+    max-width: 14.4rem;
     @include font(20/13, 1.3rem, 700);
     letter-spacing: 0.05em;
+
+    @include for-size(desktop) {
+      padding-left: 0;
+      max-width: 30rem;
+      position: relative;
+      margin-left: -2rem;
+      @include font(28/18, 1.8rem, 700);
+    }
+
+    @include for-size(large-desktop) {
+      max-width: 36rem;
+      @include font(33/21, 2.1rem, 700);
+    }
   }
 }
