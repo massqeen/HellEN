@@ -10,6 +10,9 @@
   @media (min-width: 1280px) {
     padding-top: 8.2rem;
   }
+  @media (min-width: 1680px) {
+    padding-top: 5.7rem;
+  }
 
   // .teacher__head
   &__head {
@@ -27,6 +30,7 @@
     }
     @media (min-width: 1680px) {
       @include font(6.3rem, 4.6rem, 800);
+      margin-bottom: 6.7rem;
     }
   }
 
@@ -35,7 +39,6 @@
   &__img--default {
     margin-bottom: 1.6rem;
   }
-
   &__secondary-head {
     @include font(2.9rem, 1.6rem, 800);
     letter-spacing: 0.05em;
@@ -74,6 +77,9 @@
     }
     @media (min-width: 1280px) {
       margin-bottom: 2.8rem;
+    }
+    @media (min-width: 1680px) {
+      padding-right: 14.6rem;
     }
   }
   &__features-item {
@@ -168,14 +174,19 @@
   @media (min-width: 768px) {
     margin: 0 auto;
     width: 64.24419%;
-    padding-left: 6.15475%;
+    padding-left: 4.3rem;
   }
   @media (min-width: 1280px) {
-    width: 59.50413%;
-    padding-left: 6.78333%;
-    padding-right: 2.38888%;
+    min-width: 59.50413%;
+    padding-left: 8.2rem;
+    padding-right: 2.8rem;
     &:hover .teacher__icon {
       fill: $accent-color;
     }
+  }
+  @media (min-width: 1680px) {
+    padding-left: 9rem;
+    width: 59.91935%;
+    padding-right: 9.5rem;
   }
 }
