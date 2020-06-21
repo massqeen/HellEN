@@ -47,7 +47,7 @@
   &__picture {
     @include flex-center();
 
-    @include for-size(tablet) {}
+    // @include for-size(tablet) {}
 
 
   }
@@ -58,7 +58,15 @@
     @include for-size(tablet) {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 21rem;
+      margin-bottom: 11.8rem;
+    }
+
+    @include for-size(desktop) {
+      margin-bottom: 13rem;
+    }
+
+    @include for-size(large-desktop) {
+      margin-bottom: 11rem;
     }
   }
 }
@@ -181,9 +189,20 @@
 .header-title {
   margin-bottom: 3.6rem;
 
+  @include for-size(tablet) {
+    padding-top: 1.4rem;
+    margin-bottom: 0rem;
+    width: 40%;
+  }
+
   @include for-size(desktop) {
-    width: 35%;
-    margin-bottom: 0;
+    padding-top: 6.8rem;
+    width: 42%;
+  }
+
+  @include for-size(large-desktop) {
+    padding-top: 9rem;
+    width: 46%;
   }
 
   // .header-title__main
@@ -193,8 +212,21 @@
     @include font(29/20, 2rem, 900);
     letter-spacing: 0.03em;
 
+    @include for-size(tablet) {
+      margin-bottom: 2rem;
+    }
+
     @include for-size(desktop) {
-      @include font(29/26, 2.6rem, 900);
+      margin-bottom: 2.8rem;
+      @include font(58/48, 4.8rem, 900);
+    }
+
+    @include for-size(large-desktop) {
+      @include font(75/58, 5.8rem, 900);
+    }
+
+    &--br {
+      display: block;
     }
 
   }
@@ -203,8 +235,22 @@
 
   &__subtitle {
     margin-bottom: 3.6rem;
-    @include font(20/15, 1.5rem, 700);
+    @include font(20/15, 1.5rem, 900);
     letter-spacing: 0.04em;
+
+    @include for-size(tablet) {
+      margin-bottom: 3.4rem;
+    }
+
+    @include for-size(desktop) {
+      margin-bottom: 6.2rem;
+      @include font(26/18, 1.8rem, 900);
+    }
+
+    @include for-size(large-desktop) {
+      margin-bottom: 4.6rem;
+      @include font(33/20, 2rem, 900);
+    }
 
     // .header-title__subtitle--grey
 
@@ -219,7 +265,19 @@
     &--orange {
       display: block;
       color: $accent-color;
+
+      @include for-size(desktop) {
+        display: inline-block;
+      }
     }
+  }
+
+  & .btn-active--position {
+    @include for-size(tablet) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
   }
 }
 
