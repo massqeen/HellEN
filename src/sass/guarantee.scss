@@ -6,19 +6,29 @@
     @include font(6.2rem, 2rem, 800);
     letter-spacing: 0.05em;
     margin-bottom: 0.7rem;
+    @include for-size(tablet) {
+      @include font(6.254rem, 2.6rem, 800);
+      margin-bottom: 1rem;
+    }
   }
 
   // .guarantee__list
 
   &__list {
-    padding-left: calc(2rem + 0.6rem);
+    // background-color: #f1f1f1;
 
     // .guarantee__list--bgcolor
 
     &--bgcolor {
+      padding-left: calc(2rem + 0.6rem);
       background-color: #f1f1f1;
       padding-top: 2rem;
       padding-bottom: 3.3rem;
+      @include for-size(tablet) {
+        padding-top: 3.6rem;
+        padding-left: calc(4rem + 6.7rem);
+        padding-right: calc(4rem + 5rem);
+      }
     }
   }
 }
@@ -54,6 +64,9 @@
     @include font(2rem, 1.1rem, 400);
     color: $main-text;
     letter-spacing: 0.05em;
+    @include for-size(tablet) {
+      letter-spacing: 0.06em;
+    }
     // .guarantee-item__description--axent
     &--axent {
       color: $accent-color;
