@@ -20,7 +20,7 @@
 }
 @include for-size(tablet){
   .btn-action {
-    width: 26.2rem;
+    max-width: 26.2rem;
     height: 5rem;
   }
 
@@ -28,7 +28,7 @@
 }
 @include for-size(desktop){
   .btn-action {
-    width: 35.2rem;
+    max-width: 35.2rem;
     height: 7rem;
     @include font(14/14, 1.4rem, 700);
   }
