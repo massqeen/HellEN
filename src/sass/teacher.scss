@@ -7,6 +7,9 @@
   @media (min-width: 768px) {
     padding-top: 4.5rem;
   }
+  @media (min-width: 1280px) {
+    padding-top: 8.2rem;
+  }
 
   // .teacher__head
   &__head {
@@ -17,6 +20,10 @@
     @media (min-width: 768px) {
       @include font(6.3rem, 2.6rem, 800);
       margin-bottom: 1.5rem;
+    }
+    @media (min-width: 1280px) {
+      @include font(6.3rem, 4.2rem, 800);
+      margin-bottom: 4.6rem;
     }
   }
 
@@ -33,6 +40,9 @@
     @media (min-width: 768px) {
       @include font(2rem, 2rem, 800);
     }
+    @media (min-width: 1280px) {
+      @include font(2.917rem, 2.917rem, 800);
+    }
   }
   &__secondary-head::after {
     display: block;
@@ -45,6 +55,10 @@
       margin-top: 1.1rem;
       margin-bottom: 1.8rem;
     }
+    @media (min-width: 1280px) {
+      margin-top: 0.7rem;
+      margin-bottom: 3.4rem;
+    }
   }
 
   // .teacher__features
@@ -54,6 +68,9 @@
     @media (min-width: 768px) {
       padding-right: 1rem;
       margin-bottom: 1.7rem;
+    }
+    @media (min-width: 1280px) {
+      margin-bottom: 2.8rem;
     }
   }
   &__features-item {
@@ -74,6 +91,12 @@
     fill: $accent-color;
     width: 2.5rem;
     height: 2.5rem;
+    @media (min-width: 1280px) {
+      fill: $main-text;
+      width: 3.5rem;
+      height: 3.2rem;
+      transition: all 0.3s ease-in-out;
+    }
   }
 
   // &__features__item__icon {
@@ -84,6 +107,10 @@
     padding-left: 0.8rem;
     @media (min-width: 768px) {
     }
+    @media (min-width: 1280px) {
+      @include font(2.917rem, 1.667rem, 800);
+      padding-left: 1.5rem;
+    }
   }
   &__progress::before {
     display: block;
@@ -92,6 +119,9 @@
     height: 0.2rem;
     background-color: $accent-color;
     margin-bottom: 1.4rem;
+    @media (min-width: 1280px) {
+      margin-bottom: 2.8rem;
+    }
   }
   &__progress {
     padding-left: 1.6rem;
@@ -109,11 +139,21 @@
   &__description--progress {
     @include font(2rem, 1.1rem, 400);
     letter-spacing: 0.05em;
+    @media (min-width: 1280px) {
+      @include font(2.917rem, 1.667rem, 400);
+    }
   }
   &__progress--link {
     color: $accent-color;
     text-decoration: underline;
     letter-spacing: 0.05em;
+    @media (min-width: 1280px) {
+      @include font(2.917rem, 1.667rem, 400);
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
 .teacher-info-wrap {
@@ -123,7 +163,16 @@
 }
 .wrap {
   @media (min-width: 768px) {
+    margin: 0 auto;
     width: 64.24419%;
     padding-left: 6.15475%;
+  }
+  @media (min-width: 1280px) {
+    width: 59.50413%;
+    padding-left: 6.78333%;
+    padding-right: 2.38888%;
+    &:hover .teacher__icon {
+      fill: $accent-color;
+    }
   }
 }
