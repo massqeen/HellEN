@@ -1,11 +1,7 @@
 .logo {
-<<<<<<< HEAD
-  display: block;
-  width: 8.5rem;
-=======
+
   display: inline-block;
   min-width: 8.5rem;
->>>>>>> dev
   color: #000;
   line-height: 100%;
 
@@ -14,11 +10,7 @@
   }
 
   &__name-site {
-<<<<<<< HEAD
-    display: inline-block;
-    @include font(16/15, 1.5rem, 900);
-    letter-spacing: 0.075rem;
-=======
+
     @include font(17/15, 1.5rem, 800);
     letter-spacing: 0.06em;
 
@@ -26,7 +18,7 @@
       @include font(30/25, 2.5rem, 800);
       letter-spacing: 0;
     }
->>>>>>> dev
+
   }
 
   &__icon {
