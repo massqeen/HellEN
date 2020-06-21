@@ -1,8 +1,9 @@
 <!-- TEACHER -->
 <section class="teacher container">
   <h2 class="teacher__head">Преподаватель</h2>
-  <picture class="teacher__img">
-    <!-- <source
+  <div class="teacher-info-wrap">
+    <picture class="teacher__img">
+      <!-- <source
       srcset="
         ./images/teacher/teacher-desktop.jpg    490w,
         ./images/teacher/teacher-desktop@2x.jpg 980w
@@ -10,101 +11,102 @@
       sizes="490px"
       media="(min-width: 1280px)"
     /> -->
-    <source
-      srcset="
-        ./images/teacher/teacher-desktop.jpg    490w,
-        ./images/teacher/teacher-desktop@2x.jpg 980w
-      "
-      sizes="490px"
-      media="(min-width: 1280px)"
-    />
-    <source
-      srcset="
-        ./images/teacher/teacher-tablet.jpg    247w,
-        ./images/teacher/teacher-tablet@2x.jpg 494w
-      "
-      sizes="247px"
-      media="(min-width: 768px)"
-    />
-    <source
-      srcset="
-        ./images/teacher/teacher-mobile.jpg    280w,
-        ./images/teacher/teacher-mobile@2x.jpg 560w
-      "
-      sizes="280px"
-      media="(min-width: 320px)"
-    />
+      <source
+        srcset="
+          ./images/teacher/teacher-desktop.jpg    490w,
+          ./images/teacher/teacher-desktop@2x.jpg 980w
+        "
+        sizes="490px"
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="
+          ./images/teacher/teacher-tablet.jpg    246w,
+          ./images/teacher/teacher-tablet@2x.jpg 492w
+        "
+        sizes="246px"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./images/teacher/teacher-mobile.jpg    280w,
+          ./images/teacher/teacher-mobile@2x.jpg 560w
+        "
+        sizes="280px"
+        media="(min-width: 320px)"
+      />
 
-    <img
-      class="teacher__img--default"
-      src="./images/teacher/teacher-mobile.jpg"
-      alt="Елена Морева"
-    />
-  </picture>
+      <img
+        class="teacher__img--default"
+        src="./images/teacher/teacher-mobile.jpg"
+        alt="Елена Морева"
+      />
+    </picture>
 
-  <div class="wrap">
-    <h3 class="teacher__secondary-head">Елена Морева</h3>
+    <div class="wrap">
+      <h3 class="teacher__secondary-head">Елена Морева</h3>
 
-    <ul class="teacher__features">
-      <li class="teacher__features-item">
-        <div class="teacher__icon--wrap">
-          <svg class="teacher__icon">
-            <use href="./images/icons/sprite.svg#check"></use>
-          </svg>
-        </div>
-        <p class="teacher__description">
-          Опыт подготовки учеников к ВНО - 6 лет
-        </p>
-      </li>
-      <li class="teacher__features-item">
-        <div class="teacher__icon--wrap">
-          <svg class="teacher__icon">
-            <use href="./images/icons/sprite.svg#check"></use>
-          </svg>
-        </div>
-        <p class="teacher__description">
-          Собственный результат сдачи ВНО - 197 баллов 2 года подряд
-        </p>
-      </li>
-      <li class="teacher__features-item">
-        <div class="teacher__icon--wrap">
-          <svg class="teacher__icon">
-            <use href="./images/icons/sprite.svg#check"></use>
-          </svg>
-        </div>
-        <p class="teacher__description">
-          Сдала на отлично международный аналог ВНО - Кембриджский PET
-          (Preliminary English Test)
-        </p>
-      </li>
-    </ul>
-    <ul class="teacher__progress">
-      <li class="teacher__progress-item">
-        <p class="teacher__description--progress">
-          Высшее образование получила в Институте международных отношений НАУ по
-          специальности переводчик - аналитик.
-        </p>
-      </li>
-      <li class="teacher__progress-item">
-        <p class="teacher__description--progress">
-          В свободное время проходит курсы от лучших университетов мира по
-          эффективному преподаванию и методикам написания сочинений.
-        </p>
-      </li>
-      <li class="teacher__progress-item">
-        <p class="teacher__description--progress">
-          В числе пройденных: English Grammar and Essay Writing (Berkeley),
-          English Grammar&Style (The University of Queesland), How to Write an
-          Essay (Berkeley), Academic and Business Writing (Berkeley), The Art of
-          Teaching (GEMS education), Powerful Tools for Teaching and Learning
-          (University of Houston).
-        </p>
-      </li>
-      <li class="teacher__progress-item">
-        <a href="#" class="teacher__progress-item teacher__progress--link"
-          >Cambridge English Entry Level Certificate</a
-        >
-      </li>
-    </ul>
+      <ul class="teacher__features">
+        <li class="teacher__features-item">
+          <div class="teacher__icon--wrap">
+            <svg class="teacher__icon">
+              <use href="./images/icons/sprite.svg#check"></use>
+            </svg>
+          </div>
+          <p class="teacher__description">
+            Опыт подготовки учеников к ВНО - 6 лет
+          </p>
+        </li>
+        <li class="teacher__features-item">
+          <div class="teacher__icon--wrap">
+            <svg class="teacher__icon">
+              <use href="./images/icons/sprite.svg#check"></use>
+            </svg>
+          </div>
+          <p class="teacher__description">
+            Собственный результат сдачи ВНО - 197 баллов 2 года подряд
+          </p>
+        </li>
+        <li class="teacher__features-item">
+          <div class="teacher__icon--wrap">
+            <svg class="teacher__icon">
+              <use href="./images/icons/sprite.svg#check"></use>
+            </svg>
+          </div>
+          <p class="teacher__description">
+            Сдала на отлично международный аналог ВНО - Кембриджский PET
+            (Preliminary English Test)
+          </p>
+        </li>
+      </ul>
+      <ul class="teacher__progress">
+        <li class="teacher__progress-item">
+          <p class="teacher__description--progress">
+            Высшее образование получила в Институте международных отношений НАУ
+            по специальности переводчик - аналитик.
+          </p>
+        </li>
+        <li class="teacher__progress-item">
+          <p class="teacher__description--progress">
+            В свободное время проходит курсы от лучших университетов мира по
+            эффективному преподаванию и методикам написания сочинений.
+          </p>
+        </li>
+        <li class="teacher__progress-item">
+          <p class="teacher__description--progress">
+            В числе пройденных: English Grammar and Essay Writing (Berkeley),
+            English Grammar&Style (The University of Queesland), How to Write an
+            Essay (Berkeley), Academic and Business Writing (Berkeley), The Art
+            of Teaching (GEMS education), Powerful Tools for Teaching and
+            Learning (University of Houston).
+          </p>
+        </li>
+        <li class="teacher__progress-item">
+          <a href="#" class="teacher__progress-item teacher__progress--link"
+            >Cambridge English Entry Level Certificate</a
+          >
+        </li>
+      </ul>
+    </div>
   </div>
 </section>
