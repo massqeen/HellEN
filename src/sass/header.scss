@@ -1,13 +1,11 @@
-* {
-  outline: 1px solid greenyellow;
-}
+
 
 .header {
   padding-top: 2.4rem;
   padding-bottom: 5rem;
   background-image: url(../images/header/header-bg.png);
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: 25% -12%;
   background-size: 100%;
 
   @include retina(2) {
@@ -18,6 +16,7 @@
     padding-top: 3.8rem;
     padding-bottom: 5.2rem;
     background-image: url(../images/header/header-bg-tablet.png);
+    background-position: 25% -34%;
 
     @include retina(2) {
       background-image: url(../images/header/header-bg-tablet@2x.png);
@@ -28,6 +27,7 @@
     padding-top: 1.8rem;
     padding-bottom: 8.8rem;
     background-image: url(../images/header/header-bg-desktop.png);
+
 
     @include retina(2) {
       background-image: url(../images/header/header-bg-desktop@2x.png);
@@ -46,6 +46,9 @@
 
   &__picture {
     @include flex-center();
+    @include for-size(large-desktop){
+      margin-right: -12rem;
+    }
 
     // @include for-size(tablet) {}
 
@@ -60,9 +63,15 @@
       justify-content: space-between;
       margin-bottom: 11.8rem;
     }
+    @include for-size(tablet-landscape){
+      justify-content: center;
+      align-items: center;
+    }
 
     @include for-size(desktop) {
       margin-bottom: 13rem;
+      justify-content: space-between;
+      align-items: start;
     }
 
     @include for-size(large-desktop) {
@@ -187,17 +196,27 @@
 }
 
 .header-title {
+
+  max-width: 33.3rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 28rem;
   margin-bottom: 3.6rem;
 
   @include for-size(tablet) {
     padding-top: 1.4rem;
-    margin-bottom: 0rem;
-    width: 40%;
+    width: calc(94% - 37rem);
+    max-width: 50rem;
+    margin: 0;
+    .btn-action--position{
+      margin: 0;
+    }
   }
+
 
   @include for-size(desktop) {
     padding-top: 6.8rem;
-    width: 42%;
+    max-width: 62rem;
   }
 
   @include for-size(large-desktop) {
@@ -209,11 +228,13 @@
 
   &__main {
     margin-bottom: 3.2rem;
+
     @include font(29/20, 2rem, 900);
     letter-spacing: 0.03em;
 
     @include for-size(tablet) {
       margin-bottom: 2rem;
+      @include font(33/26, 2.6rem, 900);
     }
 
     @include for-size(desktop) {
@@ -236,7 +257,7 @@
   &__subtitle {
     margin-bottom: 3.6rem;
     @include font(20/15, 1.5rem, 900);
-    letter-spacing: 0.04em;
+    letter-spacing: 0.00em;
 
     @include for-size(tablet) {
       margin-bottom: 3.4rem;
