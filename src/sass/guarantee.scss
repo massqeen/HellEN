@@ -38,7 +38,9 @@
   // .guarantee-item__icon
 
   &__icon {
-    @include abs-position($top: 0, $right, $bottom, $left: 0);
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 1.7rem;
     height: 1.9rem;
     transform: translateX(-50%);
