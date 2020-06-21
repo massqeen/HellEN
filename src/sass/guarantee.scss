@@ -26,8 +26,8 @@
       padding-bottom: 3.3rem;
       @include for-size(tablet) {
         padding-top: 3.6rem;
-        padding-left: calc(4rem + 6.7rem);
-        padding-right: calc(4rem + 5rem);
+        // padding-left: calc(4rem + 6.7rem);
+        // padding-right: calc(4rem + 5rem);
       }
     }
   }
