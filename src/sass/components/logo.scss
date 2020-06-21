@@ -1,4 +1,5 @@
 .logo {
+
   display: inline-block;
   min-width: 8.5rem;
   color: #000;
@@ -9,6 +10,7 @@
   }
 
   &__name-site {
+
     @include font(17/15, 1.5rem, 800);
     letter-spacing: 0.06em;
 
@@ -16,6 +18,7 @@
       @include font(30/25, 2.5rem, 800);
       letter-spacing: 0;
     }
+
   }
 
   &__icon {
@@ -48,6 +51,7 @@
       @include font(1.6, 0.875rem, 700);
       letter-spacing: 0.05em;
     }
+
 
     &--orange {
       margin-right: 0.2rem;
