@@ -1,4 +1,4 @@
-let topButton = document.getElementById('top-button');
+const topButton = document.getElementById('top-button');
 
 function scrollFunction() {
   // if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
@@ -26,3 +26,7 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+topButton.addEventListener('click', () => {
+  topFunction();
+});
