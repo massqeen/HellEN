@@ -1,78 +1,117 @@
 <header class="header">
-    <div class="top-line container">
-        <nav class="main-nav">
+  <div class="top-line container">
+    <nav class="main-nav">
+      //= ./components/logo.html
+      <ul class="menu-list">
+        <li class="menu-list__item">
+          <a href="#" class="menu-list__link">Программа обучения</a>
+        </li>
+        <li class="menu-list__item">
+          <a href="#" class="menu-list__link">о нас</a>
+        </li>
+        <li class="menu-list__item">
+          <a href="#" class="menu-list__link">варианты обучения</a>
+        </li>
+        <li class="menu-list__item">
+          <a href="#" class="menu-list__link">контакты</a>
+        </li>
+      </ul>
+      <a href="#popup-form" class="link-action top-line__link popup-link">
+        консультация по телефону
+      </a>
+    </nav>
 
-            //= ./components/logo.html
-            <ul class="menu-list">
-
-                <li class="menu-list__item">
-                    <a href="#" class="menu-list__link">Программа обучения</a>
-                </li>
-                <li class="menu-list__item">
-                    <a href="#" class="menu-list__link">о нас</a>
-                </li>
-                <li class="menu-list__item">
-                    <a href="#" class="menu-list__link">варианты обучения</a>
-                </li>
-                <li class="menu-list__item">
-                    <a href="#" class="menu-list__link">контакты</a>
-                </li>
-                </ul>
-                <button class="btn-action top-line__btn" type="button">консультация по телефону</button>
-            </div>
-        </nav>
-        <div class="burger">
-            <span class="burger__line"></span>
-            <span class="burger__line"></span>
-            <span class="burger__line"></span>
-        </div>
+    <div class="burger">
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
     </div>
-    <div class="header__main-content container">
-        <div class="header-title">
-        <h1 class="header-title__main">Комплексная подготовка к ВНО <span class="header-title__main--br">по английскому языку</span></h1>
-        <p class="header-title__subtitle">
-            <span class="header-title__subtitle--grey">Просто не будет.</span>Но ты
-            гарантировано наберешь
-            <span class="header-title__subtitle--orange">+25 баллов</span>
-        </p>
-        <button class="btn-action btn-action--position" type="button">хочу на бесплатное занятие</button>
-        </div>
-        <picture class="header__picture">
-            <source srcset="./images/header/header-class-desktop.png 839w, ./images/header/header-class-desktop@2x.png 1677w"
-            sizes="839px" media="(min-width: 1680px)">
-            <source srcset="./images/header/header-class-laptop.png 685w, ./images/header/header-class-laptop@2x.png 1369w"
-            sizes="685px" media="(min-width: 1280px)">
-            <source srcset="./images/header/header-class-tablet.png 370w, ./images/header/header-class-tablet@2x.png 740w"
-            sizes="370px" media="(min-width: 768px)">
-            <source srcset="./images/header/header-class-mobile.png 215w, ./images/header/header-class-mobile@2x.png 430w"
-            sizes="215px" media="(min-width: 320px)">
-            <img class="header-img" src="./images/header/header-class-mobile.png" alt="english teacher with students"/>
-        </picture>
+  </div>
+  <div class="header__main-content container">
+    <div class="header-title">
+      <h1 class="header-title__main">
+        Комплексная подготовка к ВНО
+        <span class="header-title__main--br">по английскому языку</span>
+      </h1>
+      <p class="header-title__subtitle">
+        <span class="header-title__subtitle--grey">Просто не будет.</span>Но ты
+        гарантировано наберешь
+        <span class="header-title__subtitle--orange">+25 баллов</span>
+      </p>
+      <a href="#" class="link-action link-action--position">
+        хочу на бесплатное занятие
+      </a>
     </div>
-    <ul class="advantage-list container">
-        <li class="advantage-list__item">
-            <div class="advantage-list__icon-wrapper">
-                <svg class="advantage-list__icon advantage-list__icon--student">
-                    <use href="./images/icons/sprite.svg#female-student"></use>
-                </svg>
-            </div>
-            <p class="advantage-list__item-description">Адаптированная авторская программа ВНО</p>
-        </li>
-        <li class="advantage-list__item">
-            <div class="advantage-list__icon-wrapper">
-                <svg class="advantage-list__icon advantage-list__icon--mobile">
-                    <use href="./images/icons/sprite.svg#mobile-learn"></use>
-                </svg>
-            </div>
-            <p class="advantage-list__item-description">Современные методики обучения</p>
-        </li>
-        <li class="advantage-list__item">
-            <div class="advantage-list__icon-wrapper">
-                <svg class="advantage-list__icon advantage-list__icon--dollar">
-                    <use href="./images/icons/sprite.svg#dollar"></use>
-                </svg>
-            </div>
-            <p class="advantage-list__item-description">Финансовая гарантия результата</p>
-        </li>
-    </ul>
-</header class="header">
+    <picture class="header__picture">
+      <source
+        srcset="
+          ./images/header/header-class-desktop.png     839w,
+          ./images/header/header-class-desktop@2x.png 1677w
+        "
+        sizes="839px"
+        media="(min-width: 1680px)"
+      />
+      <source
+        srcset="
+          ./images/header/header-class-laptop.png     685w,
+          ./images/header/header-class-laptop@2x.png 1369w
+        "
+        sizes="685px"
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="
+          ./images/header/header-class-tablet.png    370w,
+          ./images/header/header-class-tablet@2x.png 740w
+        "
+        sizes="370px"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./images/header/header-class-mobile.png    215w,
+          ./images/header/header-class-mobile@2x.png 430w
+        "
+        sizes="215px"
+        media="(min-width: 320px)"
+      />
+      <img
+        class="header-img"
+        src="./images/header/header-class-mobile.png"
+        alt="english teacher with students"
+      />
+    </picture>
+  </div>
+  <ul class="advantage-list container">
+    <li class="advantage-list__item">
+      <div class="advantage-list__icon-wrapper">
+        <svg class="advantage-list__icon advantage-list__icon--student">
+          <use href="./images/icons/sprite.svg#female-student"></use>
+        </svg>
+      </div>
+      <p class="advantage-list__item-description">
+        Адаптированная авторская программа ВНО
+      </p>
+    </li>
+    <li class="advantage-list__item">
+      <div class="advantage-list__icon-wrapper">
+        <svg class="advantage-list__icon advantage-list__icon--mobile">
+          <use href="./images/icons/sprite.svg#mobile-learn"></use>
+        </svg>
+      </div>
+      <p class="advantage-list__item-description">
+        Современные методики обучения
+      </p>
+    </li>
+    <li class="advantage-list__item">
+      <div class="advantage-list__icon-wrapper">
+        <svg class="advantage-list__icon advantage-list__icon--dollar">
+          <use href="./images/icons/sprite.svg#dollar"></use>
+        </svg>
+      </div>
+      <p class="advantage-list__item-description">
+        Финансовая гарантия результата
+      </p>
+    </li>
+  </ul>
+</header>

@@ -1,29 +1,48 @@
 <section class="main-form">
   <div class="container">
     <h4 class="main-form__title">
-      Регистрация на <span class="main-form__accent">бесплатную</span> телефонную <span class="main-form__accent">консультацию</span>
-      по нюансам ЗНО
-      по английскому языку
+      Регистрация на
+      <span class="main-form__accent">бесплатную</span> телефонную
+      <span class="main-form__accent">консультацию</span>
+      по нюансам ЗНО по английскому языку
     </h4>
     <p class="main-form__description">
-      Оставь заявку на участие в <span class="main-form__accent">бесплатном занятии.</span>  <span class="main-form__description--second">С вами свяжется консультант
-      и ответит на вопросы.</span>
+      Оставь заявку на участие в
+      <span class="main-form__accent">бесплатном занятии.</span>
+      <span class="main-form__description--second"
+        >С вами свяжется консультант и ответит на вопросы.</span
+      >
     </p>
 
     <form class="form">
       <div class="inputs-wrapper">
-        <input type="text" name="name" class="form-contacts__input invalids" pattern="A-Za-zА-Яа-яЁё" title="Только буквы русского и латинского алфавита" placeholder="Имя *" required="" minlength="3">
-        <input type="tel" id="phone" name="tel"
-                class="form-contacts__input invalids"
-               placeholder="Телефон*" required="" minlength="10" title="Формат: (096) 999 99 99" pattern="[0-9_-]{10}" >
+        <input
+          type="text"
+          name="name"
+          class="form-contacts__input invalids"
+          pattern="[A-Za-zА-Яа-яЁё]+"
+          title="Только буквы русского и латинского алфавита"
+          placeholder="Имя *"
+          required=""
+          minlength="3"
+        />
+        <input
+          type="tel"
+          id="phone"
+          name="tel"
+          class="form-contacts__input invalids"
+          placeholder="Телефон*"
+          required=""
+          minlength="10"
+          title="Формат: (096) 999 99 99"
+          pattern="[0-9_-]{10}"
+        />
       </div>
-      <button class="btn-action" type="submit" id="btn">хочу на бесплатное занятие</button>
+      <button class="link-action" type="submit" id="btn">
+        хочу на бесплатное занятие
+      </button>
     </form>
     <div class="overlay-form"></div>
     <div class="hidden-form"></div>
-
-
-
   </div>
-
 </section>

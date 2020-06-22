@@ -1,4 +1,4 @@
-.btn-action {
+.link-action {
   display: block;
   outline: none;
   margin-left: auto;
@@ -18,19 +18,16 @@
     background-color: #d35526;
   }
 }
-@include for-size(tablet){
-  .btn-action {
+@include for-size(tablet) {
+  .link-action {
     max-width: 26.2rem;
     height: 5rem;
   }
-
-
 }
-@include for-size(desktop){
-  .btn-action {
+@include for-size(desktop) {
+  .link-action {
     max-width: 35.2rem;
     height: 7rem;
     @include font(14/14, 1.4rem, 700);
   }
-
 }
