@@ -58,3 +58,14 @@ body.lock {
   color: #000;
   text-decoration: none;
 }
+
+.close__icon {
+  height: 20px;
+  width: 20px;
+  fill: #5b5b5f;
+  transition: fill 0.2s ease;
+
+  &:hover {
+    fill: $accent-color;
+  }
+}
