@@ -1,0 +1,39 @@
+.top-button {
+  display: inline-block;
+  padding-top: 10px;
+  background-color: $accent-color;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  position: fixed;
+  bottom: 54px;
+  right: 14px;
+  transition: background-color 300ms, opacity 500ms, visibility 500ms;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 50;
+}
+
+.svg-top-button {
+  width: 40px;
+  height: 30px;
+  fill: $primary-white;
+}
+
+.top-button:hover {
+  cursor: pointer;
+  background-color: #ff0000;
+
+  & .svg-top-button {
+    fill: $primary-white;
+  }
+}
+
+.top-button:active {
+  background-color: #00ff00;
+}
+
+.top-button.show {
+  opacity: 1;
+  visibility: visible;
+}

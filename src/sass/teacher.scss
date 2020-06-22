@@ -1,9 +1,6 @@
-// * {
-//   outline: 1px solid palevioletred;
-// }
 .teacher {
   padding-top: 4rem;
-  padding-bottom: 4.6rem;
+  padding-bottom: 3.3rem;
   @include for-size(tablet) {
     padding-top: 4.5rem;
   }

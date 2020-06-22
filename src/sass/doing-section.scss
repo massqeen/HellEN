@@ -78,6 +78,8 @@
 
     &:hover {
       background-color: $accent-color;
+      transform: scale(1.2);
+      box-shadow: 10px 14px 46px 10px rgba(255, 107, 8, 1);
 
       .doing__icon {
         fill: $primary-white;
