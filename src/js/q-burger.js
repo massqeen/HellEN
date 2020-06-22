@@ -1,17 +1,20 @@
+const notLinks = document.querySelectorAll('.link__not-active');
 function burgerMenu() {
   const burger = document.querySelector('.header__burger'),
     menu = document.querySelector('.header__menu'),
     logo = document.querySelector('.logo'),
     links = document.querySelectorAll('.header__link');
-  // notlinks = document.querySelectorAll('.link__not-active');
+
   function toggleMenu() {
     menu.classList.toggle('active');
     burger.classList.toggle('active');
     logo.classList.toggle('active');
     if (menu.classList.contains('active')) {
-      document.body.style.overflow = 'hidden';
+      // document.body.style.overflow = 'hidden';
+      bodyLock();
     } else {
-      document.body.style.overflow = 'visible';
+      // document.body.style.overflow = 'visible';
+      bodyUnLock();
     }
   }
 
@@ -23,7 +26,7 @@ function burgerMenu() {
   });
 }
 
-// [].forEach.call(notLinks, function (el) {
-//   el.addEventListener('click', () => preventDefault());
-// });
+[].forEach.call(notLinks, function (el) {
+  el.addEventListener('click', e => e.preventDefault());
+});
 burgerMenu();
