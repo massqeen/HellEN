@@ -1,9 +1,9 @@
 const notLinks = document.querySelectorAll('.link__not-active');
 function burgerMenu() {
   const burger = document.querySelector('.header__burger'),
-    menu = document.querySelector('.header__menu'),
+    links = document.querySelectorAll('.header__link'),
     logo = document.querySelector('.logo'),
-    links = document.querySelectorAll('.header__link');
+    menu = document.querySelector('.header__menu');
 
   function toggleMenu() {
     menu.classList.toggle('active');
@@ -18,7 +18,7 @@ function burgerMenu() {
     }
   }
 
-  burger.addEventListener('click', e => {
+  burger.addEventListener('click', () => {
     toggleMenu();
   });
   [].forEach.call(links, function (el) {
