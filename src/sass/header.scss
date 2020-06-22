@@ -43,6 +43,7 @@
 
   &__picture {
     @include flex-center();
+
     @include for-size(large-desktop) {
       margin-right: -12rem;
     }
@@ -58,6 +59,7 @@
       justify-content: space-between;
       margin-bottom: 11.8rem;
     }
+
     @include for-size(tablet-landscape) {
       justify-content: center;
       align-items: center;
@@ -95,8 +97,10 @@
     display: none;
 
     @include for-size(tablet) {
-      display: block;
+      @include flex-center();
       margin: 0;
+      padding-left: 1.4rem;
+      padding-right: 1.4rem;
       color: $accent-color;
       background-color: $primary-white;
       border: 2px solid $accent-color;
@@ -109,6 +113,18 @@
         background-color: #d35526;
         border: 2px solid #d35526;
       }
+    }
+
+    @include for-size(desktop) {
+      padding-left: 2.9rem;
+      padding-right: 2.9rem;
+      @include font(12/12, 1.2rem, 700);
+    }
+
+    @include for-size(large-desktop) {
+      padding-left: 3.5rem;
+      padding-right: 3.5rem;
+      @include font(14/14, 1.4rem, 700);
     }
   }
 }
@@ -196,9 +212,7 @@
     width: calc(94% - 37rem);
     max-width: 50rem;
     margin: 0;
-    .link-action--position {
-      margin: 0;
-    }
+
   }
 
   @include for-size(desktop) {
@@ -279,11 +293,27 @@
     }
   }
 
-  & .link-active--position {
+  & .link-action--position {
+    @include flex-center();
+    max-width: 25.2rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+
     @include for-size(tablet) {
       margin-left: 0;
       margin-right: 0;
     }
+
+    @include for-size(desktop) {
+      max-width: 30rem;
+      @include font(12/12, 1.2rem, 700);
+    }
+
+    @include for-size(large-desktop) {
+      max-width: 35.2rem;
+      @include font(14/14, 1.4rem, 700);
+    }
+
   }
 }
 
