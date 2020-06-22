@@ -26,17 +26,18 @@ $(document).ready(function () {
     });
   };
 
-    if (window.screen.width >= 100 && window.screen.width <= 768) {
+  if (window.screen.width >= 100 && window.screen.width <= 768) {
+    console.log(" маленький");
 
-        moreLess(167);
-
-
-    } else if (window.screen.width >= 768) {
-
-        moreLess(310);
+    moreLess(167);
 
 
-    }
+  } else if (window.screen.width >= 768) {
+    console.log(" ,большой");
+    moreLess(310);
+
+
+  }
 
 
 
@@ -44,4 +45,3 @@ $(document).ready(function () {
 
 
 });
-
