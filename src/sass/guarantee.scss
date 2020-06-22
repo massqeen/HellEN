@@ -1,0 +1,118 @@
+// * {
+//   outline: 1px solid palevioletred;
+// }
+.guarantee {
+  padding-top: 4.3rem;
+  // .guarantee__head
+  @include for-size(large-desktop) {
+    padding-top: 3.9rem;
+  }
+
+  &__head {
+    text-align: center;
+    @include font(6.2rem, 2rem, 800);
+    letter-spacing: 0.05em;
+    margin-bottom: 0.7rem;
+    @include for-size(tablet) {
+      @include font(6.254rem, 2.6rem, 800);
+      margin-bottom: 1rem;
+    }
+    @include for-size(desktop) {
+      @include font(6.254rem, 4.2rem, 800);
+      margin-bottom: 2.7rem;
+    }
+    @include for-size(large-desktop) {
+      @include font(6.254rem, 4.583rem, 800);
+      margin-bottom: 3.6rem;
+    }
+  }
+
+  // .guarantee__list
+
+  &__list {
+    // background-color: #f1f1f1;
+
+    // .guarantee__list--bgcolor
+
+    &--bgcolor {
+      padding-left: calc(2rem + 0.6rem);
+      background-color: #f1f1f1;
+      padding-top: 2rem;
+      padding-bottom: 3.5rem;
+      @include for-size(tablet) {
+        padding-top: 3.6rem;
+        margin: 0 4rem;
+        padding-left: 6.7rem;
+        // padding-right: calc(4rem + 5rem);
+      }
+      @include for-size(desktop) {
+        margin: 0 3.5rem;
+        padding-top: 4.4rem;
+        padding-right: 9rem;
+        padding-bottom: 4.3rem;
+        padding-left: 12.5rem;
+      }
+      @include for-size(large-desktop) {
+        margin: 0 17rem;
+        padding-top: 5.7rem;
+        padding-left: 11.9rem;
+        padding-bottom: 4.3rem;
+      }
+    }
+  }
+}
+.guarantee-list {
+  // .guarantee-list__item
+
+  &__item {
+    @include flex-center(flex-start, flex-start);
+    position: relative;
+  }
+  &__item:not(:last-child) {
+    border-left: 1px dotted #bababa;
+    padding-bottom: 1.4rem;
+    @include for-size(desktop) {
+      padding-bottom: 2.5rem;
+    }
+  }
+}
+.guarantee-item {
+  // .guarantee-item__icon
+
+  &__icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.7rem;
+    height: 1.9rem;
+    transform: translateX(-50%);
+    fill: $accent-color;
+    @include for-size(desktop) {
+      width: 2.6rem;
+      height: 2.8rem;
+    }
+  }
+
+  // .guarantee-item__description
+
+  &__description {
+    padding-left: 3rem;
+    @include font(2rem, 1.1rem, 400);
+    color: $main-text;
+    letter-spacing: 0.05em;
+    @include for-size(tablet) {
+      letter-spacing: 0.06em;
+    }
+    @include for-size(desktop) {
+      @include font(2.917rem, 1.8rem, 400);
+      padding-left: 4.6rem;
+    }
+    @include for-size(large-desktop) {
+      @include font(2.917rem, 2.083rem, 400);
+    }
+    // .guarantee-item__description--axent
+    &--axent {
+      color: $accent-color;
+    }
+  }
+}
