@@ -77,6 +77,8 @@
 
   .header__menu {
     position: fixed;
+    display: flex;
+    justify-content: center;
     top: -100%;
     left: 0;
     width: 100%;
@@ -84,7 +86,7 @@
     overflow: auto;
     transition: all 0.3s ease 0s;
     background-color: rgba(0, 0, 0, 0.94);
-    padding: 14.4rem 1rem 2rem 6.6rem;
+    padding: 18.4rem 0rem 0rem 0rem;
     z-index: 2;
   }
 
@@ -93,8 +95,6 @@
   }
 
   .header__list {
-    max-width: 51%;
-    margin: 0 auto;
     @include flex-center(flex-start, flex-start);
     flex-direction: column;
   }
@@ -108,5 +108,23 @@
     letter-spacing: 0.26rem;
     color: $primary-white;
     transition: all 0.1s ease-in-out;
+  }
+}
+@media (max-width: 48em) {
+  .header__link {
+    @include font(2.5, 2rem, 700);
+    letter-spacing: 0.16rem;
+  }
+  .header__menu {
+    padding: 15.9rem 0rem 0rem 0rem;
+  }
+}
+@media (max-width: 20em) {
+  .header__link {
+    @include font(2.2, 2rem, 700);
+    letter-spacing: 0.09rem;
+  }
+  .header__menu {
+    padding-top: 12rem;
   }
 }
