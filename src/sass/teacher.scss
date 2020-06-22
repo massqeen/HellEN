@@ -187,3 +187,18 @@
     padding-right: 9.5rem;
   }
 }
+.polaroid {
+  @include for-size(desktop) {
+    background-color: #fff;
+    padding: 2rem 2rem 7rem;
+    box-shadow: 20px 2rem 3rem $accent-color;
+    filter: grayscale(100%);
+    transform: scale(0.8, 0.8) rotate(5deg);
+    transition: all 0.35s;
+    &:hover {
+      filter: none;
+      transform: scale(1, 1) rotate(0deg);
+      transition: all 0.35s;
+    }
+  }
+}
