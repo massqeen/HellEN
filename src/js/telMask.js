@@ -8,5 +8,5 @@
 
 
 $(document).ready(function() {
-  $("#phone").mask("+38 (099) 999-99-99");
+  $(".phone").mask("+38 (099) 999-99-99");
 });
