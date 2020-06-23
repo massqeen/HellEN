@@ -1,9 +1,9 @@
 .top-button {
   display: inline-block;
-  padding-top: 10px;
+  padding-top: 8px;
   background-color: $accent-color;
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   text-align: center;
   position: fixed;
   bottom: 54px;
@@ -12,25 +12,52 @@
   opacity: 0;
   visibility: hidden;
   z-index: 50;
-}
 
-.svg-top-button {
-  width: 40px;
-  height: 30px;
-  fill: $primary-white;
-}
+  @include for-size(tablet) {
+    padding-top: 10px;
+    width: 50px;
+    height: 50px;
+  }
 
-.top-button:hover {
-  cursor: pointer;
-  background-color: #ff0000;
-
-  & .svg-top-button {
-    fill: $primary-white;
+  @include for-size(desktop) {
+    width: 60px;
+    height: 60px;
   }
 }
 
-.top-button:active {
-  background-color: #00ff00;
+.svg-top-button {
+  width: 26px;
+  height: 20px;
+  fill: $primary-white;
+
+  @include for-size(tablet) {
+    width: 36px;
+    height: 32px;
+  }
+
+  @include for-size(desktop) {
+    width: 44px;
+    height: 38px;
+  }
+}
+
+@media (min-width: 75em) {
+  .top-button:hover {
+    cursor: pointer;
+    background-color: #ff0000;
+
+    & .svg-top-button {
+      fill: $primary-white;
+    }
+  }
+
+  .top-button:active {
+    background-color: $primary-white;
+  }
+
+  .top-button:active .svg-top-button {
+    fill: $accent-color;
+  }
 }
 
 .top-button.show {

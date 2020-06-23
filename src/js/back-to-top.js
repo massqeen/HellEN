@@ -1,14 +1,14 @@
-const topButton = document.getElementById('top-button');
+const topButton = document.querySelector('.top-button');
 
 function scrollFunction() {
-  // if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+  // if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
   //     topButton.style.display = "block";
   // } else {
   //     topButton.style.display = "none";
   // }
   if (
-    document.body.scrollTop > 250 ||
-    document.documentElement.scrollTop > 250
+    document.body.scrollTop > 300 ||
+    document.documentElement.scrollTop > 300
   ) {
     topButton.classList.add('show');
   } else {
@@ -16,7 +16,7 @@ function scrollFunction() {
   }
 }
 
-// When the user scrolls down 250px from the top of the document, show the button
+// When the user scrolls down 300px from the top of the document, show the button
 window.onscroll = function () {
   scrollFunction();
 };
@@ -27,6 +27,6 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-topButton.addEventListener('click', () => {
-  topFunction();
-});
+// topButton.addEventListener('click', () => {
+//   topFunction();
+// });
