@@ -41,21 +41,23 @@
   }
 }
 
-.top-button:hover {
-  cursor: pointer;
-  background-color: #ff0000;
+@media (min-width: 75em) {
+  .top-button:hover {
+    cursor: pointer;
+    background-color: #ff0000;
 
-  & .svg-top-button {
-    fill: $primary-white;
+    & .svg-top-button {
+      fill: $primary-white;
+    }
   }
-}
 
-.top-button:active {
-  background-color: $primary-white;
-}
+  .top-button:active {
+    background-color: $primary-white;
+  }
 
-.top-button:active .svg-top-button {
-  fill: $accent-color;
+  .top-button:active .svg-top-button {
+    fill: $accent-color;
+  }
 }
 
 .top-button.show {

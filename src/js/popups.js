@@ -59,6 +59,10 @@ function popupOpen(curentPopup) {
       popupClose(popupActive, false);
     } else {
       bodyLock();
+      //!not part of the component, just checking state of back-to-top button
+      if (topButton.classList.contains('show')) {
+        topButton.classList.remove('show');
+      }
     }
     curentPopup.classList.add('open');
     curentPopup.addEventListener('click', function (e) {
