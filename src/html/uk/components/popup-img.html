@@ -7,11 +7,41 @@
         </svg>
       </a>
       <div class="popup__image">
-        <img
+        <picture class="certificate-modal__img">
+          <source
+            srcset="
+              ../images/teacher/certificate-desktop.jpg    1240w,
+              ../images/teacher/certificate-desktop@2x.jpg 2480w
+            "
+            sizes="1240px"
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ../images/teacher/certificate-tablet.jpg     620w,
+              ../images/teacher/certificate-tablet@2x.jpg 1240w
+            "
+            sizes="620px"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ../images/teacher/certificate-mobile.jpg    310w,
+              ../images/teacher/certificate-mobile@2x.jpg 620w
+            "
+            sizes="310px"
+            media="(min-width: 320px)"
+          />
+          <img
+            class="header-img"
+            src="../images/teacher/certificate-tablet.jpg"
+            alt="sample of the Cambridge certificate"
+          />
+        </picture>
+        <!-- <img
           src="../images/teacher/certificate.jpg"
           alt="certificate"
-          class="certificate-modal__img"
-        />
+          class="certificate-modal__img"/> -->
       </div>
     </div>
   </div>
