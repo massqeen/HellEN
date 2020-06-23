@@ -1,7 +1,7 @@
 const notLinks = document.querySelectorAll('.link__not-active');
 function burgerMenu() {
   const burger = document.querySelector('.header__burger'),
-    links = document.querySelectorAll('.header__link'),
+    links = document.querySelectorAll('.burger__item-link'),
     logo = document.querySelector('.logo'),
     menu = document.querySelector('.header__menu');
 
