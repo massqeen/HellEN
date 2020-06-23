@@ -574,9 +574,11 @@
                         var target = (a * slidesPerSection + ((b * _.options.slidesPerRow) + c));
                         if (originalSlides.get(target)) {
                             row.appendChild(originalSlides.get(target));
+
                         }
                     }
                     slide.appendChild(row);
+
                 }
                 newSlides.appendChild(slide);
             }
@@ -584,9 +586,10 @@
             _.$slider.empty().append(newSlides);
             _.$slider.children().children().children()
                 .css({
-                    'width':(100 / _.options.slidesPerRow) + '%',
+
                     'display': 'inline-block'
                 });
+
 
         }
 
@@ -610,6 +613,7 @@
         if ( _.options.responsive &&
             _.options.responsive.length &&
             _.options.responsive !== null) {
+
 
             targetBreakpoint = null;
 

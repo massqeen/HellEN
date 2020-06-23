@@ -275,10 +275,11 @@
     });
 });
 
-$(document).ready(function () {
-  $('#phone').mask('+38 (099) 999-99-99');
-});
 
-$(document).ready(function () {
-  $('#phone-popup').mask('+38 (099) 999-99-99');
+
+
+$(document).ready(function() {
+
+  $(".phone").mask("+38 (099) 999-99-99");
+
 });
