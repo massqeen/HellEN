@@ -1,0 +1,127 @@
+<header class="header" id="header">
+  <div class="container">
+    <!-- prettier-ignore -->
+    //= ./components/back-to-top.html
+    //= ./components/burger-menu.html
+
+    <div class="top-line">
+      <nav class="main-nav">
+        //= ./components/logo.html
+        <div class="main-nav--right">
+          <ul class="menu-list">
+            <li class="menu-list__item">
+              <a href="#program" class="menu-list__link">Програма навчання</a>
+            </li>
+            <li class="menu-list__item">
+              <a href="#about" class="menu-list__link">Про нас</a>
+            </li>
+            <li class="menu-list__item">
+              <a href="#doing" class="menu-list__link">Варіанти навчання</a>
+            </li>
+            <li class="menu-list__item">
+              <a href="#contacts" class="menu-list__link">Контакти</a>
+            </li>
+          </ul>
+          <a href="#form" class="link-action top-line__link">
+            Консультація по телефону
+          </a>
+        </div>
+      </nav>
+      <div class="header__burger">
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+      </div>
+    </div>
+  </div>
+  <div class="header__main-content container">
+    <div class="header-title">
+      <h1 class="header-title__main">
+        Комплексна підготовка до ЗНО
+        <span class="header-title__main--br">з английської мови</span>
+      </h1>
+      <p class="header-title__subtitle">
+        <span class="header-title__subtitle--grey">Просто не буде.</span>Проте ти
+        гарантовано набереш
+        <span class="header-title__subtitle--orange">+25 балів</span>
+      </p>
+      <a
+        href="#popup-form"
+        class="link-action link-action--position popup-link link-action--animate"
+      >
+        Хочу на безкоштовне заняття
+      </a>
+    </div>
+    <picture class="header__picture">
+      <source
+        srcset="
+          ../images/header/header-class-desktop.png     839w,
+          ../images/header/header-class-desktop@2x.png 1677w
+        "
+        sizes="839px"
+        media="(min-width: 1680px)"
+      />
+      <source
+        srcset="
+          ../images/header/header-class-laptop.png     685w,
+          ../images/header/header-class-laptop@2x.png 1369w
+        "
+        sizes="685px"
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="
+          ../images/header/header-class-tablet.png    370w,
+          ../images/header/header-class-tablet@2x.png 740w
+        "
+        sizes="370px"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ../images/header/header-class-mobile.png    215w,
+          ../images/header/header-class-mobile@2x.png 430w
+        "
+        sizes="215px"
+        media="(min-width: 320px)"
+      />
+      <img
+        class="header-img"
+        src="../images/header/header-class-mobile.png"
+        alt="english teacher with students"
+      />
+    </picture>
+  </div>
+  <ul class="advantage-list container">
+    <li class="advantage-list__item">
+      <div class="advantage-list__icon-wrapper">
+        <svg class="advantage-list__icon advantage-list__icon--student">
+          <use href="../images/icons/sprite.svg#female-student"></use>
+        </svg>
+      </div>
+      <p class="advantage-list__item-description">
+        Адаптована авторська програма ЗНО
+      </p>
+    </li>
+    <li class="advantage-list__item">
+      <div class="advantage-list__icon-wrapper">
+        <svg class="advantage-list__icon advantage-list__icon--mobile">
+          <use href="../images/icons/sprite.svg#mobile-learn"></use>
+        </svg>
+      </div>
+      <p class="advantage-list__item-description">
+        Сучасні методики навчання
+      </p>
+    </li>
+    <li class="advantage-list__item">
+      <div class="advantage-list__icon-wrapper">
+        <svg class="advantage-list__icon advantage-list__icon--dollar">
+          <use href="../images/icons/sprite.svg#dollar"></use>
+        </svg>
+      </div>
+      <p class="advantage-list__item-description">
+        Фінансова гарантія результату
+      </p>
+    </li>
+  </ul>
+</header>

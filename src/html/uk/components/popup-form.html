@@ -1,0 +1,54 @@
+<div id="popup-form" class="popup">
+  <div class="popup__body">
+    <div class="popup__content">
+      <a href="#" class="popup__close close-popup">
+        <svg class="close__icon">
+          <use href="../images/icons/close.svg#icon-close"></use>
+        </svg>
+      </a>
+      <h4 class="main-form__title">
+        Реєстрація на
+        <span class="main-form__accent">безкоштовну</span> телефонну
+        <span class="main-form__accent">консультацію</span>
+        по нюансах ЗНО з англійської мови
+      </h4>
+      <p class="main-form__description">
+        Залиш заявку на участь в
+        <span class="main-form__accent">безкоштовному занятті.</span>
+        <span class="main-form__description--second"
+          >З вами зв'яжеться консультант та відповість на питання.</span
+        >
+      </p>
+      <form class="form">
+        <div class="inputs-wrapper">
+          <input
+            type="text"
+            name="name"
+            class="form-contacts__input invalids"
+            pattern="[A-Za-zА-Яа-яЁёЇї]+"
+            title="Лише літери української та латинської абетки"
+            placeholder="Ім'я *"
+            required=""
+            minlength="2"
+          />
+          <input
+            type="tel"
+            id="phone"
+            name="tel"
+            class="form-contacts__input invalids"
+            placeholder="Телефон *"
+            required=""
+            minlength="10"
+            title="Формат: (096) 999 99 99"
+            pattern="[0-9_-]{10}"
+          />
+        </div>
+        <button class="link-action" type="submit" id="btn">
+          Хочу на безкоштовне заняття
+        </button>
+      </form>
+      <div class="overlay-form"></div>
+      <div class="hidden-form"></div>
+    </div>
+  </div>
+</div>
