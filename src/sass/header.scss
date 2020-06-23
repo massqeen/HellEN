@@ -326,7 +326,7 @@
     width: 5.8rem;
     height: 5.8rem;
     @include flex-center();
-    border: .2rem solid $accent-color;
+    border: 2px solid $accent-color;
 
     @include for-size(desktop) {
       width: 10.2rem;
@@ -337,8 +337,8 @@
       content: '';
       display: block;
       position: absolute;
-      right: -0.3rem;
-      width: 0.4rem;
+      right: -0.8rem;
+      width: 1.6rem;
       height: 3.6rem;
       background-color: $primary-white;
 
