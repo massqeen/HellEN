@@ -98,7 +98,6 @@
     width: 2.5rem;
     height: 2.5rem;
     @include for-size(desktop) {
-      fill: $main-text;
       width: 3.5rem;
       height: 3.2rem;
       transition: all 0.3s ease-in-out;
@@ -177,9 +176,6 @@
     min-width: 59.50413%;
     padding-left: 8.2rem;
     padding-right: 2.8rem;
-    &:hover .teacher__icon {
-      fill: $accent-color;
-    }
   }
   @include for-size(large-desktop) {
     padding-left: 9rem;
@@ -188,12 +184,12 @@
   }
 }
 .polaroid {
-  @include for-size(desktop) {
+  @include for-size(tablet-landscape) {
     background-color: #fff;
     padding: 2rem 2rem 7rem;
     box-shadow: 20px 2rem 3rem $accent-color;
     filter: grayscale(100%);
-    transform: scale(0.8, 0.8) rotate(5deg);
+    transform: scale(0.8, 0.8) rotate(2deg);
     transition: all 0.35s;
     &:hover {
       filter: none;
