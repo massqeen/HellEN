@@ -1,0 +1,419 @@
+.header {
+  padding-top: 2.4rem;
+  padding-bottom: 5rem;
+  background-image: url(../images/header/header-bg.png);
+  background-repeat: no-repeat;
+  background-position: 25% -12%;
+  background-size: 100%;
+
+  @include retina(2) {
+    background-image: url(../images/header/header-bg@2x.png);
+  }
+
+  @include for-size(tablet) {
+    padding-top: 3.8rem;
+    padding-bottom: 5.2rem;
+    background-image: url(../images/header/header-bg-tablet.png);
+    background-position: 25% -34%;
+
+    @include retina(2) {
+      background-image: url(../images/header/header-bg-tablet@2x.png);
+    }
+  }
+
+  @include for-size(desktop) {
+    padding-top: 1.8rem;
+    padding-bottom: 8.8rem;
+    background-image: url(../images/header/header-bg-desktop.png);
+
+    @include retina(2) {
+      background-image: url(../images/header/header-bg-desktop@2x.png);
+    }
+  }
+
+  @include for-size(large-desktop) {
+    padding-top: 1rem;
+    padding-bottom: 12.8rem;
+    background-image: url(../images/header/header-bg-large.png);
+
+    @include retina(2) {
+      background-image: url(../images/header/header-bg-large@2x.png);
+    }
+  }
+
+  &__picture {
+    @include flex-center();
+
+    @include for-size(large-desktop) {
+      margin-right: -12rem;
+    }
+
+    // @include for-size(tablet) {}
+  }
+
+  &__main-content {
+    margin-bottom: 8rem;
+
+    @include for-size(tablet) {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 11.8rem;
+    }
+
+    @include for-size(tablet-landscape) {
+      justify-content: center;
+      align-items: center;
+    }
+
+    @include for-size(desktop) {
+      margin-bottom: 13rem;
+      justify-content: space-between;
+      align-items: start;
+    }
+
+    @include for-size(large-desktop) {
+      margin-bottom: 11rem;
+    }
+  }
+}
+
+.top-line {
+  @include flex-center(space-between, center);
+  margin-bottom: 5.2rem;
+
+  @include for-size(tablet) {
+    margin-bottom: 6rem;
+  }
+
+  @include for-size(desktop) {
+    margin-bottom: 2.8rem;
+  }
+
+  @include for-size(large-desktop) {
+    margin-bottom: 3.2rem;
+  }
+
+  &__link {
+    display: none;
+
+    @include for-size(tablet) {
+      @include flex-center();
+      margin: 0;
+      padding-left: 1.4rem;
+      padding-right: 1.4rem;
+      color: $accent-color;
+      background-color: $primary-white;
+      border: 2px solid $accent-color;
+      letter-spacing: 0.1em;
+      transition: all 0.3s ease-in-out;
+
+      &:hover,
+      &:focus {
+        color: $primary-white;
+        background-color: #d35526;
+        border: 2px solid #d35526;
+      }
+    }
+
+    @include for-size(desktop) {
+      padding-left: 2.9rem;
+      padding-right: 2.9rem;
+      @include font(12/12, 1.2rem, 700);
+    }
+
+    @include for-size(large-desktop) {
+      padding-left: 3.5rem;
+      padding-right: 3.5rem;
+      @include font(14/14, 1.4rem, 700);
+    }
+  }
+}
+
+.main-nav {
+  @include for-size(tablet) {
+    width: 90%;
+    @include flex-center(space-between, center);
+  }
+
+  @include for-size(desktop) {
+    width: 100%;
+  }
+
+  &--right {
+    @include for-size(desktop) {
+      @include flex-center();
+    }
+  }
+}
+
+.menu-list {
+  display: none;
+
+  @include for-size(desktop) {
+    @include flex-center(space-between, center);
+  }
+
+  &__item {
+    @include for-size(desktop) {
+      margin-right: 4.4rem;
+    }
+  }
+
+  &__link {
+    @include for-size(desktop) {
+      @include font(110/12, 1.2rem, 700);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #b9b9b9;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+
+      &:hover,
+      :focus {
+        color: $accent-color;
+      }
+    }
+
+    @include for-size(large-desktop) {
+      @include font(110/14, 1.4rem, 700);
+    }
+  }
+}
+
+.header-title {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 28rem;
+  margin-bottom: 3.6rem;
+
+  @include for-size(tablet) {
+    padding-top: 1.4rem;
+    width: calc(94% - 37rem);
+    max-width: 50rem;
+    margin: 0;
+  }
+
+  @include for-size(desktop) {
+    padding-top: 6.8rem;
+    max-width: 62rem;
+  }
+
+  @include for-size(large-desktop) {
+    padding-top: 9rem;
+    width: 46%;
+  }
+
+  // .header-title__main
+
+  &__main {
+    margin-bottom: 3.2rem;
+
+    @include font(29/20, 2rem, 900);
+    letter-spacing: 0.03em;
+
+    @include for-size(tablet) {
+      margin-bottom: 2rem;
+      @include font(33/26, 2.6rem, 900);
+    }
+
+    @include for-size(desktop) {
+      margin-bottom: 2.8rem;
+      @include font(58/48, 4.8rem, 900);
+    }
+
+    @include for-size(large-desktop) {
+      @include font(75/58, 5.8rem, 900);
+    }
+
+    &--br {
+      display: block;
+    }
+  }
+
+  // .header-title__subtitle
+
+  &__subtitle {
+    margin-bottom: 3.6rem;
+    @include font(20/15, 1.5rem, 900);
+    letter-spacing: 0em;
+
+    @include for-size(tablet) {
+      margin-bottom: 3.4rem;
+    }
+
+    @include for-size(desktop) {
+      margin-bottom: 6.2rem;
+      @include font(26/18, 1.8rem, 900);
+    }
+
+    @include for-size(large-desktop) {
+      margin-bottom: 4.6rem;
+      @include font(33/20, 2rem, 900);
+    }
+
+    // .header-title__subtitle--grey
+
+    &--grey {
+      display: block;
+      color: #c7c7c7;
+      font-weight: 500;
+    }
+
+    // .header-title__subtitle--orange
+
+    &--orange {
+      display: block;
+      color: $accent-color;
+
+      @include for-size(desktop) {
+        display: inline-block;
+      }
+    }
+  }
+
+  & .link-action--position {
+    @include flex-center();
+    max-width: 25.2rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+
+    @include for-size(tablet) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    @include for-size(desktop) {
+      max-width: 30rem;
+      @include font(12/12, 1.2rem, 700);
+    }
+
+    @include for-size(large-desktop) {
+      max-width: 35.2rem;
+      @include font(14/14, 1.4rem, 700);
+    }
+  }
+}
+
+.header-img {
+  display: block;
+}
+
+.advantage-list {
+  @include for-size(tablet) {
+    @include flex-center(space-between, center);
+  }
+
+  &__item {
+    @include flex-center();
+    padding-left: 1.8rem;
+
+    &:not(:last-child) {
+      margin-bottom: 2.2rem;
+    }
+
+    @include for-size(tablet) {
+      padding-left: 0;
+      width: 33.3%;
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__icon-wrapper {
+    position: relative;
+    width: 5.8rem;
+    height: 5.8rem;
+    @include flex-center();
+    border: 2px solid $accent-color;
+
+    @include for-size(desktop) {
+      width: 10.2rem;
+      height: 10.2rem;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      right: -0.8rem;
+      width: 1.6rem;
+      height: 3.6rem;
+      background-color: $primary-white;
+
+      @include for-size(desktop) {
+        height: 7.3rem;
+      }
+    }
+  }
+
+  &__icon {
+    fill: $accent-color;
+
+    &--student {
+      width: 3rem;
+      height: 3.6rem;
+
+      @include for-size(desktop) {
+        width: 4rem;
+        height: 4.5rem;
+      }
+    }
+
+    &--mobile {
+      width: 3.4rem;
+      height: 3.4rem;
+
+      @include for-size(desktop) {
+        width: 4.4rem;
+        height: 4.5rem;
+      }
+    }
+
+    &--dollar {
+      width: 3rem;
+      height: 3.4rem;
+
+      @include for-size(desktop) {
+        width: 4rem;
+        height: 4.8rem;
+      }
+    }
+  }
+
+  // .advantage-list__item-description
+
+  &__item-description {
+    padding-left: 1rem;
+    max-width: 14.4rem;
+    @include font(20/13, 1.3rem, 700);
+    letter-spacing: 0.05em;
+
+    @include for-size(desktop) {
+      padding-left: 0;
+      max-width: 30rem;
+      position: relative;
+      margin-left: -2rem;
+      @include font(28/18, 1.8rem, 700);
+    }
+
+    @include for-size(large-desktop) {
+      max-width: 36rem;
+      @include font(33/21, 2.1rem, 700);
+    }
+  }
+}
+
+.overlay-link {
+  @media (max-width: 47.94em) {
+    color: $accent-color;
+    background-color: transparent;
+    border: 2px solid $accent-color;
+    transition: all 0.3s ease-in-out;
+  }
+
+  @include for-size(tablet) {
+    display: none;
+  }
+}

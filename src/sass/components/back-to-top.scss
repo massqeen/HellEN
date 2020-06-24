@@ -1,0 +1,66 @@
+.top-button {
+  display: inline-block;
+  padding-top: 8px;
+  background-color: $accent-color;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  position: fixed;
+  bottom: 54px;
+  right: 14px;
+  transition: background-color 300ms, opacity 500ms, visibility 500ms;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 50;
+
+  @include for-size(tablet) {
+    padding-top: 10px;
+    width: 50px;
+    height: 50px;
+  }
+
+  @include for-size(desktop) {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.svg-top-button {
+  width: 26px;
+  height: 20px;
+  fill: $primary-white;
+
+  @include for-size(tablet) {
+    width: 36px;
+    height: 32px;
+  }
+
+  @include for-size(desktop) {
+    width: 44px;
+    height: 38px;
+  }
+}
+
+@media (min-width: 75em) {
+  .top-button:hover {
+    cursor: pointer;
+    background-color: #ff0000;
+
+    & .svg-top-button {
+      fill: $primary-white;
+    }
+  }
+
+  .top-button:active {
+    background-color: $primary-white;
+  }
+
+  .top-button:active .svg-top-button {
+    fill: $accent-color;
+  }
+}
+
+.top-button.show {
+  opacity: 1;
+  visibility: visible;
+}

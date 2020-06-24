@@ -1,0 +1,40 @@
+@import 'minireset.scss';
+@import 'normalize.scss';
+@import 'fonts.scss';
+@import 'vars.scss';
+@import 'mixins.scss';
+@import './components/system-slider.scss';
+@import './components/container.scss';
+@import './teacher.scss';
+@import './components/btn-action.scss';
+@import './components/burger-menu.scss';
+@import './components/slider.scss';
+@import './components/title-section.scss';
+@import './components/logo.scss';
+@import './components/popup.scss';
+@import './components/popup-thanks.scss';
+@import './components/back-to-top.scss';
+@import './form.scss';
+
+:root {
+  font-size: 62.5%;
+}
+
+//reset margin from normalize
+h1 {
+  margin-top: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  @include font(20/11, 1.1rem, 400);
+  color: $main-text;
+  background-color: #fff;
+}
+
+@import 'header.scss';
+@import 'main-problems-section.scss';
+@import 'doing-section.scss';
+@import 'program-section.scss';
+@import 'guarantee.scss';
+@import 'footer.scss';

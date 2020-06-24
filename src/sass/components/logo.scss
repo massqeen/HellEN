@@ -1,0 +1,65 @@
+.logo {
+  display: inline-block;
+  min-width: 8.5rem;
+  color: #000;
+  line-height: 100%;
+
+  @include for-size(tablet) {
+    min-width: 12.1rem;
+  }
+
+  &__name-site {
+    @include font(17/15, 1.5rem, 800);
+    letter-spacing: 0.06em;
+
+    @include for-size(tablet) {
+      @include font(30/25, 2.5rem, 800);
+      letter-spacing: 0;
+    }
+  }
+
+  &__icon {
+    background-image: url(../images/icons/fire.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1.5rem 2.2rem;
+    display: inline-block;
+    margin-bottom: -0.5rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    width: 1.6rem;
+    height: 2.4rem;
+    fill: $accent-color;
+
+    @include for-size(tablet) {
+      background-size: 2.1rem 3rem;
+      width: 2.1rem;
+      height: 3rem;
+    }
+  }
+
+  &__slogan {
+    display: inline-block;
+    text-transform: uppercase;
+    @include font(1.2, 0.5rem, 700);
+    letter-spacing: 0.04em;
+
+    @include for-size(tablet) {
+      @include font(1.6, 0.875rem, 700);
+      letter-spacing: 0.05em;
+    }
+
+    &--orange {
+      margin-right: 0.2rem;
+      color: $accent-color;
+    }
+  }
+}
+
+.logo.active {
+  position: relative;
+  color: $primary-white;
+  left: 0;
+  top: 0;
+  z-index: 4;
+}
