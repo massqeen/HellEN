@@ -2,12 +2,14 @@
 
 # HellEN Адский английский
 
-- ### Участники:
-  - **[Артур Плющевский](https://github.com/massqeen)**
-  - **[Ярослав Пальцун](https://github.com/yaarchee)**
-  - **[Александр Решетило](https://github.com/Areshetilo)**
-  - **[Максим Данилов](https://github.com/MaxDanylov)**
-  - **[Дарья Кобехно]()**
+- ### Разработчики:
+  - **[Артур Плющевский](https://github.com/massqeen)** - Team-Lead, владыка
+    репозитория
+  - **[Ярослав Пальцун](https://github.com/yaarchee)** - технический директор
+  - **[Александр Решетило](https://github.com/Areshetilo)** - ночной
+    исправляющий
+  - **[Максим Данилов](https://github.com/MaxDanylov)** - ночной верстающий
+  - **[Дарья Кобехно]()** -
   - **[Илья Карпов](https://github.com/IlliaKarpoff)**
   - **[Елена Кукушкина](https://github.com/elena-2020-web)**
   - **[Евгений Штыгайло](https://github.com/evgeshti)**
