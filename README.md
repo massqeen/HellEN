@@ -24,6 +24,6 @@
 
 - ### Рабочая версия продукта:
 
-- **[Рабочий продукт](http://fls.guru/www/massqeen/HellEN/)**
+  - **[Рабочий продукт](http://fls.guru/www/massqeen/HellEN/)**
 
 #### Сборку проекта осуществляли с помощью **[Gulp Starter Kit](https://github.com/luxplanjay/gulp-starter-kit)**
