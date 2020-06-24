@@ -1,6 +1,6 @@
 ## Командный проект команды
 
-# <p align="center"><img src="/images/icons/favicon.png" width="20">HellEN Адский английский</p>
+# <p align="center"><img src="./images/icons/favicon.png" width="20">HellEN Адский английский</p>
 
 - ### Разработчики:
   - **[Артур Плющевский](https://github.com/massqeen)** - Team-Lead, владыка
