@@ -1,6 +1,6 @@
 ## Командный проект команды
 
-# HellEN Адский английский
+# ![alt text](src/images/icons/favicon.png)HellEN Адский английский
 
 - ### Разработчики:
   - **[Артур Плющевский](https://github.com/massqeen)** - Team-Lead, владыка
