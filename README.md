@@ -14,4 +14,4 @@
 
 ### Ссылки:
 
-#### Сборку проекта осуществляли с помощью `[Gulp Starter Kit](https://github.com/luxplanjay/gulp-starter-kit)`
+#### Сборку проекта осуществляли с помощью **[Gulp Starter Kit](https://github.com/luxplanjay/gulp-starter-kit)**
