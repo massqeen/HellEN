@@ -1,4 +1,4 @@
-## Командный проект команды **PushMaster**
+## **PushMaster** team project
 
 # <p><img src="https://t3.ftcdn.net/jpg/02/84/46/60/240_F_284466038_lOHcM8pRGyigojkyV2M9CSQpimCTcqeD.jpg" width="30">HellEN Адский английский</p>
 
