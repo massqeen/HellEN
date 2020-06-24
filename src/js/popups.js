@@ -2,14 +2,10 @@ const popupLinks = document.querySelectorAll('.popup-link');
 const body = document.querySelector('body');
 const lockPadding = document.querySelectorAll('.lock-padding');
 const buttonForm = document.getElementById('btn'); //get button form
+const buttonFormPopup = document.getElementById('btnPopup');
 const buttonFormLink = document.getElementById('clickBtn'); //get hidden form link
+const buttonFormLinkPopup = document.getElementById('clickBtnPopup');
 const virtualClick = new Event('click'); //get virtual click event
-
-//слушаем клик по кнопке формы и передаем виртуальный клик на скрытую ссылку
-buttonForm.addEventListener('click', () => {
-  buttonFormLink.dispatchEvent(virtualClick);
-  console.log('push it mthfcker');
-});
 
 let unlock = true;
 
@@ -109,6 +105,15 @@ document.addEventListener('keydown', function (e) {
     const popupActive = document.querySelector('.popup.open');
     popupClose(popupActive);
   }
+});
+
+//слушаем клик по кнопке формы и передаем виртуальный клик на скрытую ссылку
+buttonForm.addEventListener('click', () => {
+  buttonFormLink.dispatchEvent(virtualClick);
+});
+
+buttonFormPopup.addEventListener('click', () => {
+  buttonFormLinkPopup.dispatchEvent(virtualClick);
 });
 
 // полифилы на closest и matches
