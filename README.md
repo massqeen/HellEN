@@ -1,6 +1,6 @@
 ## Командный проект команды
 
-# <p><img src="https://t3.ftcdn.net/jpg/02/84/46/60/240_F_284466038_lOHcM8pRGyigojkyV2M9CSQpimCTcqeD.jpg" width="40">HellEN Адский английский</p>
+# <p><img src="https://t3.ftcdn.net/jpg/02/84/46/60/240_F_284466038_lOHcM8pRGyigojkyV2M9CSQpimCTcqeD.jpg" width="30">HellEN Адский английский</p>
 
 - ### Разработчики:
   - **[Артур Плющевский](https://github.com/massqeen)** - Team-Lead, владыка
