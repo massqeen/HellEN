@@ -107,15 +107,6 @@ document.addEventListener('keydown', function (e) {
   }
 });
 
-//слушаем клик по кнопке формы и передаем виртуальный клик на скрытую ссылку
-buttonForm.addEventListener('click', () => {
-  buttonFormLink.dispatchEvent(virtualClick);
-});
-
-buttonFormPopup.addEventListener('click', () => {
-  buttonFormLinkPopup.dispatchEvent(virtualClick);
-});
-
 // полифилы на closest и matches
 (function () {
   // проверяем поддержку
