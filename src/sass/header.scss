@@ -128,18 +128,40 @@
     }
   }
 }
+.translator {
+  @include flex-center();
+  padding: 0 2rem;
+
+  &__link {
+    @include font(14/11, 1.1rem, 300);
+    display: block;
+    padding: .3rem;
+    color: #c7c7c7;
+    
+    &--uk {
+      // border-right: .1rem solid $accent-color;
+      border-right: .1rem solid #c7c7c7;
+    }
+
+    &:hover,
+    &:focus,
+    &:active       {
+      color: $accent-color;
+    }
+  }
+}
 
 .main-nav {
-  @include for-size(tablet) {
     width: 90%;
     @include flex-center(space-between, center);
-  }
 
   @include for-size(desktop) {
     width: 100%;
   }
 
   &--right {
+    display: flex;
+    
     @include for-size(desktop) {
       @include flex-center();
     }
@@ -273,7 +295,7 @@
 
   & .link-action--position {
     @include flex-center();
-    max-width: 25.2rem;
+    max-width: 26.4rem;
     padding-left: 0.8rem;
     padding-right: 0.8rem;
 

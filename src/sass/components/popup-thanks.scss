@@ -1,3 +1,18 @@
+.popup__content-img-wrapper {
+  margin-bottom: 10rem;
+
+  @media (orientation: landscape) {
+    @include flex-center(space-between, center);
+  }
+  @include for-size(tablet) {
+    @include flex-center(space-between, center);
+  }
+}
+
+.popup__content-insta-wrap {
+  text-align: center;
+}
+
 .main-form__description--color {
   color: $primary-white;
   margin-bottom: 1.5rem;
@@ -7,4 +22,7 @@
 }
 .logo__slogan--color {
   color: $primary-white;
+}
+.logo--center {
+  text-align: center;
 }
