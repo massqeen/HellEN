@@ -66,14 +66,14 @@
 .image-anchor {
   background-repeat: no-repeat;
   background-size: 24.7rem 17.1rem;
-  background-position: right -10rem bottom 58rem;
+  background-position: right -10rem bottom 55rem;
   background-image: url(../images/program/bcg-mobile.jpg);
   @include retina(2) {
     background-image: url(../images/program/bcg-mobile@2x.jpg);
   }
 }
 
-@media (min-width: 57px) and (max-width: 76.7px) {
+@media (min-width: 57em) and (max-width: 76.7em) {
   .image-anchor {
     background-position: right -7rem bottom 39rem;
   }
@@ -183,7 +183,7 @@
   .image-anchor {
     background-image: url(../images/program/bcg-desktop.jpg);
     background-size: 70rem 48.5rem;
-    background-position: left -16rem bottom 32.5rem;
+    background-position: left -16rem bottom 27.5rem;
     @include retina(2) {
       background-image: url(../images/program/bcg-desktop@2x.jpg);
     }
@@ -276,5 +276,10 @@
         letter-spacing: 0.94px;
       }
     }
+  }
+}
+@media (min-width: 81.25em) {
+  .image-anchor {
+    background-position: left -17rem bottom 25.5rem;
   }
 }
