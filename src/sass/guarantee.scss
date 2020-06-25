@@ -37,18 +37,15 @@
       padding-right: 1rem;
       @include for-size(tablet) {
         padding-top: 3.6rem;
-        margin: 0 4rem;
         padding-left: 6.7rem;
       }
       @include for-size(desktop) {
-        margin: 0 3.5rem;
         padding-top: 4.4rem;
         padding-right: 9rem;
         padding-bottom: 4.3rem;
         padding-left: 12.5rem;
       }
       @include for-size(large-desktop) {
-        margin: 0 17rem;
         padding-top: 5.7rem;
         padding-left: 11.9rem;
         padding-bottom: 4.3rem;
