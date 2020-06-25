@@ -69,7 +69,8 @@
   height: 0.2rem;
   background-color: #ff6b08;
   position: absolute;
-  bottom: 6%;
+  bottom: 50%;
+  z-index: 1;
   border-radius: 0.1rem;
   cursor: pointer;
   @extend %transition;
@@ -85,7 +86,7 @@
 }
 
 .slick-prev {
-  left: 10%;
+  left: -6%;
   transform: translate(-50%);
 
   &::before {
@@ -120,7 +121,7 @@
 
 
 .slick-next {
-  right: 10%;
+  right: -6%;
   transform: translate(50%);
 
   &::before {
@@ -281,6 +282,16 @@
 }
 
 @include for-size(tablet) {
+  .slick-slider{
+    position: static;
+  }
+
+  .wrap-sliders {
+
+    width: 96%;
+
+  }
+
   .main-slider {
     padding-top: 4rem;
 
@@ -365,6 +376,12 @@
     .program-section__title {
       margin-bottom: 3.7rem;
     }
+  }
+
+  .wrap-sliders {
+
+    width: 100%;
+
   }
 
   .slider {
