@@ -1,6 +1,11 @@
 const popupLinks = document.querySelectorAll('.popup-link');
 const body = document.querySelector('body');
 const lockPadding = document.querySelectorAll('.lock-padding');
+const buttonForm = document.getElementById('btn'); //get button form
+const buttonFormPopup = document.getElementById('btnPopup');
+const buttonFormLink = document.getElementById('clickBtn'); //get hidden form link
+const buttonFormLinkPopup = document.getElementById('clickBtnPopup');
+const virtualClick = new Event('click'); //get virtual click event
 
 let unlock = true;
 
