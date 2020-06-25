@@ -5,7 +5,7 @@
 
 .advantages__list {
   background-color: $primary-white;
-  padding: 1.4rem 1.8rem 3.4rem 1.8rem;
+  padding: 1.3rem 1.4rem 2.4rem 1.8rem;
   @include flex-center(flex-start, flex-start);
   flex: 0 0 100%;
   flex-direction: column;
@@ -15,11 +15,11 @@
   }
 
   @include for-size(tablet) {
-    padding: 2.8rem 9.8rem 3.4rem 9.8rem;
+    padding: 2.8rem 6.6rem 3.4rem 9.8rem;
   }
 
   @include for-size(desktop) {
-    padding: 4.5rem 9.8rem 4.2rem 9.8rem;
+    padding: 4.5rem 9.8rem 4.2rem 9.1rem;
   }
 }
 
