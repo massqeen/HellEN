@@ -4,12 +4,20 @@
   }
 }
 .header__burger {
-  position: relative;
-  width: 24px;
-  height: 14px;
+  width: 28px;
+  height: 18px;
+  background-color: $primary-white;
+
   z-index: 3;
-  color: $primary-white;
+  position: fixed;
+  top: 36px;
+  right: 20px;
   cursor: pointer;
+
+  @include for-size(tablet) {
+    top: 54px;
+    right: 40px;
+  }
 
   @include for-size(desktop) {
     display: none;
@@ -26,110 +34,114 @@
   }
 }
 
-@media (max-width: 79.94em) {
-  body.lock {
-    overflow: hidden;
-  }
+body.lock {
+  overflow: hidden;
+}
 
-  .header__burger {
-    position: relative;
-    z-index: 3;
-  }
-  .header__burger-line {
-    position: absolute;
-    background-color: $main-text;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    transition: all 0.3s ease-in-out;
-  }
+.header__burger-line {
+  position: absolute;
+  background-color: $main-text;
+  left: 2px;
+  width: 24/28 * 100%;
+  height: 2px;
+  transition: all 0.3s ease-in-out;
+}
 
-  .header__burger-line:first-child {
-    top: 0;
-  }
-  .header__burger-line:nth-child(2) {
-    top: 6px;
-  }
-  .header__burger-line:last-child {
-    bottom: 0;
-  }
+.header__burger-line:first-child {
+  top: 2px;
+}
+.header__burger-line:nth-child(2) {
+  top: 8px;
+}
+.header__burger-line:last-child {
+  bottom: 2px;
+}
 
-  .header__burger.active .header__burger-line {
-    background-color: $primary-white;
-  }
+.header__burger.active {
+  background-color: transparent;
+}
 
-  .header__burger.active:active .header__burger-line {
-    background-color: $accent-color;
-  }
+.header__burger.active .header__burger-line {
+  background-color: $primary-white;
+}
 
-  .header__burger.active .header__burger-line:nth-child(2) {
-    transform: scale(0);
-  }
+.header__burger.active:active .header__burger-line {
+  background-color: $accent-color;
+}
 
-  .header__burger.active .header__burger-line:first-child {
-    transform: rotate(45deg);
-    top: 6px;
-  }
-  .header__burger.active .header__burger-line:last-child {
-    transform: rotate(-45deg);
-    bottom: 6px;
-  }
+.header__burger.active .header__burger-line:nth-child(2) {
+  transform: scale(0);
+}
 
-  .header__menu {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    top: -100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    transition: all 0.3s ease 0s;
-    background-color: rgba(0, 0, 0, 0.96);
-    padding: 18.4rem 0rem 0rem 0rem;
-    z-index: 2;
-  }
+.header__burger.active .header__burger-line:first-child {
+  transform: rotate(45deg);
+  top: 8px;
+}
+.header__burger.active .header__burger-line:last-child {
+  transform: rotate(-45deg);
+  bottom: 8px;
+}
 
-  .header__menu.active {
-    top: 0;
-  }
+.header__menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  transition: all 0.3s ease 0s;
+  background-color: rgba(0, 0, 0, 0.96);
+  padding: 18.4rem 0rem 0rem 0rem;
+  z-index: 2;
+}
 
-  .header__list {
-    @include flex-center(flex-start, flex-start);
-    flex-direction: column;
-  }
-  .header__list-item {
-    &:last-child {
-      margin-top: 4.4rem;
-    }
+.header__menu.active {
+  top: 0;
+}
 
-    &:active > .header__link {
-      color: $accent-color;
-    }
-  }
-  .header__link {
-    @include font(2.8, 2.6rem, 700);
-    letter-spacing: 0.26rem;
-    color: $primary-white;
-    transition: all 0.1s ease-in-out;
+.header__list {
+  @include flex-center(flex-start, flex-start);
+  flex-direction: column;
+}
+.header__list-item {
+  &:active > .header__link {
+    color: $accent-color;
   }
 }
-@media (max-width: 48em) {
+
+.burger__item-link {
+  margin-top: 4.4rem;
+  color: $primary-white;
+}
+
+@media (max-width: 20.94em) {
+  .header__link {
+    @include font(2.2, 1.8rem, 700);
+    letter-spacing: 0.09rem;
+  }
+  .header__menu {
+    padding: 10.6rem 1rem 1rem 1rem;
+  }
+}
+
+@media (min-width: 21em) and (max-width: 47.94em) {
   .header__link {
     @include font(2.5, 2rem, 700);
     letter-spacing: 0.16rem;
   }
   .header__menu {
-    padding: 15.9rem 0rem 0rem 0rem;
+    padding: 15.9rem 1rem 1rem 1rem;
   }
 }
-@media (max-width: 20em) {
+
+@media (min-width: 48em) {
   .header__link {
-    @include font(2.2, 2rem, 700);
-    letter-spacing: 0.09rem;
-  }
-  .header__menu {
-    padding-top: 10.6rem;
+    @include font(2.8, 2.6rem, 700);
+    letter-spacing: 0.26rem;
+    color: $primary-white;
+    transition: all 0.1s ease-in-out;
   }
 }
