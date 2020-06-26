@@ -432,6 +432,10 @@
   border-radius: 50%;
   border: 2px solid transparent;
   background-clip: content-box;
+  @extend %transition;
+  &:hover {
+    transform: scale(1.2);
+  }
 }
 .slick-dots{
   display: none;
