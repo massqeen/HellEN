@@ -304,7 +304,7 @@
   }
 
   &__item {
-    @include flex-center();
+    @include flex-center(flex-start);
 
     &:not(:last-child) {
       margin-bottom: 2.2rem;
