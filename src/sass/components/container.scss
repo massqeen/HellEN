@@ -1,17 +1,21 @@
 .container {
   max-width: 138rem;
-  padding: 0 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   margin: 0 auto;
 
   @include for-size(tablet) {
-    padding: 0 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   @include for-size(desktop) {
-    padding: 0 3.5rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
   }
 
   @include for-size(large-desktop) {
-    padding: 0 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }

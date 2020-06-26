@@ -28,18 +28,18 @@
   @include font(20/13, 1.3rem, 700);
   letter-spacing: 0.65px;
 
-  @media screen and (max-width: 47.94em) {
+  @media screen and (max-width: 35.94em) {
     &:not(:last-child) {
       margin-bottom: 1.4rem;
     }
   }
 
-  @media screen and (min-width: 36em) and (max-width: 79.94em) {
+  @media screen and (min-width: 36em) and (max-width: 61.94em) {
     &:not(:nth-last-child(-n + 2)) {
       margin-bottom: 2rem;
     }
   }
-  @media screen and (min-width: 80em) {
+  @media screen and (min-width: 62em) {
     &:not(:nth-last-child(-n + 3)) {
       margin-bottom: 4.5rem;
     }

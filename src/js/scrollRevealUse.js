@@ -10,7 +10,7 @@ ScrollReveal({
 
 ScrollReveal({
   origin: 'left',
-  distance: '30rem',
+  distance: '20rem',
   duration: 1500,
   easing: 'ease-in-out',
   reset: false,
@@ -54,7 +54,7 @@ ScrollReveal({
 
 ScrollReveal({
   origin: 'right',
-  distance: '50rem',
+  distance: '15 rem',
   duration: 1500,
   easing: 'ease-in-out',
   reset: false,
@@ -63,7 +63,7 @@ ScrollReveal({
 
 ScrollReveal({
   origin: 'right',
-  distance: '50rem',
+  distance: '15rem',
   duration: 1500,
   easing: 'ease-in-out',
   reset: false,
@@ -72,7 +72,7 @@ ScrollReveal({
 
 ScrollReveal({
   origin: 'right',
-  distance: '50rem',
+  distance: '15rem',
   duration: 1500,
   interval: 300,
   delay: 0.1,
@@ -86,7 +86,7 @@ ScrollReveal({
 
 ScrollReveal({
   origin: 'right',
-  distance: '50rem',
+  distance: '15rem',
   duration: 1500,
   easing: 'ease-in-out',
   reset: false,

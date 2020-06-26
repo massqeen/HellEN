@@ -304,15 +304,13 @@
   }
 
   &__item {
-    @include flex-center();
-    padding-left: 1.8rem;
+    @include flex-center(flex-start);
 
     &:not(:last-child) {
       margin-bottom: 2.2rem;
     }
 
     @include for-size(tablet) {
-      padding-left: 0;
       width: 33.3%;
 
       &:not(:last-child) {
