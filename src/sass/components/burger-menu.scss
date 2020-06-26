@@ -4,12 +4,20 @@
   }
 }
 .header__burger {
-  position: relative;
-  width: 24px;
-  height: 14px;
-  z-index: 3;
+  width: 28px;
+  height: 18px;
+  background-color: $primary-white;
 
+  z-index: 3;
+  position: fixed;
+  top: 36px;
+  right: 20px;
   cursor: pointer;
+
+  @include for-size(tablet) {
+    top: 54px;
+    right: 40px;
+  }
 
   @include for-size(desktop) {
     display: none;
@@ -33,20 +41,24 @@ body.lock {
 .header__burger-line {
   position: absolute;
   background-color: $main-text;
-  left: 0;
-  width: 100%;
+  left: 2px;
+  width: 24/28 * 100%;
   height: 2px;
   transition: all 0.3s ease-in-out;
 }
 
 .header__burger-line:first-child {
-  top: 0;
+  top: 2px;
 }
 .header__burger-line:nth-child(2) {
-  top: 6px;
+  top: 8px;
 }
 .header__burger-line:last-child {
-  bottom: 0;
+  bottom: 2px;
+}
+
+.header__burger.active {
+  background-color: transparent;
 }
 
 .header__burger.active .header__burger-line {
@@ -63,11 +75,11 @@ body.lock {
 
 .header__burger.active .header__burger-line:first-child {
   transform: rotate(45deg);
-  top: 6px;
+  top: 8px;
 }
 .header__burger.active .header__burger-line:last-child {
   transform: rotate(-45deg);
-  bottom: 6px;
+  bottom: 8px;
 }
 
 .header__menu {
@@ -99,14 +111,6 @@ body.lock {
     color: $accent-color;
   }
 }
-
-// .header__link {
-//   @include font(1.2, 1.8rem, 700);
-//   letter-spacing: 1.8rem;
-// }
-// .header__menu {
-//   padding-top: 10.6rem;
-// }
 
 .burger__item-link {
   margin-top: 4.4rem;
