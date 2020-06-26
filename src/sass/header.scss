@@ -61,7 +61,7 @@
     }
 
     @include for-size(tablet-landscape) {
-      justify-content: center;
+      // justify-content: center;
       align-items: center;
     }
 
@@ -304,20 +304,23 @@
   }
 
   &__item {
-    @include flex-center();
-    // padding-left: 1.8rem;
+    display: flex;
+    align-items: center;
+    // @include flex-center();
 
     &:not(:last-child) {
       margin-bottom: 2.2rem;
     }
 
     @include for-size(tablet) {
-      // padding-left: 0;
       width: 33.3%;
 
       &:not(:last-child) {
         margin-bottom: 0;
       }
+    }
+    @include for-size(desctop) {
+      // @include flex-center(start, center);
     }
   }
 
