@@ -47,8 +47,6 @@
     @include for-size(large-desktop) {
       margin-right: -12rem;
     }
-
-    // @include for-size(tablet) {}
   }
 
   &__main-content {
@@ -61,7 +59,6 @@
     }
 
     @include for-size(tablet-landscape) {
-      // justify-content: center;
       align-items: center;
     }
 
