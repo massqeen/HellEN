@@ -304,9 +304,7 @@
   }
 
   &__item {
-    display: flex;
-    align-items: center;
-    // @include flex-center();
+    @include flex-center();
 
     &:not(:last-child) {
       margin-bottom: 2.2rem;
@@ -314,6 +312,7 @@
 
     @include for-size(tablet) {
       width: 33.3%;
+      justify-content: flex-start;
 
       &:not(:last-child) {
         margin-bottom: 0;
