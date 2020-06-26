@@ -447,6 +447,13 @@
   .slick-current .slider-nav__item{
     border: 2px solid $accent-color;
   }
+  .slick-slide div{
+    display: flex;
+  }
+  .slick-list{
+    padding: 1.5rem 0;
+  }
+  
   @include for-size(tablet){
     width: 60rem;
   }
@@ -455,4 +462,5 @@
 .slider-nav div:focus{
   outline: none;
 }
+
 
