@@ -1,3 +1,12 @@
+# lsp personal settings
+/lsp
+
+### Intellij+all Patch ###
+# Ignores the whole .idea folder and all .iml files
+# See toptal/gitignore.io#186 and toptal/gitignore.io#360
+
+.idea/
+
 # Artifacts
 stash/
 
